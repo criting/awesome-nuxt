@@ -37,33 +37,10 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute, useRouter } from 'vue-router';
 import { projects } from '@@/data/all';
 
-const router = useRouter();
-const route = useRoute();
-
 const allProjects = ref(projects);
-
-const selectedCategory = ref(route.query.category?.toString() || 'all');
-const selectedTags = ref<string[]>(
-  Array.isArray(route.query.tags)
-    ? route.query.tags.map(String)
-    : route.query.tags
-    ? [route.query.tags.toString()]
-    : []
-);
-const searchQuery = ref(route.query.q?.toString() || '');
-
-watch([selectedCategory, selectedTags, searchQuery], () => {
-  const query: Record<string, string | string[]> = {};
-
-  if (selectedCategory.value !== 'all') query.category = selectedCategory.value;
-  if (selectedTags.value.length > 0) query.tags = selectedTags.value;
-  if (searchQuery.value) query.q = searchQuery.value;
-
-  router.replace({ query });
-});
+const { category: selectedCategory, tags: selectedTags, search: searchQuery } = useFilterQuery();
 
 const allTags = computed(() => {
   const tags = new Set<string>();

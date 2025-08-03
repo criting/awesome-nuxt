@@ -6,4 +6,6 @@ export type Project = {
   category: string;
   image?: string;
   premium?: boolean;
+  stars?: number;
+  lastUpdated?: string;
 };
