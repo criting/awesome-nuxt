@@ -1,0 +1,27 @@
+import vue from '@vitejs/plugin-vue';
+
+export default defineNuxtConfig({
+  devtools: { enabled: true },
+  modules: ['@nuxt/eslint', '@nuxt/ui'],
+
+  css: ['~/assets/css/main.css'],
+
+  fonts: {
+    families: [
+      {
+        name: 'Geist',
+        provider: 'google',
+        weights: ['400', '500', '600', '700', '800']
+      }
+    ]
+  },
+
+  nitro: {
+    experimental: {
+      tasks: true
+    },
+    rollupConfig: {
+      plugins: [vue()]
+    }
+  },
+})
