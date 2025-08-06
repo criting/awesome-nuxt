@@ -8,4 +8,5 @@ export type Project = {
   premium?: boolean;
   stars?: number;
   lastUpdated?: string;
+  author?: string;
 };

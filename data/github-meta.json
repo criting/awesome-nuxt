@@ -1,14 +1,72 @@
 {
   "https://github.com/HugoRCD/nuxt-ui-chat": {
-    "stars": 88,
-    "lastUpdated": "2025-08-01T20:28:27Z"
+    "stars": 89,
+    "lastUpdated": "2025-08-05T13:08:01Z",
+    "author": "HugoRCD"
+  },
+  "https://github.com/nuxt-ui-pro/chat": {
+    "stars": 104,
+    "lastUpdated": "2025-08-05T21:33:02Z",
+    "author": "nuxt-ui-pro"
+  },
+  "https://github.com/HugoRCD/canvas": {
+    "stars": 309,
+    "lastUpdated": "2025-08-06T12:29:47Z",
+    "author": "HugoRCD"
   },
   "https://github.com/HugoRCD/wxt-nuxt-ui-starter": {
     "stars": 27,
-    "lastUpdated": "2025-08-01T08:13:44Z"
+    "lastUpdated": "2025-08-01T08:13:44Z",
+    "author": "HugoRCD"
   },
   "https://github.com/NuxSaaS/NuxSaaS": {
-    "stars": 352,
-    "lastUpdated": "2025-08-03T08:34:22Z"
+    "stars": 354,
+    "lastUpdated": "2025-08-06T18:49:29Z",
+    "author": "NuxSaaS"
+  },
+  "https://github.com/SupersaasHQ/lemonrepo": {
+    "stars": 263,
+    "lastUpdated": "2025-08-02T04:12:58Z",
+    "author": "SupersaasHQ"
+  },
+  "https://github.com/kingyue737/vitify-nuxt": {
+    "stars": 129,
+    "lastUpdated": "2025-08-03T11:13:31Z",
+    "author": "kingyue737"
+  },
+  "https://github.com/nuxt/movies": {
+    "stars": 2138,
+    "lastUpdated": "2025-08-06T19:32:08Z",
+    "author": "nuxt"
+  },
+  "https://github.com/nuxt/hackernews": {
+    "stars": 1374,
+    "lastUpdated": "2025-08-05T11:49:29Z",
+    "author": "nuxt"
+  },
+  "https://github.com/scottyzen/woonuxt": {
+    "stars": 837,
+    "lastUpdated": "2025-08-05T08:20:15Z",
+    "author": "scottyzen"
+  },
+  "https://github.com/w3bdesign/nuxtjs-woocommerce": {
+    "stars": 222,
+    "lastUpdated": "2025-08-06T19:10:37Z",
+    "author": "w3bdesign"
+  },
+  "https://github.com/danielroe/nuxt-vapor-demo": {
+    "stars": 48,
+    "lastUpdated": "2025-08-03T05:09:50Z",
+    "author": "danielroe"
+  },
+  "https://github.com/productdevbook/nitro-graphql": {
+    "stars": 53,
+    "lastUpdated": "2025-08-05T06:38:36Z",
+    "author": "productdevbook"
+  },
+  "https://github.com/Flosciante/nuxt-image-gallery": {
+    "stars": 169,
+    "lastUpdated": "2025-08-01T22:00:29Z",
+    "author": "Flosciante"
   }
 }

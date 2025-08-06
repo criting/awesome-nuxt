@@ -9,4 +9,12 @@ export const ai: Project[] = [
     category: 'ai',
     image: 'https://nuxtjs.org/logo.png'
   },
+  {
+    name: 'Nuxt AI Chatbot Template',
+    description: 'Full-featured AI Chatbot Nuxt application with authentication, chat history, multiple pages, collapsible sidebar, keyboard shortcuts, light & dark mode, command palette and more. Built using Nuxt UI Pro components and integrated with Workers AI for a complete chat experience.',
+    url: 'https://github.com/nuxt-ui-pro/chat',
+    tags: ['auth', 'nuxt 3', 'nuxt ui pro', 'nuxthub', 'drizzle', 'auth'],
+    category: 'ai',
+    image: 'https://nuxtjs.org/logo.png'
+  },
 ];

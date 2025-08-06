@@ -43,4 +43,77 @@ export const starter: Project[] = [
     premium: true,
     image: 'https://nuxtjs.org/logo.png'
   },
+  {
+    name: 'Lemonrepo',
+    description: 'Lemonrepo allows you sell access to Private GitHub repositories using Lemonsqueezy. Everything is automated, license activation to repo read only invite management.',
+    url: 'https://github.com/SupersaasHQ/lemonrepo',
+    tags: ['nuxt 3', 'saas', 'payments', 'lemonsqueezy', 'auth', 'github'],
+    category: 'starter',
+    image: 'https://nuxtjs.org/logo.png'
+  },
+  {
+    name: 'Vitify Nuxt',
+    description: 'Vuetify + Nuxt, Opinionated Admin Starter Template',
+    url: 'https://github.com/kingyue737/vitify-nuxt',
+    tags: ['nuxt 3', 'pinia', 'admin', 'charts', 'auth', 'vuetify', 'vueuse'],
+    category: 'starter',
+    image: 'https://nuxtjs.org/logo.png'
+  },
+  {
+    name: 'Nuxt Movies',
+    description: 'Movies app demo built using Nuxt 3, Vue 3, UnoCSS, Image Module, The Movie Database API and TypeScript.',
+    url: 'https://github.com/nuxt/movies',
+    tags: ['nuxt 3', 'unocss'],
+    category: 'starter',
+    image: 'https://nuxtjs.org/logo.png'
+  },
+  {
+    name: 'Nuxt Hacker News',
+    description: 'Hacker News clone built with Nuxt.',
+    url: 'https://github.com/nuxt/hackernews',
+    tags: ['nuxt 3'],
+    category: 'starter',
+    image: 'https://nuxtjs.org/logo.png'
+  },
+  {
+    name: 'WooNuxt',
+    description: 'Modern, fast, and SEO-friendly front-end for WooCommerce. It\'s built on Nuxt 3 and uses the WPGraphQL API to retrieve all the data it needs.',
+    url: 'https://github.com/scottyzen/woonuxt',
+    tags: ['nuxt 3', 'woocommerce', 'graphql', 'ecommerce'],
+    category: 'starter',
+    image: 'https://nuxtjs.org/logo.png'
+  },
+  {
+    name: 'Nuxt 3 Ecommerce with WooCommerce',
+    description: '.',
+    url: 'https://github.com/w3bdesign/nuxtjs-woocommerce',
+    tags: ['nuxt 3', 'woocommerce', 'graphql', 'ecommerce', 'wordpress'],
+    category: 'starter',
+    image: 'https://nuxtjs.org/logo.png'
+  },
+  {
+    name: 'Nuxt Vapor Mode Demo',
+    description: 'A demo showcasing Vue\'s new Vapor Mode compilation with benchmark tests inspired by js-framework-benchmark.',
+    url: 'https://github.com/danielroe/nuxt-vapor-demo',
+    tags: ['nuxt 3', 'vapor', 'vue 3', 'benchmark'],
+    category: 'starter',
+    image: 'https://nuxtjs.org/logo.png'
+  },
+  {
+    name: 'Nitro GraphQL',
+    description: 'A standalone Nitro module that integrates GraphQL servers into any Nitro application with automatic type generation, file watching, and seamless framework integration.',
+    url: 'https://github.com/productdevbook/nitro-graphql',
+    tags: ['nuxt 3', 'graphql', 'nitro'],
+    category: 'starter',
+    image: 'https://nuxtjs.org/logo.png'
+  },
+  {
+    name: 'NuxtHub Image Gallery Starter Template',
+    description: 'This starter lets you get started with NuxtHub Blob in seconds.',
+    url: 'https://github.com/Flosciante/nuxt-image-gallery',
+    tags: ['nuxt 3', 'nuxt ui', 'nuxthub', 'blob', 'image gallery', 'cloudflare'],
+    category: 'starter',
+    image: 'https://nuxtjs.org/logo.png'
+  },
+
 ];

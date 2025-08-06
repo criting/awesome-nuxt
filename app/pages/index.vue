@@ -3,7 +3,7 @@
     <h1 class="text-3xl font-bold mb-8">Awesome Nuxt Projects</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-24">
-      <aside class="space-y-2 sticky top-8 self-start h-fit">
+      <aside class="space-y-2 lg:sticky top-8 self-start h-fit">
         <h2 class="text-xl font-semibold mb-4">Filters</h2>
 
         <h5>Categories</h5>

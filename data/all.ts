@@ -17,7 +17,8 @@ export const projects: Project[] = rawProjects.map((project) => {
     return {
       ...project,
       stars: githubMeta[project.url]?.stars,
-      lastUpdated: githubMeta[project.url]?.lastUpdated
+      lastUpdated: githubMeta[project.url]?.lastUpdated,
+      author: githubMeta[project.url]?.author
     }
   }
   return project

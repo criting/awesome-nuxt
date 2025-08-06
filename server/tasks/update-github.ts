@@ -15,7 +15,7 @@ async run() {
   const headers: Record<string, string> = token ? { Authorization: `Bearer ${token}` } : {}
 
   const cachePath = join('data', 'github-meta.json')
-  const cache: Record<string, { stars: number; lastUpdated: string }> = existsSync(cachePath)
+  const cache: Record<string, { stars: number; lastUpdated: string, author: string }> = existsSync(cachePath)
     ? JSON.parse(await readFile(cachePath, 'utf8'))
     : {}
 
@@ -26,6 +26,7 @@ async run() {
       return {
         stars: data.stargazers_count,
         lastUpdated: data.updated_at,
+        author: data.owner?.login || '',
       }
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
