@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nuxt/eslint": "1.7.1",
-    "@nuxt/ui": "3.3.0",
+    "@nuxt/ui-pro": "^3.3.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vueuse/core": "^13.6.0",
     "eslint": "^9.32.0",

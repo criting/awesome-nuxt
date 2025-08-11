@@ -2,16 +2,16 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/ui'],
+  modules: ['@nuxt/eslint', '@nuxt/ui-pro'],
 
   css: ['~/assets/css/main.css'],
 
   fonts: {
     families: [
       {
-        name: 'Geist',
+        name: 'Lato',
         provider: 'google',
-        weights: ['400', '500', '600', '700', '800']
+        weights: ['300', '400', '500', '600', '700', '800']
       }
     ]
   },

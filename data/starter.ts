@@ -12,7 +12,7 @@ export const starter: Project[] = [
   {
     name: 'Nuxt Visitors',
     description: 'Add live visitor counting to your Nuxt website in seconds. WebSocket-based, type-safe, and completely automatic.',
-    url: 'https://github.com/HugoRCD/wxt-nuxt-ui-starter',
+    url: 'https://github.com/HugoRCD/nuxt-visitors',
     tags: ['nuxt 3', 'web sockets', 'visitors', 'nitro', 'real-time'],
     category: 'starter',
     image: 'https://github.com/HugoRCD/wxt-nuxt-ui-starter/raw/main/public/preview.png'
@@ -23,7 +23,6 @@ export const starter: Project[] = [
     url: 'https://github.com/NuxSaaS/NuxSaaS',
     tags: ['auth', 'nuxt 4', 'saas', 'full-stack', 'i18n', 'payments', 'stripe', 'drizzle'],
     category: 'starter',
-    image: 'https://nuxtjs.org/logo.png'
   },
   {
     name: 'SuperSaaS',
@@ -32,7 +31,7 @@ export const starter: Project[] = [
     tags: ['auth', 'nuxt 4', 'saas', 'full-stack', 'i18n', 'payments', 'stripe', 'drizzle', 'nuxthub', 'cloudflare'],
     category: 'starter',
     premium: true,
-    image: 'https://nuxtjs.org/logo.png'
+    image: 'https://supersaas.dev/banner.png'
   },
   {
     name: 'Nuxt Starter Kit',
@@ -41,7 +40,7 @@ export const starter: Project[] = [
     tags: ['auth', 'nuxt 4', 'saas', 'full-stack', 'i18n', 'payments', 'stripe', 'drizzle'],
     category: 'starter',
     premium: true,
-    image: 'https://nuxtjs.org/logo.png'
+    image: 'https://nuxtstarterkit.com/__og-image__/static/og.png'
   },
   {
     name: 'Lemonrepo',
@@ -49,7 +48,6 @@ export const starter: Project[] = [
     url: 'https://github.com/SupersaasHQ/lemonrepo',
     tags: ['nuxt 3', 'saas', 'payments', 'lemonsqueezy', 'auth', 'github'],
     category: 'starter',
-    image: 'https://nuxtjs.org/logo.png'
   },
   {
     name: 'Vitify Nuxt',
@@ -57,7 +55,6 @@ export const starter: Project[] = [
     url: 'https://github.com/kingyue737/vitify-nuxt',
     tags: ['nuxt 3', 'pinia', 'admin', 'charts', 'auth', 'vuetify', 'vueuse'],
     category: 'starter',
-    image: 'https://nuxtjs.org/logo.png'
   },
   {
     name: 'Nuxt Movies',
@@ -65,7 +62,7 @@ export const starter: Project[] = [
     url: 'https://github.com/nuxt/movies',
     tags: ['nuxt 3', 'unocss'],
     category: 'starter',
-    image: 'https://nuxtjs.org/logo.png'
+    image: 'https://user-images.githubusercontent.com/11247099/171109597-ee4fb47c-48b5-4dba-94b3-a56e0083c142.png'
   },
   {
     name: 'Nuxt Hacker News',
@@ -73,7 +70,6 @@ export const starter: Project[] = [
     url: 'https://github.com/nuxt/hackernews',
     tags: ['nuxt 3'],
     category: 'starter',
-    image: 'https://nuxtjs.org/logo.png'
   },
   {
     name: 'WooNuxt',
@@ -81,7 +77,7 @@ export const starter: Project[] = [
     url: 'https://github.com/scottyzen/woonuxt',
     tags: ['nuxt 3', 'woocommerce', 'graphql', 'ecommerce'],
     category: 'starter',
-    image: 'https://nuxtjs.org/logo.png'
+    image: 'https://user-images.githubusercontent.com/5116925/218879668-f4c1f9fd-bef4-44b0-bc7f-e87d994aa3a1.png'
   },
   {
     name: 'Nuxt 3 Ecommerce with WooCommerce',
@@ -89,7 +85,7 @@ export const starter: Project[] = [
     url: 'https://github.com/w3bdesign/nuxtjs-woocommerce',
     tags: ['nuxt 3', 'woocommerce', 'graphql', 'ecommerce', 'wordpress'],
     category: 'starter',
-    image: 'https://nuxtjs.org/logo.png'
+    image: 'https://user-images.githubusercontent.com/45217974/106988377-f129a080-676f-11eb-94b9-a44c86ea6c79.png'
   },
   {
     name: 'Nuxt Vapor Mode Demo',
@@ -97,7 +93,6 @@ export const starter: Project[] = [
     url: 'https://github.com/danielroe/nuxt-vapor-demo',
     tags: ['nuxt 3', 'vapor', 'vue 3', 'benchmark'],
     category: 'starter',
-    image: 'https://nuxtjs.org/logo.png'
   },
   {
     name: 'Nitro GraphQL',
@@ -105,15 +100,156 @@ export const starter: Project[] = [
     url: 'https://github.com/productdevbook/nitro-graphql',
     tags: ['nuxt 3', 'graphql', 'nitro'],
     category: 'starter',
-    image: 'https://nuxtjs.org/logo.png'
   },
   {
-    name: 'NuxtHub Image Gallery Starter Template',
+    name: 'NuxtHub Image Gallery',
     description: 'This starter lets you get started with NuxtHub Blob in seconds.',
     url: 'https://github.com/Flosciante/nuxt-image-gallery',
     tags: ['nuxt 3', 'nuxt ui', 'nuxthub', 'blob', 'image gallery', 'cloudflare'],
     category: 'starter',
-    image: 'https://nuxtjs.org/logo.png'
   },
-
+  {
+    name: 'Nuxt x BetterAuth',
+    description: 'A demo of using BetterAuth with Nuxt and PostgreSQL. This template is designed to be deployed anywhere, with specific instructions for Vercel + Neon Database.',
+    url: 'https://github.com/HugoRCD/nuxt-better-auth',
+    tags: ['nuxt 3', 'auth', 'betterauth'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt Vercel ISR',
+    description: "This is a tiny demo to show off Nuxt's route rules integration with Vercel.",
+    url: 'https://github.com/danielroe/nuxt-vercel-isr',
+    tags: ['nuxt 3', 'vercel', 'isr'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt Blog',
+    description: "Nuxt Blog built with Nuxt3, Nuxt-Content2, Vue3 & TailwindCss",
+    url: 'https://github.com/nurRiyad/nuxt-blog',
+    tags: ['nuxt 3', 'nuxt content', 'blog'],
+    category: 'starter',
+    image: 'https://github.com/nurRiyad/nuxt-blog/raw/main/assets/images/preview1.png'
+  },
+  {
+    name: 'Nuxt-Mapbox',
+    description: "Elegant Mapbox integration with Nuxt",
+    url: 'https://github.com/AlexLavoie42/Nuxt-Mapbox',
+    tags: ['nuxt 3', 'mapbox'],
+    category: 'starter',
+  },
+  {
+    name: 'Maya Nuxt Template',
+    description: "A personal photography portfolio template built with Nuxt.js and Tailwind CSS.",
+    url: 'https://github.com/Youhan/maya-nuxt-template',
+    tags: ['nuxt 3', 'blog'],
+    category: 'starter',
+    image: 'https://github.com/Youhan/maya-nuxt-template/raw/main/cover-dark.webp#gh-dark-mode-only'
+  },
+  {
+    name: 'Nuxt Electron',
+    description: "Integrate Nuxt and Electron",
+    url: 'https://github.com/caoxiemeihao/nuxt-electron',
+    tags: ['nuxt 3', 'electron'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt Monorepo Demo',
+    description: "This project demonstrates how to use Nuxt Layers to build a complete monorepo architecture. You can also browse different branches to understand various application scenarios.",
+    url: 'https://github.com/serkodev/nuxt-monorepo',
+    tags: ['nuxt 3', 'monorepo'],
+    category: 'starter',
+  },
+  {
+    name: 'LaraNuxt',
+    description: "Laravel + Nuxt.js Boilerplate",
+    url: 'https://github.com/fumeapp/laranuxt',
+    tags: ['nuxt 3', 'laravel'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt 4 + Mastra Starter Kit',
+    description: "This project uses Nuxt 4 and the Mastra.ai agent framework.",
+    url: 'https://github.com/Strift/nuxt-mastra-starter-kit',
+    tags: ['nuxt 4', 'mastra'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt 3D DnD Game',
+    description: "This project is a Dungeons & Dragons-like 3D game, built entirely with Nuxt, TresJS, and ThreeJS.",
+    url: 'https://github.com/alvarosabu/nuxt-3d-dnd-game',
+    tags: ['nuxt 3', '3d', 'dnd', 'tresjs', 'threejs'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt Starter Medusa',
+    description: "Combine Medusa's modules for your commerce backend with the newest Nuxt v3, ready for v4, features for a performant storefront.",
+    url: 'https://github.com/OlivierBelaud/nuxt-starter-medusa',
+    tags: ['nuxt 3', 'medusa', 'ecommerce'],
+    category: 'starter',
+  },
+  {
+    name: 'Multiplayer Globe App with Nuxt',
+    description: "Display website visitor locations in real-time using Nuxt and NuxtHub.",
+    url: 'https://github.com/nuxt-hub/multiplayer-globe',
+    tags: ['nuxt 3', 'nuxthub', 'websockets', 'real-time'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt Reactive WebSocket Demo',
+    description: "A real-time cursor tracking demo built with Nuxt showcasing the ability to use WebSockets to reactively update multiple states across different browsers/devices.",
+    url: 'https://github.com/sandros94/nuxt-reactive-ws',
+    tags: ['nuxt 3', 'websockets', 'real-time'],
+    category: 'starter',
+  },
+  {
+    name: 'NuxtWaitlist',
+    description: "This is a full stack nuxt waitlist template. It allows you to collect emails of people who are potentially interested in buying your product.",
+    url: 'https://github.com/masterkram/Nuxt-Waitlist',
+    tags: ['nuxt 3', 'waitlist', 'nuxthub'],
+    category: 'starter',
+  },
+  {
+    name: 'Supersaas Lite',
+    description: "A minimal fullstack starter template deployed on the Edge using NuxtHub.",
+    url: 'https://github.com/SupersaasHQ/essentials-lite',
+    tags: ['nuxt 3', 'auth', 'nuxthub', 'drizzle', 'edge', 'cloudflare'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt Multisite Inheritance',
+    description: "This template shows how to approach a problem of unifying multiple applications with a sgnificant amount of shared functionalities on the UI/feature layer.",
+    url: 'https://github.com/filrak/nuxt-layers-multisite',
+    tags: ['nuxt 3', 'multitenancy'],
+    category: 'starter',
+  },
+  {
+    name: 'Chat with PDF',
+    description: "Chat with PDF is a full-stack AI-powered application that lets you to ask questions to PDF documents.",
+    url: 'https://github.com/filrak/nuxt-layers-multisite',
+    tags: ['nuxt 3', 'pdf', 'ai', 'chat', 'nuxthub'],
+    category: 'starter',
+  },
+  {
+    name: 'NuxtCommerce',
+    description: "An open-source, dynamic e-commerce solution powered by Nuxt 3 and GraphQL, headless storefront replacement for Woocommerce. Featuring a user interface in the style of Pinterest and fully customizable (Vue, Nuxt3).",
+    url: 'https://github.com/zackha/nuxtcommerce',
+    tags: ['nuxt 3', 'ecommerce', 'graphql', 'headless', 'woocommerce'],
+    category: 'starter',
+  },
+  {
+    name: 'NUXTOR',
+    description: "A spiritual successor of ViTauri, made with Nuxt 4 and Tauri 2 Build super fast desktop applications!",
+    url: 'https://github.com/NicolaSpadari/nuxtor',
+    tags: ['nuxt 4', 'tauri', 'desktop', 'applications'],
+    category: 'starter',
+    image: 'https://github.com/NicolaSpadari/nuxtor/raw/main/public/screenshot.png'
+  },
+  {
+    name: 'Glide.ai',
+    description: "Dark, modern, website template",
+    url: 'https://github.com/prismicio-community/nuxt-starter-prismic-glideai',
+    tags: ['nuxt 3', 'template'],
+    category: 'starter',
+    image: 'https://camo.githubusercontent.com/86880b4ba71fa91324aca48dbed65afc54c90eba83b39903a8ffd081f160b91e/68747470733a2f2f696d616765732e707269736d69632e696f2f323530312d676c6964652d61692f5a3678394535627173744a392d6849585f676c69646561692d636f757273652e706e673f6175746f3d666f726d61742c636f6d7072657373'
+  },
 ];

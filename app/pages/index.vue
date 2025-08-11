@@ -1,15 +1,130 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold mb-8">Awesome Nuxt Projects</h1>
+  <div>
+    <ScrollToTop />
+    <UModal
+      v-if="selectedProject"
+      v-model:open="modalOpen"
+      fullscreen
+      :ui="{ header: 'hidden' }"
+      class="bg-white"
+    >
+      <template #body>
+        <div
+          class="w-full h-full absolute inset-0 bg-[url(/gradient.jpg)] bg-cover mix-blend-multiply -z-10 opacity-30"
+        />
+        <div class="max-w-3xl mx-auto px-4 py-8">
+          <div class="flex gap-2 items-center cursor-pointer group" @click="modalOpen = false">
+            <div
+              class="bg-black group-hover:bg-primary flex justify-center p-2 rounded-full transition-colors duration-200"
+            >
+              <UIcon name="i-lucide-arrow-left" class="text-white" />
+            </div>
+            Go back
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div>
+              <ProjectImage :image="selectedProject.image" :name="selectedProject.name" />
+            </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-24">
-      <aside class="space-y-2 lg:sticky top-8 self-start h-fit">
-        <h2 class="text-xl font-semibold mb-4">Filters</h2>
+            <div>
+              <div>
+                <h2 class="text-2xl font-bold mb-2">{{ selectedProject.name }}</h2>
+                <p class="text-sm text-gray-600">{{ selectedProject.description }}</p>
+              </div>
 
-        <h5>Categories</h5>
-        <CategoryFilter v-model="selectedCategory" :categories="allCategories" />
+              <div class="mt-4">
+                <h5 class="text-sm font-semibold mb-2">Tags</h5>
+                <div class="flex flex-wrap gap-2">
+                  <UBadge
+                    v-for="tag in selectedProject.tags"
+                    :key="tag"
+                    color="secondary"
+                    size="sm"
+                    variant="subtle"
+                  >
+                    {{ tag }}
+                  </UBadge>
+                </div>
+              </div>
 
-        <h5>Tags</h5>
+              <div v-if="selectedProject.stars" class="mt-4">
+                <h5 class="text-sm font-semibold mb-2">Project</h5>
+              </div>
+
+              <div class="gap-2 flex flex-col w-auto items-start">
+                <div class="flex items-center text-sm text-gray-600">
+                  <UIcon
+                    v-if="selectedProject.stars"
+                    name="i-lucide-star"
+                    class="text-yellow-500 mr-1"
+                  />
+                  <span v-if="selectedProject.stars">{{ selectedProject.stars }} GitHub stars</span>
+                </div>
+
+                <div class="flex items-center text-sm text-gray-600">
+                  <UIcon v-if="selectedProject.author" name="i-lucide-user" class="mr-1" />
+                  <a :href="`https://github.com/${selectedProject.author}`" target="_blank">
+                    <span v-if="selectedProject.author">{{ selectedProject.author }}</span>
+                  </a>
+                </div>
+
+                <div>
+                  <span v-if="selectedProject.lastUpdated" class="text-gray-500 text-sm">
+                    Last updated: {{ new Date(selectedProject.lastUpdated).toLocaleDateString() }}
+                  </span>
+                </div>
+
+                <div v-if="selectedProject.url">
+                  <div class="flex gap-2 items-center cursor-pointer group" @click="openProjectUrl">
+                    <div
+                      class="bg-black group-hover:bg-primary flex justify-center p-2 rounded-full transition-colors duration-200"
+                    >
+                      <UIcon name="i-lucide-square-arrow-out-up-right" class="text-white" />
+                    </div>
+                    View project
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </UModal>
+    <UContainer>
+      <UPageHero
+        title="Nuxt Projects That Deliver"
+        description="A curated list of Nuxt projects, templates, and starters that actually work — ready for
+          you to use or learn from."
+        headline="New release"
+      />
+    </UContainer>
+    <section class="relative">
+      <div
+        class="absolute inset-0 bg-[url(/gradient.jpg)] bg-cover bg-no-repeat -z-10 mx-auto h-[300px] w-[95%] rounded-lg"
+      />
+      <div
+        class="absolute inset-0 bg-linear-to-b from-transparent to-white -z-10 h-[300px] w-[95%] mx-auto bg-no-repeat"
+      />
+      <UContainer>
+        <div class="relative mb-8 pt-12">
+          <h1 class="text-3xl font-bold mb-2">Explore Nuxt Projects</h1>
+          <p class="text-gray-600">
+            Discover a collection of Nuxt projects, templates, and starters that are ready to use or
+            learn from.
+          </p>
+        </div>
+        <div class="grid grid-cols-1">
+          <div class="space-y-2 self-start">
+            <div class="flex items-center gap-2">
+              <div>
+                <UBadge class="rounded-full flex" size="lg">
+                  <UIcon name="i-lucide-filter" />
+                  <span class="text-gray-200">More filters</span>
+                </UBadge>
+              </div>
+              <CategoryFilter v-model="selectedCategory" :categories="allCategories" />
+            </div>
+            <!-- <h5>Tags</h5>
         <TagFilter v-model="selectedTags" :tags="allTags" />
         <h5>Search</h5>
         <UInput
@@ -17,30 +132,51 @@
           placeholder="Search projects..."
           icon="i-heroicons-magnifying-glass"
           class="w-full"
-        />
-      </aside>
+        /> -->
+          </div>
 
-      <section>
-        <div class="mb-4">
-          <h2 class="text-xl font-semibold mb-2">Projects</h2>
-          <p class="text-gray-600">
-            {{ filteredProjects.length }} project{{ filteredProjects.length === 1 ? '' : 's' }}
-          </p>
-        </div>
+          <section>
+            <div class="mb-4 mt-8">
+              <p class="text-gray-600 text-xs">
+                {{ filteredProjects.length }} project{{ filteredProjects.length === 1 ? '' : 's' }}
+              </p>
+            </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ProjectCard v-for="project in filteredProjects" :key="project.name" :project="project" />
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+              <ProjectCard
+                v-for="project in filteredProjects"
+                :key="project.name"
+                :project="project"
+                @click="() => selectProject(project)"
+              />
+            </div>
+          </section>
         </div>
-      </section>
-    </div>
+      </UContainer>
+    </section>
   </div>
 </template>
 
 <script setup lang="ts">
 import { projects } from '@@/data/all';
+import type { Project } from '@@/types/project';
 
+const modalOpen = ref(false);
 const allProjects = ref(projects);
+const selectedProject = ref<Project | null>(null);
 const { category: selectedCategory, tags: selectedTags, search: searchQuery } = useFilterQuery();
+
+function selectProject(project: Project) {
+  console.log('Selected project:', project);
+  selectedProject.value = project;
+  modalOpen.value = true;
+}
+
+function openProjectUrl() {
+  if (selectedProject.value?.url) {
+    window.open(selectedProject.value.url, '_blank');
+  }
+}
 
 const allTags = computed(() => {
   const tags = new Set<string>();

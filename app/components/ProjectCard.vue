@@ -1,72 +1,41 @@
 <template>
-  <UCard class="hover:bg-gray-50 transition-colors duration-200">
-    <template #header>
-      <div class="flex items-center justify-between">
-        <h2 class="font-semibold text-lg">{{ project.name }}</h2>
-        <UBadge v-if="project.premium" label="Premium" size="sm" />
-      </div>
-    </template>
+  <div class="transition-transform duration-200 group cursor-pointer">
+    <div class="relative">
+      <div class="relative w-full px-12 py-8 group transition-all">
+        <div
+          class="absolute top-0 w-full h-full bg-[url(/gradient.jpg)] bg-cover left-0 -z-[10] opacity-100 rounded-lg"
+        />
+        <div
+          class="absolute top-0 w-full h-full bg-[url(/gradient-orange.jpg)] bg-cover left-0 -z-[10] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"
+        />
+        <ProjectImage
+          :image="project.image"
+          :name="project.name"
+          :description="project.description"
+          class="z-10"
+        />
+        <!-- <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 left-0 group-hover:opacity-80 transition-opacity duration-200 rounded-lg"
+        >
+          <div
+            class="absolute bottom-2 text-white hidden group-hover:block w-full left-0 px-4 py-1"
+          >
+            <div class="flex justify-between">
+              <div v-if="project.stars" class="flex items-center text-sm">
+                <UIcon name="i-lucide-star" class="text-yellow-500 mr-1" />
+                <span>{{ project.stars }} stars</span>
+              </div>
 
-    <div class="flex justify-items-end items-end mb-3">
-      <p class="text-sm text-gray-600 line-clamp-3">{{ project.description }}</p>
-
-      <UPopover class="mr-1">
-        <UButton color="neutral" variant="ghost" icon="i-lucide-info" size="xs" />
-
-        <template #content>
-          <div class="max-w-xs p-4">
-            <p class="text-sm text-gray-600">{{ project.description }}</p>
+              <div v-if="project.author" class="flex items-center text-sm text-white">
+                <UIcon name="i-lucide-user" class="mr-1" />
+                <span>{{ project.author }}</span>
+              </div>
+            </div>
           </div>
-        </template>
-      </UPopover>
-    </div>
-
-    <div class="overflow-x-auto w-full">
-      <div class="flex flex-row gap-2 min-w-max">
-        <UBadge v-for="version in project.nuxt" :key="version" color="primary" size="xs">
-          Nuxt {{ version }}
-        </UBadge>
-
-        <UBadge v-for="tag in project.tags" :key="tag" color="secondary" size="xs" variant="subtle">
-          {{ tag }}
-        </UBadge>
+        </div> -->
       </div>
     </div>
-
-    <USeparator class="py-3" />
-
-    <div>
-      <div class="flex items-center text-sm text-gray-600">
-        <UIcon v-if="project.stars" name="i-lucide-star" class="text-yellow-500 mr-1" />
-        <span v-if="project.stars">{{ project.stars }} stars</span>
-      </div>
-
-      <div class="flex items-center text-sm text-gray-600">
-        <UIcon v-if="project.author" name="i-lucide-user" class="mr-1" />
-        <span v-if="project.author">{{ project.author }}</span>
-      </div>
-
-      <div>
-        <span v-if="project.lastUpdated" class="text-gray-500 text-sm">
-          Last updated: {{ new Date(project.lastUpdated).toLocaleDateString() }}
-        </span>
-      </div>
-    </div>
-
-    <USeparator v-if="project.lastUpdated" class="py-3" />
-
-    <UButton
-      :to="project.url"
-      target="_blank"
-      color="primary"
-      size="sm"
-      class="w-full p-0"
-      variant="link"
-      icon="i-heroicons-arrow-top-right-on-square"
-    >
-      View
-    </UButton>
-  </UCard>
+  </div>
 </template>
 
 <script setup lang="ts">
