@@ -27,7 +27,11 @@
           }"
         >
           <template #links>
-            <div class="flex gap-2 items-center cursor-pointer group">
+            <div
+              to="#projects"
+              class="flex gap-2 items-center cursor-pointer group"
+              @click="scrollToProjects"
+            >
               <div
                 class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
               >
@@ -44,4 +48,10 @@
 
 <script setup>
 import { projects } from '~~/data/all';
+
+function scrollToProjects() {
+  if (import.meta.client) {
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 </script>

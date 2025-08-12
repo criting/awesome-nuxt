@@ -10,7 +10,10 @@
           'bg-white text-gray-800 hover:bg-gray-100': model !== category
         }"
         size="lg"
-        @click="model = category"
+        @click="
+          model = category;
+          scrollToProjects();
+        "
       >
         {{ category }}
       </UBadge>
@@ -28,4 +31,10 @@ const props = defineProps<{
 
 const emit = defineEmits(['update:modelValue']);
 const model = useVModel(props, 'modelValue', emit);
+
+function scrollToProjects() {
+  if (import.meta.client) {
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 </script>

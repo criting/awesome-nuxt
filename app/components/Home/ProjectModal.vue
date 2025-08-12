@@ -22,16 +22,23 @@
         <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mt-8">
           <div class="relative w-full px-12 py-8 group transition-all">
             <div
-              class="absolute top-0 w-full h-full bg-[url(/gradient.jpg)] bg-cover left-0 -z-[10] opacity-100 rounded-lg"
+              class="absolute top-0 w-full h-full bg-[url(/gradient-orange.jpg)] bg-cover left-0 -z-[10] opacity-100 rounded-lg"
             />
             <div
-              class="absolute top-0 w-full h-full bg-[url(/gradient-orange.jpg)] bg-cover left-0 -z-[10] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"
+              class="absolute top-0 left-0 w-full h-full bg-black opacity-30 rounded-lg -z-[9]"
             />
+            <div
+              v-if="selectedProject.premium"
+              class="text-center opacity-100 absolute top-4 left-0 right-0 m-auto"
+            >
+              <UBadge color="neutral" size="sm" variant="outline" class="ring-0">Premium</UBadge>
+            </div>
             <ProjectImage
               :image="selectedProject.image"
               :name="selectedProject.name"
               :description="selectedProject.description"
               class="z-10"
+              size="taller"
             />
           </div>
 
@@ -42,7 +49,7 @@
                 <UBadge
                   v-for="tag in selectedProject.tags"
                   :key="tag"
-                  color="secondary"
+                  color="primary"
                   size="sm"
                   variant="soft"
                 >

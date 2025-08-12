@@ -1,10 +1,12 @@
 <template>
   <section class="mt-24">
-    <UPageCTA
-      title="Know an awesome Nuxt project?"
-      description="Share it with the community!"
-      :links="links"
-    />
+    <UContainer>
+      <UPageCTA
+        title="Know an awesome Nuxt project?"
+        description="Share it with the community!"
+        :links="links"
+      />
+    </UContainer>
   </section>
 </template>
 <script setup lang="ts">

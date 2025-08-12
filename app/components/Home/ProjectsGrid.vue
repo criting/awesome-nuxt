@@ -1,7 +1,7 @@
 <template>
-  <section class="relative">
+  <section id="projects" class="relative">
     <div
-      class="absolute inset-0 bg-[url(/gradient.jpg)] bg-cover bg-no-repeat -z-10 mx-auto h-[500px] w-full xl:w-[95%] xl:rounded-lg"
+      class="absolute inset-0 bg-[url(/gradient.jpg)] bg-cover bg-no-repeat -z-10 mx-auto h-[500px] w-full xl:w-[95%] xl:rounded-xl"
     />
     <div
       class="absolute inset-0 bg-linear-to-b from-transparent to-white -z-10 h-[500px] w-full xl:w-[95%] mx-auto bg-no-repeat dark:to-gray-900"
