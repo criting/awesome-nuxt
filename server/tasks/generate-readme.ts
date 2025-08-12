@@ -2,14 +2,6 @@ import { writeFile } from 'fs/promises'
 import { projects } from '@@/data/all'
 import type { Project } from '@@/types/project'
 
-function formatStars(stars?: number) {
-  return stars ? `⭐ ${stars}` : ''
-}
-
-function formatDate(date?: string) {
-  return date ? `🕒 Updated: ${date.slice(0, 10)}` : ''
-}
-
 function escapeMarkdown(text: string) {
   return text.replace(/\*/g, '\\*').replace(/_/g, '\\_')
 }
@@ -79,8 +71,8 @@ Create a Pull Request. We’ll review for quality, relevance, and metadata compl
 function generateMarkdown() {
   const lines: string[] = []
 
-  lines.push('# Awesome Nuxt Projects\n')
-  lines.push('A curated list of real-world projects built with Nuxt.')
+  lines.push('# Awesome Nuxt\n')
+  lines.push('A curated list of Nuxt projects, templates, and starters that actually work — ready for you to use or learn from.')
   lines.push('> **Note:** This excludes Nuxt modules. Visit [modules.nuxt.com](https://nuxt.com/modules) for official modules.\n')
 
   const grouped = groupByCategory(projects)
@@ -89,10 +81,7 @@ function generateMarkdown() {
     lines.push(`## ${capitalize(category)}\n`)
     for (const project of items) {
       lines.push(
-        `- [${project.name}](${project.url})  \n  *${escapeMarkdown(project.description)}*  \n  ${[
-          formatStars(project.stars),
-          formatDate(project.lastUpdated)
-        ]
+        `- [${project.name}](${project.url})  \n  *${escapeMarkdown(project.description)}*  \n
           .filter(Boolean)
           .join(' | ')}\n`
       )

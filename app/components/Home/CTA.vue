@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-24">
+  <section>
     <UContainer>
       <UPageCTA
         title="Know an awesome Nuxt project?"

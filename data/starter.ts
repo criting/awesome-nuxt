@@ -15,7 +15,6 @@ export const starter: Project[] = [
     url: 'https://github.com/HugoRCD/nuxt-visitors',
     tags: ['nuxt 3', 'web sockets', 'visitors', 'nitro', 'real-time'],
     category: 'starter',
-    image: 'https://github.com/HugoRCD/wxt-nuxt-ui-starter/raw/main/public/preview.png'
   },
   {
     name: 'NuxSaaS',
@@ -245,11 +244,41 @@ export const starter: Project[] = [
     image: 'https://github.com/NicolaSpadari/nuxtor/raw/main/public/screenshot.png'
   },
   {
-    name: 'Glide.ai',
-    description: "Dark, modern, website template",
-    url: 'https://github.com/prismicio-community/nuxt-starter-prismic-glideai',
-    tags: ['nuxt 3', 'template'],
+    name: 'Nuxt Headless UI',
+    description: "Headless UI integration for Nuxt. Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.",
+    url: 'https://github.com/P4sca1/nuxt-headlessui',
+    tags: ['nuxt 3', 'headless ui', 'tailwind css'],
     category: 'starter',
-    image: 'https://camo.githubusercontent.com/86880b4ba71fa91324aca48dbed65afc54c90eba83b39903a8ffd081f160b91e/68747470733a2f2f696d616765732e707269736d69632e696f2f323530312d676c6964652d61692f5a3678394535627173744a392d6849585f676c69646561692d636f757273652e706e673f6175746f3d666f726d61742c636f6d7072657373'
+  },
+  {
+    name: 'BlogiNote',
+    description: "BlogiNote is a Nuxt Theme based on Nuxt Content module, it can generate static website to show your blog posts and notes with flexible layouts and multiple optimizations.",
+    url: 'https://github.com/Benbinbin/BlogiNote',
+    tags: ['nuxt 3', 'nuxt content', 'blog', 'notes'],
+    category: 'starter',
+    image: 'https://github.com/Benbinbin/BlogiNote/raw/main/public/cover.jpg'
+  },
+  {
+    name: 'Nuxt 3 + Medium (n3dium)',
+    description: "This is a tiny, incomplete example for a paywalled content site built in Nuxt 3 for a live-coding session at Vue.js Global Summit 2022 and Vue.js Amsterdam 2022.",
+    url: 'https://github.com/danielroe/n3dium',
+    tags: ['nuxt 3', 'medium', 'paywall', 'content'],
+    category: 'starter',
+  },
+  {
+    name: 'Vitesse for Nuxt 4',
+    description: "A Vitesse template for Nuxt 4, inspired by the original Vitesse template for Nuxt 3.",
+    url: 'https://github.com/antfu/vitesse-nuxt',
+    tags: ['nuxt 4', 'vitesse', 'starter'],
+    category: 'starter',
+    image: 'https://user-images.githubusercontent.com/11247099/140462375-7b7ac4db-35b7-453c-8a05-13d8d20282c4.png'
+  },
+  {
+    name: 'Nuxt Booster',
+    description: "Nuxt Booster takes over the Lighthouse performance optimization of your generated website. All used components and resources are loaded on demand based on the viewport.",
+    url: 'https://github.com/basics/nuxt-booster',
+    tags: ['nuxt 4', 'performance', 'optimization', 'lighthouse'],
+    category: 'starter',
+    image: 'https://repository-images.githubusercontent.com/265295866/5cf41209-5402-4479-a5f6-29c6b1c0d7ce'
   },
 ];

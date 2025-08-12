@@ -1,7 +1,10 @@
 <template>
   <section>
-    <UPageSection title="FAQ" description="Have questions? We have answers!" />
-    <UPageAccordion :items="items" class="max-w-2xl mx-auto" />
+    <UPageSection title="FAQ" description="Have questions? We have answers!">
+      <template #body>
+        <UPageAccordion :items="items" class="max-w-2xl mx-auto" />
+      </template>
+    </UPageSection>
   </section>
 </template>
 <script setup lang="ts">

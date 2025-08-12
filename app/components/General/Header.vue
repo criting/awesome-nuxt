@@ -5,7 +5,12 @@
         root: 'bg-white dark:bg-neutral-900 border rounded-xl border-neutral-200 dark:border-neutral-800 mt-4'
       }"
     >
-      <template #title> Awesome Nuxt </template>
+      <template #title
+        ><div class="flex items-center gap-2">
+          <img src="/logo-2.svg" class="w-10 h-10 dark:hidden" alt="Logo" />
+          <img src="/logo-1.svg" class="w-10 h-10 hidden dark:block" alt="Logo" /> Awesome Nuxt
+        </div></template
+      >
 
       <UNavigationMenu
         :items="items"

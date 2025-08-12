@@ -1,6 +1,6 @@
 import type { Project } from '../types/project'
 import { ai } from './ai'
-import { portfolio } from './portfolio'
+import { template } from './template'
 import { starter } from './starter'
 import githubMetaJson from './github-meta.json'
 
@@ -8,7 +8,7 @@ const githubMeta = githubMetaJson as Record<string, Partial<Project>>
 
 export const rawProjects: Project[] = [
   ...ai,
-  ...portfolio,
+  ...template,
   ...starter
 ]
 
