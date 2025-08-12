@@ -1,39 +1,41 @@
 <template>
-  <UContextMenu
-    size="sm"
-    :items="items"
-    :ui="{
-      content: 'w-48'
-    }"
-  >
-    <div class="transition-transform duration-200 group cursor-pointer">
-      <div class="relative">
-        <div class="relative w-full px-12 py-8 group transition-all">
-          <div
-            class="absolute top-0 w-full h-full bg-[url(/gradient.jpg)] bg-cover left-0 -z-[10] opacity-100 rounded-lg"
-          />
-          <div
-            class="absolute top-0 w-full h-full bg-[url(/gradient-orange.jpg)] bg-cover left-0 -z-[10] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"
-          />
-          <div
-            class="absolute top-0 left-0 w-full h-full bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-lg -z-[9]"
-          />
-          <div
-            v-if="project.premium"
-            class="text-center opacity-50 group-hover:opacity-100 transition-opacity duration-200"
-          >
-            <UBadge color="neutral" size="sm" variant="outline" class="ring-0">Premium</UBadge>
+  <div @click="selectProject(project)">
+    <UContextMenu
+      size="sm"
+      :items="items"
+      :ui="{
+        content: 'w-48'
+      }"
+    >
+      <div class="transition-transform duration-200 group cursor-pointer">
+        <div class="relative">
+          <div class="relative w-full px-12 py-8 group transition-all">
+            <div
+              class="absolute top-0 w-full h-full bg-[url(/gradient.jpg)] bg-cover left-0 -z-[10] opacity-100 rounded-lg"
+            />
+            <div
+              class="absolute top-0 w-full h-full bg-[url(/gradient-orange.jpg)] bg-cover left-0 -z-[10] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"
+            />
+            <div
+              class="absolute top-0 left-0 w-full h-full bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-lg -z-[9]"
+            />
+            <div
+              v-if="project.premium"
+              class="text-center opacity-50 group-hover:opacity-100 transition-opacity duration-200"
+            >
+              <UBadge color="neutral" size="sm" variant="outline" class="ring-0">Premium</UBadge>
+            </div>
+            <ProjectImage
+              :image="project.image"
+              :name="project.name"
+              :description="project.description"
+              class="z-10"
+            />
           </div>
-          <ProjectImage
-            :image="project.image"
-            :name="project.name"
-            :description="project.description"
-            class="z-10"
-          />
         </div>
       </div>
-    </div>
-  </UContextMenu>
+    </UContextMenu>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -44,12 +46,15 @@ const emit = defineEmits<{
   (e: 'view', project: Project): void;
 }>();
 
+function selectProject(project: Project) {
+  emit('view', project);
+}
+
 const items = ref<ContextMenuItem[]>([
   {
     label: 'View Project',
     icon: 'i-lucide-eye',
     onSelect() {
-      // Emit event to parent
       emit('view', props.project);
     }
   }
