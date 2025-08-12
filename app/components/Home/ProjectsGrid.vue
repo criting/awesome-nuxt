@@ -16,13 +16,23 @@
       </div>
       <div class="grid grid-cols-1">
         <div class="space-y-2 self-start">
-          <div class="flex items-center gap-2">
-            <div>
-              <UBadge class="rounded-full flex" size="lg">
-                <UIcon name="i-lucide-filter" />
-                <span class="text-gray-200">More filters</span>
-              </UBadge>
+          <div class="flex flex-col gap-2 md:flex-row">
+            <div class="flex flex-col gap-2">
+              <span class="text-gray-500 text-sm">Search by name or description:</span>
+              <UInput
+                v-model="searchQuery"
+                placeholder="Search projects..."
+                icon="i-heroicons-magnifying-glass"
+                class="w-auto md:w-md lg:w-xl"
+              />
             </div>
+            <div class="flex flex-col gap-2">
+              <span class="text-gray-500 text-sm">Filter by tags:</span>
+              <TagFilter v-model="selectedTags" :tags="allTags" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 mt-4">
+            <span class="text-gray-500 text-sm">Filter by category:</span>
             <CategoryFilter v-model="selectedCategory" :categories="allCategories" />
           </div>
           <!-- <h5>Tags</h5>
@@ -94,9 +104,9 @@ const filteredProjects = computed(() => {
   });
 });
 
-// const allTags = computed(() => {
-//   const tags = new Set<string>();
-//   allProjects.value.forEach((p) => p.tags?.forEach((t: string) => tags.add(t)));
-//   return [...tags];
-// });
+const allTags = computed(() => {
+  const tags = new Set<string>();
+  allProjects.value.forEach((p) => p.tags?.forEach((t: string) => tags.add(t)));
+  return [...tags];
+});
 </script>

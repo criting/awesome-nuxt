@@ -20,8 +20,6 @@
 
       <template #right>
         <UColorModeButton />
-        <ThemePicker />
-
         <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
           <UButton
             color="neutral"

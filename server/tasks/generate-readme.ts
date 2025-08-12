@@ -33,7 +33,7 @@ function generateMarkdown() {
 
   lines.push('# Awesome Nuxt Projects\n')
   lines.push('A curated list of real-world projects built with Nuxt.')
-  lines.push('> **Note:** This excludes Nuxt modules. Visit [modules.nuxt.com](https://modules.nuxt.com) for official modules.\n')
+  lines.push('> **Note:** This excludes Nuxt modules. Visit [modules.nuxt.com](https://nuxt.com/modules) for official modules.\n')
 
   const grouped = groupByCategory(projects)
 

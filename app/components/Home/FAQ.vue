@@ -14,7 +14,7 @@ const items = ref([
   {
     label: 'Does this site include Nuxt modules?',
     content:
-      'No. Nuxt modules already have an official directory at modules.nuxt.com. Our focus is on full projects and templates that showcase how Nuxt is used in production or creative builds.'
+      'No. Nuxt modules already have an official directory at https://nuxt.com/modules. Our focus is on full projects and templates that showcase how Nuxt is used in production or creative builds.'
   },
   {
     label: 'How are projects selected?',
