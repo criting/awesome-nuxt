@@ -18,7 +18,7 @@
         {{ description }}
       </div>
     </div>
-    <div v-else class="w-full h-64 object-contain flex flex-col items-center justify-center">
+    <div v-else class="w-full h-66 object-contain flex flex-col items-center justify-center">
       <div class="font-semibold text-white mix-blend-overlay group-hover:mix-blend-normal">
         {{ name }}
       </div>

@@ -6,33 +6,39 @@
       v-model:open="modalOpen"
       fullscreen
       :ui="{ header: 'hidden' }"
-      class="bg-white"
+      class="light:bg-white"
     >
       <template #body>
         <div
-          class="w-full h-full absolute inset-0 bg-[url(/gradient.jpg)] bg-cover mix-blend-multiply -z-10 opacity-30"
+          class="w-full h-full absolute inset-0 bg-[url(/gradient.jpg)] bg-cover mix-blend-multiply -z-10 opacity-20"
         />
         <div class="max-w-3xl mx-auto px-4 py-8">
           <div class="flex gap-2 items-center cursor-pointer group" @click="modalOpen = false">
             <div
-              class="bg-black group-hover:bg-primary flex justify-center p-2 rounded-full transition-colors duration-200"
+              class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
             >
               <UIcon name="i-lucide-arrow-left" class="text-white" />
             </div>
             Go back
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            <div>
-              <ProjectImage :image="selectedProject.image" :name="selectedProject.name" />
+          <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mt-8">
+            <div class="relative w-full px-12 py-8 group transition-all">
+              <div
+                class="absolute top-0 w-full h-full bg-[url(/gradient.jpg)] bg-cover left-0 -z-[10] opacity-100 rounded-lg"
+              />
+              <div
+                class="absolute top-0 w-full h-full bg-[url(/gradient-orange.jpg)] bg-cover left-0 -z-[10] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"
+              />
+              <ProjectImage
+                :image="selectedProject.image"
+                :name="selectedProject.name"
+                :description="selectedProject.description"
+                class="z-10"
+              />
             </div>
 
             <div>
-              <div>
-                <h2 class="text-2xl font-bold mb-2">{{ selectedProject.name }}</h2>
-                <p class="text-sm text-gray-600">{{ selectedProject.description }}</p>
-              </div>
-
-              <div class="mt-4">
+              <div class="mt-2">
                 <h5 class="text-sm font-semibold mb-2">Tags</h5>
                 <div class="flex flex-wrap gap-2">
                   <UBadge
@@ -40,7 +46,7 @@
                     :key="tag"
                     color="secondary"
                     size="sm"
-                    variant="subtle"
+                    variant="soft"
                   >
                     {{ tag }}
                   </UBadge>
@@ -74,10 +80,10 @@
                   </span>
                 </div>
 
-                <div v-if="selectedProject.url">
+                <div v-if="selectedProject.url" class="mt-4">
                   <div class="flex gap-2 items-center cursor-pointer group" @click="openProjectUrl">
                     <div
-                      class="bg-black group-hover:bg-primary flex justify-center p-2 rounded-full transition-colors duration-200"
+                      class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
                     >
                       <UIcon name="i-lucide-square-arrow-out-up-right" class="text-white" />
                     </div>
@@ -90,23 +96,54 @@
         </div>
       </template>
     </UModal>
-    <UContainer>
-      <UPageHero
-        title="Nuxt Projects That Deliver"
-        description="A curated list of Nuxt projects, templates, and starters that actually work — ready for
-          you to use or learn from."
-        headline="New release"
+    <div class="relative flex flex-col items-center justify-center h-screen bg-no-repeat">
+      <div
+        class="absolute top-0 left-0 inset-0 bg-[url(/hero-bg.svg)] bg-cover bg-no-repeat lg:bg-center"
       />
-    </UContainer>
+      <div
+        class="absolute top-0 left-0 inset-0 bg-[url(/dots.svg)] bg-contain opacity-[0.03] dark:opacity-10"
+      />
+      <div
+        class="absolute -top-[90px] bg-linear-to-b from-transparent to-white -z-0 h-[100px] w-full bg-no-repeat opacity-50 dark:hidden"
+      />
+      <div
+        class="absolute bottom-0 bg-linear-to-b from-transparent to-white -z-0 h-[300px] w-full bg-no-repeat opacity-50 dark:hidden"
+      />
+
+      <UContainer>
+        <UPageHero
+          :headline="projects.length + ' Projects'"
+          title="Nuxt Projects That Deliver"
+          description="A curated list of Nuxt projects, templates, and starters that actually work — ready for
+          you to use or learn from."
+          :ui="{
+            container: 'lg:py-60',
+            headline:
+              'bg-secondary text-white rounded-full px-4 py-2 mb-4 inline-block text-xs font-semibold'
+          }"
+        >
+          <template #links>
+            <div class="flex gap-2 items-center cursor-pointer group">
+              <div
+                class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
+              >
+                <UIcon :name="'i-lucide-arrow-right'" class="text-white" />
+              </div>
+              Explore projects
+            </div>
+          </template>
+        </UPageHero>
+      </UContainer>
+    </div>
     <section class="relative">
       <div
-        class="absolute inset-0 bg-[url(/gradient.jpg)] bg-cover bg-no-repeat -z-10 mx-auto h-[300px] w-[95%] rounded-lg"
+        class="absolute inset-0 bg-[url(/gradient.jpg)] bg-cover bg-no-repeat -z-10 mx-auto h-[500px] w-full xl:w-[95%] xl:rounded-lg"
       />
       <div
-        class="absolute inset-0 bg-linear-to-b from-transparent to-white -z-10 h-[300px] w-[95%] mx-auto bg-no-repeat"
+        class="absolute inset-0 bg-linear-to-b from-transparent to-white -z-10 h-[500px] w-full xl:w-[95%] mx-auto bg-no-repeat dark:to-gray-900"
       />
       <UContainer>
-        <div class="relative mb-8 pt-12">
+        <div class="relative mb-8 pt-24">
           <h1 class="text-3xl font-bold mb-2">Explore Nuxt Projects</h1>
           <p class="text-gray-600">
             Discover a collection of Nuxt projects, templates, and starters that are ready to use or
@@ -148,8 +185,22 @@
                 :key="project.name"
                 :project="project"
                 @click="() => selectProject(project)"
+                @view="selectProject"
               />
             </div>
+          </section>
+
+          <section>
+            <UPageSection title="FAQ" description="Have questions? We have answers!" />
+            <UPageAccordion :items="faqItems" class="max-w-2xl mx-auto" />
+          </section>
+
+          <section class="mt-24">
+            <UPageCTA
+              title="Know an awesome Nuxt project?"
+              description="Share it with the community!"
+              :links="ctaLinks"
+            />
           </section>
         </div>
       </UContainer>
@@ -159,7 +210,57 @@
 
 <script setup lang="ts">
 import { projects } from '@@/data/all';
+import type { ButtonProps } from '@nuxt/ui';
+
 import type { Project } from '@@/types/project';
+
+const ctaLinks = ref<ButtonProps[]>([
+  {
+    label: 'Contribute',
+    color: 'neutral',
+    trailingIcon: 'i-lucide-arrow-right',
+    to: 'https://www.figma.com/community/file/1288455405058138934',
+    target: '_blank'
+  }
+]);
+
+const faqItems = ref([
+  {
+    label: 'What is Awesome Nuxt?',
+    content:
+      'Awesome Nuxt is a curated collection of high-quality, real-world projects built with Nuxt. Unlike the official modules directory, this site focuses on complete apps, templates, and starters that you can learn from, adapt, or launch.'
+  },
+  {
+    label: 'Does this site include Nuxt modules?',
+    content:
+      'No. Nuxt modules already have an official directory at modules.nuxt.com. Our focus is on full projects and templates that showcase how Nuxt is used in production or creative builds.'
+  },
+  {
+    label: 'How are projects selected?',
+    content:
+      'All projects are hand-picked based on quality, usefulness, and inspiration value. We check for active maintenance, clean code, and relevance to the Nuxt ecosystem.'
+  },
+  {
+    label: 'Can I submit my own project?',
+    content:
+      'Yes! We welcome community contributions. Check the GitHub repository for guidelines on how to submit your project.'
+  },
+  {
+    label: 'Do you show project stats like GitHub stars?',
+    content:
+      'Yes. We pull GitHub metadata like stars and last updated dates using a cached update process. This helps you see which projects are popular and actively maintained.'
+  },
+  {
+    label: 'Is this an official Nuxt project?',
+    content:
+      'No. This is an independent, community-driven initiative created to complement the official Nuxt resources by showcasing inspiring real-world projects.'
+  },
+  {
+    label: 'Will you add tips, snippets, and other resources?',
+    content:
+      'Yes! In the future, we plan to expand the project — adding curated tips, code snippets, and learning resources alongside projects.'
+  }
+]);
 
 const modalOpen = ref(false);
 const allProjects = ref(projects);
@@ -167,7 +268,6 @@ const selectedProject = ref<Project | null>(null);
 const { category: selectedCategory, tags: selectedTags, search: searchQuery } = useFilterQuery();
 
 function selectProject(project: Project) {
-  console.log('Selected project:', project);
   selectedProject.value = project;
   modalOpen.value = true;
 }

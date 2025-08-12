@@ -4,4 +4,26 @@
 @theme static {
   --font-sans: 'Lato', sans-serif;
   --font-mono: 'Lato Mono', monospace;
+
+  --color-green-50: #E5F1EE;
+  --color-green-100: #CCE4DD;
+  --color-green-200: #99C9BB;
+  --color-green-300: #66AD99;
+  --color-green-400: #339277;
+  --color-green-500: #0D392F;
+  --color-green-600: #0A2D25;
+  --color-green-700: #07211B;
+  --color-green-800: #051612;
+  --color-green-900: #020B09;
+
+  --color-yellow-50:  #FAF6E9;
+  --color-yellow-100: #F2E5BF;
+  --color-yellow-200: #E9D494;
+  --color-yellow-300: #E1C469;
+  --color-yellow-400: #D9B33F;
+  --color-yellow-500: #E0C162;
+  --color-yellow-600: #BF9925;
+  --color-yellow-700: #95771D;
+  --color-yellow-800: #6A5515;
+  --color-yellow-900: #3F330C;
 }

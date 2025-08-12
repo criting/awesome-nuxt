@@ -6,8 +6,8 @@
         :key="category"
         class="mr-2 rounded-full cursor-pointer hover:bg-gray-300 transition-colors duration-200"
         :class="{
-          'bg-white text-gray-500': model === category,
-          'bg-gray-200 text-gray-800': model !== category
+          'bg-primary text-white hover:bg-primary': model === category,
+          'bg-white text-gray-800 hover:bg-gray-100': model !== category
         }"
         size="lg"
         @click="model = category"

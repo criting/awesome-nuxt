@@ -1,7 +1,7 @@
 export default defineAppConfig({
-  appName: 'Nuxt World - Build better with Nuxt',
-  baseUrl: 'https://nuxt-world.dev',
-  logoUrl: 'https://nuxt-world.dev/logo.png',
+  appName: 'Awesome Nuxt - Build better with Nuxt',
+  baseUrl: 'https://awesome-nuxt.dev',
+  logoUrl: 'https://awesome-nuxt.dev/logo.png',
   appDescription: 'Build better with Nuxt.',
   ui: {
     icons: {
@@ -13,7 +13,8 @@ export default defineAppConfig({
       }
     },
     colors: {
-      primary: 'neutral',
+        primary: 'green',
+        secondary: 'yellow',
     },
   },
   seo: {

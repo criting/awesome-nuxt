@@ -1,48 +1,89 @@
 <template>
-  <div class="transition-transform duration-200 group cursor-pointer">
-    <div class="relative">
-      <div class="relative w-full px-12 py-8 group transition-all">
-        <div
-          class="absolute top-0 w-full h-full bg-[url(/gradient.jpg)] bg-cover left-0 -z-[10] opacity-100 rounded-lg"
-        />
-        <div
-          class="absolute top-0 w-full h-full bg-[url(/gradient-orange.jpg)] bg-cover left-0 -z-[10] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"
-        />
-        <ProjectImage
-          :image="project.image"
-          :name="project.name"
-          :description="project.description"
-          class="z-10"
-        />
-        <!-- <div
-          class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 left-0 group-hover:opacity-80 transition-opacity duration-200 rounded-lg"
-        >
+  <UContextMenu
+    size="sm"
+    :items="items"
+    :ui="{
+      content: 'w-48'
+    }"
+  >
+    <div class="transition-transform duration-200 group cursor-pointer">
+      <div class="relative">
+        <div class="relative w-full px-12 py-8 group transition-all">
           <div
-            class="absolute bottom-2 text-white hidden group-hover:block w-full left-0 px-4 py-1"
+            class="absolute top-0 w-full h-full bg-[url(/gradient.jpg)] bg-cover left-0 -z-[10] opacity-100 rounded-lg"
+          />
+          <div
+            class="absolute top-0 w-full h-full bg-[url(/gradient-orange.jpg)] bg-cover left-0 -z-[10] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"
+          />
+          <div
+            class="absolute top-0 left-0 w-full h-full bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-lg -z-[9]"
+          />
+          <div
+            v-if="project.premium"
+            class="text-center opacity-50 group-hover:opacity-100 transition-opacity duration-200"
           >
-            <div class="flex justify-between">
-              <div v-if="project.stars" class="flex items-center text-sm">
-                <UIcon name="i-lucide-star" class="text-yellow-500 mr-1" />
-                <span>{{ project.stars }} stars</span>
-              </div>
-
-              <div v-if="project.author" class="flex items-center text-sm text-white">
-                <UIcon name="i-lucide-user" class="mr-1" />
-                <span>{{ project.author }}</span>
-              </div>
-            </div>
+            <UBadge color="neutral" size="sm" variant="outline" class="ring-0">Premium</UBadge>
           </div>
-        </div> -->
+          <ProjectImage
+            :image="project.image"
+            :name="project.name"
+            :description="project.description"
+            class="z-10"
+          />
+        </div>
       </div>
     </div>
-  </div>
+  </UContextMenu>
 </template>
 
 <script setup lang="ts">
-defineProps({
+import type { ContextMenuItem } from '@nuxt/ui';
+import type { Project } from '@@/types/project';
+
+const emit = defineEmits<{
+  (e: 'view', project: Project): void;
+}>();
+
+const items = ref<ContextMenuItem[]>([
+  {
+    label: 'View Project',
+    icon: 'i-lucide-eye',
+    onSelect() {
+      // Emit event to parent
+      emit('view', props.project);
+    }
+  }
+]);
+
+const props = defineProps({
   project: {
-    type: Object,
+    type: Object as () => Project,
     default: () => ({})
   }
 });
+
+if (props.project.premium) {
+  items.value.push({
+    label: 'Premium',
+    icon: 'i-lucide-star',
+    disabled: true
+  });
+}
+
+if (props.project.stars) {
+  items.value.push({
+    label: 'GitHub Repo',
+    icon: 'i-lucide-github',
+    onSelect() {
+      window.open(`${props.project.url}`, '_blank');
+    }
+  });
+}
+if (props.project.stars) {
+  items.value.push({
+    label: `${props.project.stars} stars`,
+    icon: 'i-lucide-star',
+    disabled: true
+  });
+}
 </script>
