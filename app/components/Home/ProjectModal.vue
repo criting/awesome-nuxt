@@ -10,11 +10,9 @@
   >
     <template #body>
       <div
+        fetchPriority="high"
         class="absolute left-0 top-0 w-full h-full bg-[url(/hero-bg.svg)] dark:bg-[url(/hero-bg-dark.svg)] bg-cover opacity-40 dark:opacity-70 -z-[10]"
       />
-      <!-- <div
-        class="w-full h-full absolute inset-0 bg-[url(/gradient.jpg)] bg-cover mix-blend-multiply -z-10 opacity-20"
-      /> -->
       <div class="max-w-3xl mx-auto px-4 py-8">
         <div class="flex gap-2 items-center cursor-pointer group" @click="open = false">
           <div
