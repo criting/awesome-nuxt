@@ -17,7 +17,7 @@ const links = ref<ButtonProps[]>([
     label: 'Contribute',
     color: 'neutral',
     trailingIcon: 'i-lucide-arrow-right',
-    to: 'https://www.figma.com/community/file/1288455405058138934',
+    to: 'https://github.com/criting/awesome-nuxt#-contributing',
     target: '_blank'
   }
 ]);

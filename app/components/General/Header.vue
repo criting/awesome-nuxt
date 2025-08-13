@@ -7,8 +7,8 @@
     >
       <template #title
         ><div class="flex items-center gap-2">
-          <img src="/logo-2.svg" class="w-10 h-10 dark:hidden" alt="Logo" />
-          <img src="/logo-1.svg" class="w-10 h-10 hidden dark:block" alt="Logo" /> Awesome Nuxt
+          <UColorModeImage light="/logo-2.svg" dark="/logo-1.svg" class="w-10 h-10" alt="Logo" />
+          Awesome Nuxt
         </div></template
       >
 
@@ -29,7 +29,7 @@
           <UButton
             color="neutral"
             variant="ghost"
-            to="https://github.com/nuxt/ui"
+            to="https://github.com/criting/awesome-nuxt"
             target="_blank"
             icon="i-simple-icons-github"
             aria-label="GitHub"
@@ -53,7 +53,7 @@ const items = computed<NavigationMenuItem[]>(() => [
   },
   {
     label: 'Contibute',
-    to: 'https://www.figma.com/community/file/1288455405058138934',
+    to: 'https://github.com/criting/awesome-nuxt#-contributing',
     target: '_blank'
   }
 ]);
