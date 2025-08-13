@@ -1,7 +1,9 @@
 <template>
   <div class="w-full z-10">
     <div v-if="image">
-      <img
+      <NuxtImg
+        format="webp"
+        quality="80"
         :src="image"
         alt="Project Image"
         class="rounded-lg w-full h-48 object-contain group-hover:scale-105 transition-transform duration-200"

@@ -3,7 +3,12 @@ import vue from '@vitejs/plugin-vue';
 export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/ui-pro', '@nuxthub/core'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui-pro',
+    '@nuxthub/core',
+    '@nuxt/image',
+  ],
 
   css: ['~/assets/css/main.css'],
 
