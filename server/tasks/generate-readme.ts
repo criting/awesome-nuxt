@@ -2,6 +2,9 @@ import { writeFile } from 'fs/promises'
 import { projects } from '@@/data/all'
 import type { Project } from '@@/types/project'
 
+const OG_IMAGE = 'https://awesome-nuxt.dev/og-image.png'
+const SITE_URL = 'https://awesome-nuxt.dev'
+
 function escapeMarkdown(text: string) {
   return text.replace(/\*/g, '\\*').replace(/_/g, '\\_')
 }
@@ -70,6 +73,12 @@ Create a Pull Request. We’ll review for quality, relevance, and metadata compl
 
 function generateMarkdown() {
   const lines: string[] = []
+
+  lines.push(
+    `<a href="${SITE_URL}" target="_blank" rel="noopener noreferrer">` +
+    `<img src="${OG_IMAGE}" alt="Awesome Nuxt" width="1200" />` +
+    `</a>\n`
+  )
 
   lines.push('# Awesome Nuxt\n')
   lines.push('A curated list of Nuxt projects, templates, and starters that actually work — ready for you to use or learn from.')

@@ -1,3 +1,5 @@
+<a href="https://awesome-nuxt.dev" target="_blank" rel="noopener noreferrer"><img src="https://awesome-nuxt.dev/og-image.png" alt="Awesome Nuxt" width="1200" /></a>
+
 # Awesome Nuxt
 
 A curated list of Nuxt projects, templates, and starters that actually work — ready for you to use or learn from.
@@ -10,6 +12,9 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 
 - [Nuxt AI Chatbot Template](https://github.com/nuxt-ui-pro/chat)  
   Full-featured AI Chatbot Nuxt application with authentication, chat history, multiple pages, collapsible sidebar, keyboard shortcuts, light & dark mode, command palette and more. Built using Nuxt UI Pro components and integrated with Workers AI for a complete chat experience.  
+
+- [Chat with PDF](https://github.com/RihanArfan/chat-with-pdf)  
+  Chat with PDF is a full-stack AI-powered application that lets you to ask questions to PDF documents.  
 
 ## Template
 
@@ -27,6 +32,15 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 
 - [Alpine.js](https://github.com/clemcode/alpine-theme)  
   The minimalist blog theme, powered by Nuxt..  
+
+- [Nuxt Landing Template](https://github.com/nuxt-ui-pro/landing)  
+  This template lets you build a landing page with Nuxt UI Pro quickly.  
+
+- [Dashboard Template](https://github.com/nuxt-ui-pro/dashboard-vue)  
+  Get started with the Vite + Vue dashboard template with multiple pages, collapsible sidebar, keyboard shortcuts, light & dark more, command palette and more, powered by Nuxt UI Pro.  
+
+- [HR Folio](https://github.com/HugoRCD/hr-folio)  
+  This is the code for my personal portfolio built with Nuxt and Tailwind CSS.  
 
 ## Starter
 
@@ -143,6 +157,57 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 
 - [Nuxt Booster](https://github.com/basics/nuxt-booster)  
   Nuxt Booster takes over the Lighthouse performance optimization of your generated website. All used components and resources are loaded on demand based on the viewport.  
+
+- [Arthur Danjou Portfolio](https://github.com/ArthurDanjou/artsite)  
+  My professional portfolio built with modern Nuxt.js technologies, showcasing projects, skills, and experience.  
+
+- [Nuxt Boilerplate](https://github.com/renegadevi/nuxt-boilerplate)  
+  A ready to use Nuxt 4 boilerplate. (w/ HTTPS, Tailwind, i18n+RTL, Pinia, GDPR, Dark mode, TypeScript, Prettier, ESLint etc.)  
+
+- [Hello Edge](https://github.com/nuxt-hub/hello-edge)  
+  A minimal Nuxt starter deployed on the Edge using NuxtHub.  
+
+- [Todos with Atidone](https://github.com/atinux/atidone)  
+  A demonstration using Nuxt with server-side rendering on the edge, authentication and database querying using Cloudflare D1 with Drizzle ORM.  
+
+- [Art with Atidraw](https://github.com/atinux/atidraw)  
+  Atidraw is a web application that lets you to create, enhance, and share your drawings with the world. Harnessing the power of Cloudflare R2 and Cloudflare AI to store and enhance your drawings.  
+
+- [AI Images Flux-1 Schnell](https://github.com/atinux/flux-ai-image-generator)  
+  Generate images with AI using Flux-1 Schnell running on your Cloudflare account.  
+
+- [Bloggrify](https://github.com/bloggrify/bloggrify)  
+  A personal blog template made with Nuxt and Nuxt-content  
+
+- [Nuxt + Sanity app](https://github.com/sanity-io/sanity-template-nuxt-clean)  
+  This template includes a Nuxt app with a Sanity Studio – an open-source Vue application that connects to your Sanity project's hosted dataset. The Studio is configured locally and can then be deployed for content collaboration.  
+
+- [Nuxt Commerce](https://github.com/Baroshem/nuxt-commerce)  
+  A high-performance, server-rendered E-commerce app built with Nuxt & Shopify. This template uses Nuxt UI, Image & Scripts optimization, Hybrid Rendering, SEO and more.  
+
+- [GitHub Open Source Explorer](https://github.com/SeanLuis/github-explorer)  
+  A modern web application to discover, explore, and track trending open-source projects on GitHub. Built with Nuxt 3, Vue 3, and TailwindCSS.  
+
+- [Recruiterre](https://github.com/NuxtMint/recruiterre-mint)  
+  A modern job board application built with Nuxt 3, featuring real-time search, filtering, and an interactive map interface.  
+
+- [NuCommerce](https://github.com/Pinegrow/pg-nuxtui)  
+  Nuxt 3 Full stack (SPA-SSR) quick start template that pre-includes the Pinegrow Nuxt Module, Pinegrow Tailwind CSS Plugin, Nuxt UI and other goodies for Vue Designer. This template uses the tailwind-based Nuxt UI component library and features an eCommerce store, where data is fetched via APIs server by server routes (Nitro-powered).  
+
+- [Nuxt Workers](https://github.com/danielroe/nuxt-workers)  
+  SSR-safe, zero-config Web Workers integration for Nuxt.  
+
+- [Nuxt GraphQL Client](https://github.com/Diizzayy/nuxt-graphql-client)  
+  Minimal GraphQL Client + Code Generation for Nuxt  
+
+- [Nuxt Shopify](https://github.com/konkonam/nuxt-shopify)  
+  Easily integrate Shopify into your Nuxt app  
+
+- [DruxtJS](https://github.com/druxt/druxt.js)  
+  Druxt = DRUpal + nUXT = Fully Decoupled Drupal Framework  
+
+- [Cloudflare Workers AI LLM](https://github.com/ra-jeev/hub-chat)  
+  Cloudflare Workers AI LLM Playground with Nuxt  
 
 
 

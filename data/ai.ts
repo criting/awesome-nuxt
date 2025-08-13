@@ -16,4 +16,12 @@ export const ai: Project[] = [
     category: 'ai',
     image: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL2NoYXQtdGVtcGxhdGUubnV4dC5kZXYiLCJpYXQiOjE3NDI4NDY2ODB9.n4YCsoNz8xatox7UMoYZFNo7iS1mC_DT0h0A9cKRoTw.jpg?theme=dark'
   },
+  {
+    name: 'Chat with PDF',
+    description: 'Chat with PDF is a full-stack AI-powered application that lets you to ask questions to PDF documents.',
+    url: 'https://github.com/RihanArfan/chat-with-pdf',
+    tags: ['nuxt 3', 'nuxt ui', 'nuxthub', 'ai', 'pdf', 'drizzle'],
+    category: 'ai',
+    image: 'https://github.com/RihanArfan/chat-with-pdf/raw/main/.github/hybrid-rag.png'
+  },
 ];

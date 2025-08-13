@@ -41,4 +41,30 @@ export const template: Project[] = [
     category: 'template',
     image: 'https://github.com/clemcode/alpine-theme/raw/main/.starters/default/public/social-card-preview.png'
   },
+  {
+    name: 'Nuxt Landing Template',
+    description: "This template lets you build a landing page with Nuxt UI Pro quickly.",
+    url: 'https://github.com/nuxt-ui-pro/landing',
+    tags: ['nuxt 3', 'nuxt ui pro'],
+    category: 'template',
+    image: 'https://camo.githubusercontent.com/554aed614ce5337b6923d21d570196200d91b16cde414deefe74b94810772802/68747470733a2f2f6173736574732e6875622e6e7578742e636f6d2f65794a30655841694f694a4b563151694c434a68624763694f694a49557a49314e694a392e65794a31636d77694f694a6f64485277637a6f764c327868626d5270626d6374644756746347786864475575626e56346443356b5a5859694c434a70595851694f6a45334d7a6b304e6a4d7a4e7a56392e6a61326e5544564f6f49467679614d6d67394a6e3531754e4d6f595974345741314b57555142577755506f2e6a70673f7468656d653d6461726b',
+    premium: true
+  },
+  {
+    name: 'Dashboard Template',
+    description: "Get started with the Vite + Vue dashboard template with multiple pages, collapsible sidebar, keyboard shortcuts, light & dark more, command palette and more, powered by Nuxt UI Pro.",
+    url: 'https://github.com/nuxt-ui-pro/dashboard-vue',
+    tags: ['nuxt 3', 'nuxt ui pro', 'dashboard'],
+    category: 'template',
+    image: 'https://github-production-user-asset-6210df.s3.amazonaws.com/904724/418197124-c620cfcb-f244-49c0-8c9e-e95c17f014ef.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250813T182758Z&X-Amz-Expires=300&X-Amz-Signature=90ca978363bebf38998d1157f92c70950ed959a5ba3ec0c04aa5191bf8ca7f4e&X-Amz-SignedHeaders=host',
+    premium: true
+  },
+  {
+    name: 'HR Folio',
+    description: "This is the code for my personal portfolio built with Nuxt and Tailwind CSS.",
+    url: 'https://github.com/HugoRCD/hr-folio',
+    tags: ['nuxt 3', 'nuxt content', 'nuxt image', 'resend', 'nuxt robots', 'nuxt og image'],
+    category: 'template',
+    image: 'https://github.com/HugoRCD/hr-folio/raw/main/public/preview.png',
+  }
 ];

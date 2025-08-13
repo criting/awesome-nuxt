@@ -57,7 +57,7 @@ const items = computed<NavigationMenuItem[]>(() => [
     to: '/'
   },
   {
-    label: 'Contibute',
+    label: 'Contribute',
     to: 'https://github.com/criting/awesome-nuxt#-contributing',
     target: '_blank'
   }

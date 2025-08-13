@@ -281,4 +281,128 @@ export const starter: Project[] = [
     category: 'starter',
     image: 'https://repository-images.githubusercontent.com/265295866/5cf41209-5402-4479-a5f6-29c6b1c0d7ce'
   },
+  {
+    name: 'Arthur Danjou Portfolio',
+    description: "My professional portfolio built with modern Nuxt.js technologies, showcasing projects, skills, and experience.",
+    url: 'https://github.com/ArthurDanjou/artsite',
+    tags: ['nuxt 3', 'portfolio', 'nuxt ui', 'nuxt content', 'i18n'],
+    category: 'starter',
+    image: 'https://github.com/ArthurDanjou/artsite/blob/master/public/projects/artsite/cover.png?raw=true'
+  },
+  {
+    name: 'Nuxt Boilerplate',
+    description: "A ready to use Nuxt 4 boilerplate. (w/ HTTPS, Tailwind, i18n+RTL, Pinia, GDPR, Dark mode, TypeScript, Prettier, ESLint etc.)",
+    url: 'https://github.com/renegadevi/nuxt-boilerplate',
+    tags: ['nuxt 4', 'boilerplate', 'tailwind', 'i18n', 'pinia', 'gdpr', 'dark mode', 'typescript', 'prettier', 'eslint'],
+    category: 'starter',
+    image: 'https://raw.githubusercontent.com/renegadevi/nuxt-boilerplate/main/.github/screenshot.png'
+  },
+  {
+    name: 'Hello Edge',
+    description: "A minimal Nuxt starter deployed on the Edge using NuxtHub.",
+    url: 'https://github.com/nuxt-hub/hello-edge',
+    tags: ['nuxt 3', 'nuxthub', 'edge', 'cloudflare'],
+    category: 'starter',
+  },
+  {
+    name: 'Todos with Atidone',
+    description: "A demonstration using Nuxt with server-side rendering on the edge, authentication and database querying using Cloudflare D1 with Drizzle ORM.",
+    url: 'https://github.com/atinux/atidone',
+    tags: ['nuxt 3', 'cloudflare', 'd1', 'drizzle', 'auth', 'todos'],
+    category: 'starter',
+  },
+  {
+    name: 'Art with Atidraw',
+    description: "Atidraw is a web application that lets you to create, enhance, and share your drawings with the world. Harnessing the power of Cloudflare R2 and Cloudflare AI to store and enhance your drawings.",
+    url: 'https://github.com/atinux/atidraw',
+    tags: ['nuxt 3', 'cloudflare', 'r2', 'ai', 'drawings'],
+    category: 'starter',
+  },
+  {
+    name: 'AI Images Flux-1 Schnell',
+    description: "Generate images with AI using Flux-1 Schnell running on your Cloudflare account.",
+    url: 'https://github.com/atinux/flux-ai-image-generator',
+    tags: ['nuxt 3', 'ai', 'images', 'cloudflare', 'flux-1'],
+    category: 'starter',
+  },
+  {
+    name: 'Bloggrify',
+    description: "A personal blog template made with Nuxt and Nuxt-content",
+    url: 'https://github.com/bloggrify/bloggrify',
+    tags: ['nuxt 3', 'blog', 'nuxt content'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt + Sanity app',
+    description: "This template includes a Nuxt app with a Sanity Studio – an open-source Vue application that connects to your Sanity project's hosted dataset. The Studio is configured locally and can then be deployed for content collaboration.",
+    url: 'https://github.com/sanity-io/sanity-template-nuxt-clean',
+    tags: ['nuxt 3', 'sanity', 'cms', 'nuxt content'],
+    category: 'starter',
+    image: 'https://github.com/sanity-io/sanity-template-nuxt-clean/raw/main/nuxt-sanity-preview.webp'
+  },
+  {
+    name: 'Nuxt Commerce',
+    description: "A high-performance, server-rendered E-commerce app built with Nuxt & Shopify. This template uses Nuxt UI, Image & Scripts optimization, Hybrid Rendering, SEO and more.",
+    url: 'https://github.com/Baroshem/nuxt-commerce',
+    tags: ['nuxt 3', 'shopify', 'e-commerce'],
+    category: 'starter',
+  },
+  {
+    name: 'GitHub Open Source Explorer',
+    description: "A modern web application to discover, explore, and track trending open-source projects on GitHub. Built with Nuxt 3, Vue 3, and TailwindCSS.",
+    url: 'https://github.com/SeanLuis/github-explorer',
+    tags: ['nuxt 3', 'github', 'pinia', 'explorer'],
+    category: 'starter',
+    image: 'https://github.com/SeanLuis/github-explorer/raw/master/PREVIEW_DARK.png'
+  },
+  {
+    name: 'Recruiterre',
+    description: "A modern job board application built with Nuxt 3, featuring real-time search, filtering, and an interactive map interface.",
+    url: 'https://github.com/NuxtMint/recruiterre-mint',
+    tags: ['nuxt 3', 'job board', 'recruitment'],
+    category: 'starter',
+  },
+  {
+    name: 'NuCommerce',
+    description: "Nuxt 3 Full stack (SPA-SSR) quick start template that pre-includes the Pinegrow Nuxt Module, Pinegrow Tailwind CSS Plugin, Nuxt UI and other goodies for Vue Designer. This template uses the tailwind-based Nuxt UI component library and features an eCommerce store, where data is fetched via APIs server by server routes (Nitro-powered).",
+    url: 'https://github.com/Pinegrow/pg-nuxtui',
+    tags: ['nuxt 3', 'e-commerce', 'tailwind css', 'nuxt ui'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt Workers',
+    description: "SSR-safe, zero-config Web Workers integration for Nuxt.",
+    url: 'https://github.com/danielroe/nuxt-workers',
+    tags: ['nuxt 3', 'web workers', 'integration'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt GraphQL Client',
+    description: "Minimal GraphQL Client + Code Generation for Nuxt",
+    url: 'https://github.com/Diizzayy/nuxt-graphql-client',
+    tags: ['nuxt 3', 'graphql', 'code generation'],
+    category: 'starter',
+    image: 'https://github.com/Diizzayy/nuxt-graphql-client/raw/main/docs/public/cover.png'
+  },
+  {
+    name: 'Nuxt Shopify',
+    description: "Easily integrate Shopify into your Nuxt app",
+    url: 'https://github.com/konkonam/nuxt-shopify',
+    tags: ['nuxt 3', 'nuxt 4', 'shopify'],
+    category: 'starter',
+  },
+  {
+    name: 'DruxtJS',
+    description: "Druxt = DRUpal + nUXT = Fully Decoupled Drupal Framework",
+    url: 'https://github.com/druxt/druxt.js',
+    tags: ['nuxt 3', 'drupal', 'headless cms'],
+    category: 'starter',
+  },
+  {
+    name: 'Cloudflare Workers AI LLM',
+    description: "Cloudflare Workers AI LLM Playground with Nuxt",
+    url: 'https://github.com/ra-jeev/hub-chat',
+    tags: ['nuxt 3', 'ai', 'llm', 'cloudflare', 'workers'],
+    category: 'starter' 
+  }
 ];

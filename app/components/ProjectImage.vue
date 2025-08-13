@@ -25,10 +25,10 @@
       </div>
       <div
         v-if="description"
-        class="text-xs text-white text-center mt-2 line-clamp-1 group-hover:mix-blend-normal"
+        class="text-xs text-white text-center mt-2 group-hover:mix-blend-normal"
         :class="{
           'mix-blend-normal': size === 'taller',
-          'mix-blend-overlay': size !== 'taller'
+          'mix-blend-overlay line-clamp-1': size !== 'taller'
         }"
       >
         {{ description }}
@@ -46,10 +46,10 @@
       </div>
       <div
         v-if="description"
-        class="text-xs text-white text-center mt-2 line-clamp-1 group-hover:mix-blend-normal"
+        class="text-xs text-white text-center mt-2 group-hover:mix-blend-normal"
         :class="{
           'mix-blend-normal': size === 'taller',
-          'mix-blend-overlay': size !== 'taller'
+          'mix-blend-overlay line-clamp-1': size !== 'taller'
         }"
       >
         {{ description }}

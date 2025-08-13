@@ -23,7 +23,7 @@ useHead({
 useSeoMeta({
   title: 'Awesome Nuxt - Build better with Nuxt',
   ogTitle: 'Awesome Nuxt - Build better with Nuxt',
-  ogImage: '/og-image.jpg',
+  ogImage: '/og-image.png',
   description:
     'A curated list of awesome Nuxt projects, respources, and tools to help you build better applications with Nuxt.',
   ogDescription:
@@ -32,7 +32,7 @@ useSeoMeta({
   twitterTitle: 'Awesome Nuxt - Build better with Nuxt',
   twitterDescription:
     'A curated list of awesome Nuxt projects, respources, and tools to help you build better applications with Nuxt.',
-  twitterImage: '/og-image.jpg',
+  twitterImage: '/og-image.png',
   twitterCard: 'summary_large_image'
 });
 </script>
