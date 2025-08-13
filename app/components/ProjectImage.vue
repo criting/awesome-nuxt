@@ -2,8 +2,6 @@
   <div class="w-full z-10">
     <div v-if="image">
       <NuxtImg
-        format="webp"
-        quality="80"
         :src="image"
         alt="Project Image"
         class="rounded-lg w-full h-48 object-contain group-hover:scale-105 transition-transform duration-200"
@@ -12,6 +10,8 @@
         }"
         sizes="100px sm:150px md:200px"
         loading="lazy"
+        width="600"
+        height="300"
       />
       <div
         class="font-semibold text-white text-center group-hover:mix-blend-normal transition-all duration-200 z-10"

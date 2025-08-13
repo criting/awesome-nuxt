@@ -14,6 +14,24 @@ export default defineNuxtConfig({
     cache: true,
   },
 
+  image: {
+    provider: 'cloudflare',
+    cloudflare: {
+      baseURL: 'https://awesome-nuxt.dev'
+    },
+    format: ['webp'],
+    quality: 50,
+
+    screens: {
+      xs: 100,
+      sm: 200,
+      md: 300,
+      lg: 400,
+      xl: 500,
+      xxl: 600,
+    }
+  },
+
   css: ['~/assets/css/main.css'],
 
   fonts: {
