@@ -81,9 +81,7 @@ function generateMarkdown() {
     lines.push(`## ${capitalize(category)}\n`)
     for (const project of items) {
       lines.push(
-        `- [${project.name}](${project.url})  \n  *${escapeMarkdown(project.description)}*  \n
-          .filter(Boolean)
-          .join(' | ')}\n`
+        `- [${project.name}](${project.url})  \n  *${escapeMarkdown(project.description)}*  \n`
       )
     }
   }

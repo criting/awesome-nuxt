@@ -8,10 +8,10 @@
         class="absolute top-0 left-0 inset-0 bg-[url(/dots.svg)] bg-contain opacity-[0.03] dark:opacity-10"
       />
       <div
-        class="absolute -top-[90px] bg-linear-to-b from-transparent to-white -z-0 h-[100px] w-full bg-no-repeat opacity-50 dark:hidden"
+        class="absolute -top-[90px] bg-linear-to-b from-transparent to-white -z-0 h-[100px] w-full bg-no-repeat opacity-50 dark:to-gray-900"
       />
       <div
-        class="absolute bottom-0 bg-linear-to-b from-transparent to-white -z-0 h-[300px] w-full bg-no-repeat opacity-50 dark:hidden"
+        class="absolute bottom-0 bg-linear-to-b from-transparent to-white -z-0 h-[300px] w-full bg-no-repeat opacity-50 dark:to-gray-900 dark:opacity-100"
       />
 
       <UContainer>

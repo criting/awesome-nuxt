@@ -20,7 +20,7 @@
       </div>
       <div
         v-if="description"
-        class="text-xs text-white text-center mt-2 line-clamp-2 group-hover:mix-blend-normal"
+        class="text-xs text-white text-center mt-2 line-clamp-1 group-hover:mix-blend-normal"
         :class="{
           'mix-blend-normal': size === 'taller',
           'mix-blend-overlay': size !== 'taller'
@@ -29,7 +29,7 @@
         {{ description }}
       </div>
     </div>
-    <div v-else class="w-full h-66 object-contain flex flex-col items-center justify-center">
+    <div v-else class="w-full h-60 object-contain flex flex-col items-center justify-center">
       <div
         class="font-semibold text-white group-hover:mix-blend-normal"
         :class="{
@@ -41,7 +41,7 @@
       </div>
       <div
         v-if="description"
-        class="text-xs text-white text-center mt-2 line-clamp-2 group-hover:mix-blend-normal"
+        class="text-xs text-white text-center mt-2 line-clamp-1 group-hover:mix-blend-normal"
         :class="{
           'mix-blend-normal': size === 'taller',
           'mix-blend-overlay': size !== 'taller'

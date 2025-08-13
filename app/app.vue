@@ -11,6 +11,6 @@
 useSeoMeta({
   title: 'Awesome Nuxt - Build better with Nuxt',
   description:
-    'A curated list of awesome Nuxt projects, resources, and tools to help you build better applications with Nuxt.'
+    'A curated list of awesome Nuxt projects, respources, and tools to help you build better applications with Nuxt.'
 });
 </script>

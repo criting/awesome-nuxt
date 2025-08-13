@@ -79,8 +79,8 @@ export const starter: Project[] = [
     image: 'https://user-images.githubusercontent.com/5116925/218879668-f4c1f9fd-bef4-44b0-bc7f-e87d994aa3a1.png'
   },
   {
-    name: 'Nuxt 3 Ecommerce with WooCommerce',
-    description: '.',
+    name: 'Ecommerce with WooCommerce',
+    description: 'Nuxt 3 and Vue 3 headless eCommerce site with WooCommerce backend and Algolia search',
     url: 'https://github.com/w3bdesign/nuxtjs-woocommerce',
     tags: ['nuxt 3', 'woocommerce', 'graphql', 'ecommerce', 'wordpress'],
     category: 'starter',
