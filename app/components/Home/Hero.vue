@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="relative flex flex-col items-center justify-center h-screen bg-no-repeat">
+    <div class="relative flex flex-col items-center justify-center lg:h-screen bg-no-repeat">
       <div
         class="absolute top-0 left-0 inset-0 bg-[url(/hero-bg.svg)] dark:bg-[url(/hero-bg-dark.svg)] bg-cover bg-no-repeat lg:bg-center"
       />

@@ -8,6 +8,7 @@
         :class="{
           'pt-8 h-60': size === 'taller'
         }"
+        loading="lazy"
       />
       <div
         class="font-semibold text-white text-center group-hover:mix-blend-normal transition-all duration-200 z-10"

@@ -1,6 +1,7 @@
 import vue from '@vitejs/plugin-vue';
 
 export default defineNuxtConfig({
+  ssr: false,
   devtools: { enabled: true },
   modules: ['@nuxt/eslint', '@nuxt/ui-pro'],
 
