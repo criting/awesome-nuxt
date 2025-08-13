@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       baseURL: 'https://awesome-nuxt.dev'
     },
     format: ['webp'],
-    quality: 100,
+    quality: 80,
 
     screens: {
       xs: 100,
