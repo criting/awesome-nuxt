@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     '@nuxt/image',
   ],
 
+  hub: {
+    cache: true,
+  },
+
   css: ['~/assets/css/main.css'],
 
   fonts: {
