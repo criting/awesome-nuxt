@@ -10,7 +10,7 @@
         :class="{
           'pt-8 h-60': size === 'taller'
         }"
-        sizes="300px sm:100px md:200px"
+        sizes="100px sm:150px md:200px"
         loading="lazy"
       />
       <div
