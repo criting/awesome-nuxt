@@ -4,12 +4,17 @@
     v-model:open="open"
     fullscreen
     :ui="{ header: 'hidden' }"
-    class="light:bg-white"
+    class="light:bg-white relativ"
+    title="Project Details"
+    description="Explore the details of the selected Nuxt project."
   >
     <template #body>
       <div
-        class="w-full h-full absolute inset-0 bg-[url(/gradient.jpg)] bg-cover mix-blend-multiply -z-10 opacity-20"
+        class="absolute left-0 top-0 w-full h-full bg-[url(/hero-bg.svg)] dark:bg-[url(/hero-bg-dark.svg)] bg-cover opacity-40 dark:opacity-70 -z-[10]"
       />
+      <!-- <div
+        class="w-full h-full absolute inset-0 bg-[url(/gradient.jpg)] bg-cover mix-blend-multiply -z-10 opacity-20"
+      /> -->
       <div class="max-w-3xl mx-auto px-4 py-8">
         <div class="flex gap-2 items-center cursor-pointer group" @click="open = false">
           <div
@@ -20,9 +25,13 @@
           Go back
         </div>
         <div class="grid grid-cols-1 md:grid-cols-1 gap-8 mt-8">
-          <div class="relative w-full px-12 py-8 group transition-all">
+          <NuxtLink
+            class="relative w-full px-12 py-8 group transition-all"
+            :to="`${selectedProject.url}`"
+            target="_blank"
+          >
             <div
-              class="absolute top-0 w-full h-full bg-[url(/gradient-orange.jpg)] bg-cover left-0 -z-[10] opacity-100 rounded-lg"
+              class="absolute top-0 w-full h-full bg-[url(/gradient-orange.jpg)] bg-cover left-0 -z-[10] rounded-lg"
             />
             <div
               class="absolute top-0 left-0 w-full h-full bg-black opacity-30 rounded-lg -z-[9]"
@@ -40,7 +49,7 @@
               class="z-10"
               size="taller"
             />
-          </div>
+          </NuxtLink>
 
           <div>
             <div class="mt-2">
@@ -86,14 +95,18 @@
               </div>
 
               <div v-if="selectedProject.url" class="mt-4">
-                <div class="flex gap-2 items-center cursor-pointer group" @click="openProjectUrl">
+                <NuxtLink
+                  class="flex gap-2 items-center cursor-pointer group"
+                  :to="selectedProject.url"
+                  target="_blank"
+                >
                   <div
                     class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
                   >
                     <UIcon name="i-lucide-square-arrow-out-up-right" class="text-white" />
                   </div>
                   View project
-                </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -107,11 +120,7 @@ import type { Project } from '~~/types/project';
 
 const open = defineModel<boolean>('open', { default: false });
 
-const props = defineProps<{
+defineProps<{
   selectedProject: Project | null;
 }>();
-
-function openProjectUrl() {
-  if (props.selectedProject?.url) window.open(props.selectedProject.url, '_blank');
-}
 </script>

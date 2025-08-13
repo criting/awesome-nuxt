@@ -1,8 +1,17 @@
 <template>
-  <section>
+  <section class="relative">
+    <div
+      class="absolute inset-0 bg-[url(/gradient-shape-6.svg)] w-20 h-20 bg-cover bg-no-repeat top-40 lg:top-50 left-50 blur-xs"
+    />
+    <div
+      class="absolute bg-[url(/gradient-shape-10.svg)] w-35 h-30 bg-cover bg-no-repeat bottom-[200px] right-50 blur-md lg:blur-none"
+    />
     <UPageSection title="FAQ" description="Have questions? We have answers!">
       <template #body>
-        <UPageAccordion :items="items" class="max-w-2xl mx-auto" />
+        <UPageAccordion
+          :items="items"
+          class="max-w-2xl mx-auto bg-[rgba(255,255,255,0.5)] dark:bg-[rgba(32,39,57,0.5)] p-4 rounded-lg backdrop-blur-2xl"
+        />
       </template>
     </UPageSection>
   </section>

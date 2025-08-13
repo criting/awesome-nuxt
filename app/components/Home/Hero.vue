@@ -35,10 +35,22 @@
               <div
                 class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
               >
-                <UIcon :name="'i-lucide-arrow-right'" class="text-white" />
+                <UIcon name="i-lucide-arrow-right" class="text-white" />
               </div>
               Explore projects
             </div>
+            <NuxtLink
+              class="flex gap-2 items-center cursor-pointer group"
+              to="https://github.com/criting/awesome-nuxt"
+              target="_blank"
+            >
+              <div
+                class="bg-secondary group-hover:bg-primary flex justify-center p-2 rounded-full transition-colors duration-200"
+              >
+                <UIcon name="i-simple-icons-github" class="text-white" />
+              </div>
+              View on GitHub
+            </NuxtLink>
           </template>
         </UPageHero>
       </UContainer>

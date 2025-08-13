@@ -7,7 +7,12 @@
     >
       <template #title
         ><div class="flex items-center gap-2">
-          <UColorModeImage light="/logo-2.svg" dark="/logo-1.svg" class="w-10 h-10" alt="Logo" />
+          <UColorModeImage
+            light="/logo-light.svg"
+            dark="/logo-dark.svg"
+            class="w-10 h-10"
+            alt="Logo"
+          />
           Awesome Nuxt
         </div></template
       >

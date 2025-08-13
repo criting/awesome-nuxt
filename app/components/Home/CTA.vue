@@ -1,5 +1,11 @@
 <template>
-  <section>
+  <section class="relative">
+    <div
+      class="absolute inset-0 bg-[url(/gradient-shape-11.svg)] w-20 h-20 bg-cover bg-no-repeat top-65 lg:top-50 lg:left-90 left-50 z-10 dark:opacity-70"
+    />
+    <div
+      class="absolute bg-[url(/gradient-shape-4.svg)] w-20 h-20 bg-cover bg-no-repeat -top-[40px] right-[130px] lg:right-120 z-10 dark:opacity-70"
+    />
     <UContainer>
       <UPageCTA
         title="Know an awesome Nuxt project?"
