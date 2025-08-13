@@ -1,0 +1,91 @@
+name: 'Project Request'
+description: Suggest a Nuxt project to add to the list
+title: '[Project] <name>'
+labels: ['project:request']
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      placeholder: e.g. SuperSaaS
+    validations:
+      required: true
+
+  - type: input
+    id: website
+    attributes:
+      label: Project website (or demo)
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repository (if applicable)
+      placeholder: https://github.com/org/repo
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Choose the primary bucket
+      options:
+        - starter
+        - ai
+        - portfolio
+        - ecommerce
+        - dashboard
+        - devtools
+        - cms
+        - opensource
+        - landing
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (comma-separated)
+      placeholder: e.g. stripe, supabase, tailwind
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      placeholder: What does this project do? Why is it useful?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: details
+    attributes:
+      label: Additional details
+      options:
+        - label: Supports Nuxt 3
+        - label: Supports Nuxt 4
+        - label: Premium / Paid
+        - label: Actively maintained
+    validations:
+      required: false
+
+  - type: input
+    id: image
+    attributes:
+      label: Image / cover URL (optional)
+      placeholder: https://...
+    validations:
+      required: false
+
+  - type: textarea
+    id: why-awesome
+    attributes:
+      label: Why should this be included?
+      placeholder: What makes it stand out or useful to others?
+    validations:
+      required: false
