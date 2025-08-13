@@ -2,7 +2,7 @@
   <section>
     <div class="relative flex flex-col items-center justify-center lg:h-screen bg-no-repeat">
       <div
-        class="absolute top-0 left-0 inset-0 bg-[url(/hero-bg.svg)] dark:bg-[url(/hero-bg-dark.svg)] bg-cover bg-no-repeat lg:bg-center"
+        class="absolute top-0 left-0 inset-0 bg-[url(/hero-bg.svg)] dark:bg-[url(/hero-bg-dark.svg)] bg-cover bg-no-repeat lg:bg-center light:opacity-40 light:md:opacity-100"
       />
       <div
         class="absolute top-0 left-0 inset-0 bg-[url(/dots.svg)] bg-contain opacity-[0.03] dark:opacity-10"

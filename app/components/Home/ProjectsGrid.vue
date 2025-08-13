@@ -18,7 +18,9 @@
         <div class="space-y-2 self-start">
           <div class="flex flex-col gap-2 md:flex-row">
             <div class="flex flex-col gap-2">
-              <span class="text-gray-500 text-sm">Search by name or description:</span>
+              <span class="text-gray-500 dark:text-gray-400 text-sm"
+                >Search by name or description:</span
+              >
               <UInput
                 v-model="searchQuery"
                 placeholder="Search projects..."
@@ -27,28 +29,19 @@
               />
             </div>
             <div class="flex flex-col gap-2">
-              <span class="text-gray-500 text-sm">Filter by tags:</span>
+              <span class="text-gray-500 dark:text-gray-400 text-sm">Filter by tags:</span>
               <TagFilter v-model="selectedTags" :tags="allTags" />
             </div>
           </div>
           <div class="flex flex-col gap-2 mt-4">
-            <span class="text-gray-500 text-sm">Filter by category:</span>
+            <span class="text-gray-500 dark:text-gray-400 text-sm">Filter by category:</span>
             <CategoryFilter v-model="selectedCategory" :categories="allCategories" />
           </div>
-          <!-- <h5>Tags</h5>
-        <TagFilter v-model="selectedTags" :tags="allTags" />
-        <h5>Search</h5>
-        <UInput
-          v-model="searchQuery"
-          placeholder="Search projects..."
-          icon="i-heroicons-magnifying-glass"
-          class="w-full"
-        /> -->
         </div>
 
         <section>
           <div class="mb-4 mt-8">
-            <p class="text-gray-600 text-xs">
+            <p class="text-gray-600 dark:text-gray-400 text-xs">
               {{ filteredProjects.length }} project{{ filteredProjects.length === 1 ? '' : 's' }}
             </p>
           </div>
