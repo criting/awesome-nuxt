@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div>
+    <div class="flex gap-3 flex-wrap">
       <UBadge
         v-for="category in categories"
         :key="category.slug"
-        class="mr-2 rounded-full cursor-pointer hover:bg-gray-300 transition-colors duration-200 px-3 py-2"
+        class="rounded-full cursor-pointer hover:bg-gray-300 transition-colors duration-200 px-3 py-2"
         :class="{
           'bg-primary text-white hover:bg-primary': model === category.slug,
           'bg-white text-gray-800 hover:bg-gray-100': model !== category.slug

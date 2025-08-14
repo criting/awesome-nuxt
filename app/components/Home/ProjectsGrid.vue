@@ -1,7 +1,7 @@
 <template>
   <section id="projects" class="relative">
     <div
-      class="absolute inset-0 bg-[url(/gradient.jpg)] dark:bg-[url(/gradient-dark.jpg)] bg-cover bg-no-repeat -z-10 mx-auto h-[500px] w-full xl:w-[95%] xl:rounded-xl"
+      class="absolute inset-0 bg-[url(/gradient.jpg)] dark:bg-[url(/gradient-dark.jpg)] bg-cover bg-no-repeat -z-10 mx-auto h-[500px] w-full lg:w-[97%] xl:w-[95%] lg:rounded-xl"
     />
     <div
       class="absolute inset-0 bg-linear-to-b from-transparent to-white -z-10 h-[500px] w-full xl:w-[95%] mx-auto bg-no-repeat dark:to-gray-900"
@@ -42,7 +42,7 @@
             <UButton
               variant="subtle"
               size="xs"
-              class="text-sm text-gray-500 dark:text-gray-400"
+              class="text-sm text-gray-500 dark:text-gray-400 w-full md:w-auto flex items-center gap-1 justify-center py-2 px-4"
               @click="
                 selectedCategory = 'all';
                 selectedTags = [];
