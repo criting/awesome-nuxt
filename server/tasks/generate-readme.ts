@@ -76,13 +76,13 @@ function generateMarkdown() {
 
   lines.push(
     `<a href="${SITE_URL}" target="_blank" rel="noopener noreferrer">` +
-    `<img src="${OG_IMAGE}" alt="Awesome Nuxt" width="1200" />` +
+    `<img src="${OG_IMAGE}" alt="Awesome Nuxt" width="100%" />` +
     `</a>\n`
   )
 
   lines.push('# Awesome Nuxt\n')
   lines.push('A curated list of Nuxt projects, templates, and starters that actually work — ready for you to use or learn from.')
-  lines.push('> **Note:** This excludes Nuxt modules. Visit [modules.nuxt.com](https://nuxt.com/modules) for official modules.\n')
+  lines.push('> **Note:** This excludes Nuxt modules. Visit [https://nuxt.com/modules](https://nuxt.com/modules) for official modules.\n')
 
   const grouped = groupByCategory(projects)
 

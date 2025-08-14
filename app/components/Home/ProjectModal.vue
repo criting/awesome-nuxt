@@ -70,7 +70,7 @@
             </div>
 
             <div class="gap-2 flex flex-col w-auto items-start">
-              <div class="flex items-center text-sm text-gray-600">
+              <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
                 <UIcon
                   v-if="selectedProject.stars"
                   name="i-lucide-star"
@@ -79,7 +79,7 @@
                 <span v-if="selectedProject.stars">{{ selectedProject.stars }} GitHub stars</span>
               </div>
 
-              <div class="flex items-center text-sm text-gray-600">
+              <div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
                 <UIcon v-if="selectedProject.author" name="i-lucide-user" class="mr-1" />
                 <a :href="`https://github.com/${selectedProject.author}`" target="_blank">
                   <span v-if="selectedProject.author">{{ selectedProject.author }}</span>
@@ -88,7 +88,14 @@
 
               <div>
                 <span v-if="selectedProject.lastUpdated" class="text-gray-500 text-sm">
-                  Last updated: {{ new Date(selectedProject.lastUpdated).toLocaleDateString() }}
+                  Last updated:
+                  {{
+                    new Date(selectedProject.lastUpdated).toLocaleDateString('en-GB', {
+                      day: 'numeric',
+                      month: 'long',
+                      year: 'numeric'
+                    })
+                  }}
                 </span>
               </div>
 
