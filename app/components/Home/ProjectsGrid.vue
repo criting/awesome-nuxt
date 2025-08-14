@@ -89,11 +89,6 @@ function onView(project: Project) {
   emit('view', project);
 }
 
-console.log(
-  'Projects without slug:',
-  allProjects.value.filter((p) => !p.slug).map((p) => p.name)
-);
-
 const allCategories = computed(() => {
   const categoriesSet = new Set<string>(['all']);
   allProjects.value.forEach((p) => categoriesSet.add(p.category));
