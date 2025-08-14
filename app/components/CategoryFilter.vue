@@ -3,19 +3,20 @@
     <div>
       <UBadge
         v-for="category in categories"
-        :key="category"
-        class="mr-2 rounded-full cursor-pointer hover:bg-gray-300 transition-colors duration-200"
+        :key="category.slug"
+        class="mr-2 rounded-full cursor-pointer hover:bg-gray-300 transition-colors duration-200 px-3 py-2"
         :class="{
-          'bg-primary text-white hover:bg-primary': model === category,
-          'bg-white text-gray-800 hover:bg-gray-100': model !== category
+          'bg-primary text-white hover:bg-primary': model === category.slug,
+          'bg-white text-gray-800 hover:bg-gray-100': model !== category.slug
         }"
         size="lg"
         @click="
-          model = category;
+          model = category.slug;
           scrollToProjects();
         "
       >
-        {{ category }}
+        <UIcon :name="category.icon" />
+        {{ category.name }}
       </UBadge>
     </div>
   </div>
@@ -23,9 +24,10 @@
 
 <script setup lang="ts">
 import { useVModel } from '@vueuse/core';
+import type { CategoryOption } from '~~/types/category-ui';
 
 const props = defineProps<{
-  categories: string[];
+  categories: CategoryOption[];
   modelValue: string;
 }>();
 

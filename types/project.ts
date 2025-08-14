@@ -1,10 +1,12 @@
+import type { CategorySlug } from './category'
+
 export type Project = {
   slug?: string;
   name: string;
   description: string;
   url: string;
   tags: string[];
-  category: string;
+  category: CategorySlug;
   image?: string;
   premium?: boolean;
   stars?: number;

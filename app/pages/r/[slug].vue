@@ -7,6 +7,10 @@
     <div v-if="project" class="max-w-3xl mx-auto">
       <ProjectDetails :selected-project="project" />
     </div>
+
+    <section>
+      <SimilarProjects :project="project" />
+    </section>
   </div>
 </template>
 

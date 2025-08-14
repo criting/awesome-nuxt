@@ -77,6 +77,8 @@
 <script setup lang="ts">
 import { projects } from '@@/data/all';
 import type { Project } from '@@/types/project';
+import { PROJECT_CATEGORIES, type CategorySlug } from '~~/types/category';
+import type { CategoryOption } from '~~/types/category-ui';
 
 const allProjects = ref(projects);
 const { category: selectedCategory, tags: selectedTags, search: searchQuery } = useFilterQuery();
@@ -89,10 +91,27 @@ function onView(project: Project) {
   emit('view', project);
 }
 
-const allCategories = computed(() => {
-  const categoriesSet = new Set<string>(['all']);
-  allProjects.value.forEach((p) => categoriesSet.add(p.category));
-  return [...categoriesSet];
+const ALL_OPTION: CategoryOption = { slug: 'all', name: 'All', icon: 'i-lucide-grid' };
+
+const registryOrder = Object.values(PROJECT_CATEGORIES).map((c) => c.slug);
+
+const allCategories = computed<CategoryOption[]>(() => {
+  const used = new Set<CategorySlug>();
+
+  for (const p of allProjects.value as Project[]) {
+    if (p?.category && p.category in PROJECT_CATEGORIES) {
+      used.add(p.category as CategorySlug);
+    }
+  }
+
+  const usedCategories: CategoryOption[] = registryOrder
+    .filter((slug) => used.has(slug))
+    .map((slug) => {
+      const c = PROJECT_CATEGORIES[slug];
+      return { slug: c.slug, name: c.name, icon: c.icon };
+    });
+
+  return [ALL_OPTION, ...usedCategories];
 });
 
 const filteredProjects = computed(() => {

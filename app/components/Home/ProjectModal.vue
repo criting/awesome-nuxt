@@ -24,6 +24,9 @@
         </div>
         <ProjectDetails :selected-project="selectedProject" />
       </div>
+      <section class="px-4">
+        <SimilarProjects :project="selectedProject" />
+      </section>
     </template>
   </UModal>
 </template>
