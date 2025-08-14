@@ -1,11 +1,11 @@
-<a href="https://awesome-nuxt.dev" target="_blank" rel="noopener noreferrer"><img src="https://awesome-nuxt.dev/og-image.png" alt="Awesome Nuxt" width="1200" /></a>
+<a href="https://awesome-nuxt.dev" target="_blank" rel="noopener noreferrer"><img src="https://awesome-nuxt.dev/og-image.png" alt="Awesome Nuxt" width="100%" /></a>
 
-# Awesome Nuxt
+# 🚀 Awesome Nuxt
 
 A curated list of Nuxt projects, templates, and starters that actually work — ready for you to use or learn from.
-> **Note:** This excludes Nuxt modules. Visit [modules.nuxt.com](https://nuxt.com/modules) for official modules.
+> **Note:** This excludes Nuxt modules. Visit [https://nuxt.com/modules](https://nuxt.com/modules) for official modules.
 
-## Ai
+## AI & Chatbots
 
 - [Nuxt UI Chat](https://github.com/HugoRCD/nuxt-ui-chat)  
   A modern, full-featured AI chatbot application built with Nuxt 3, Nuxt UI Pro, and the Vercel AI SDK v5. Features real-time streaming, multiple AI models support via AI Gateway, persistent chat history with PostgreSQL, and a beautiful responsive interface.  
@@ -16,7 +16,7 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 - [Chat with PDF](https://github.com/RihanArfan/chat-with-pdf)  
   Chat with PDF is a full-stack AI-powered application that lets you to ask questions to PDF documents.  
 
-## Template
+## Templates
 
 - [Canvas template](https://github.com/HugoRCD/canvas)  
   Canvas Portfolio is a fully customizable i18n portfolio template built with Nuxt and Nuxt UI, designed to help you showcase your work, testimonials, and key information with ease. The template integrates with Nuxt Studio for a smooth editing experience, while leveraging Nuxt Content for content management. Built with performance, flexibility, and responsiveness in mind, Canvas Portfolio provides a robust foundation for developers and creatives alike.  
@@ -42,7 +42,7 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 - [HR Folio](https://github.com/HugoRCD/hr-folio)  
   This is the code for my personal portfolio built with Nuxt and Tailwind CSS.  
 
-## Starter
+## Starter Kits
 
 - [WXT + Nuxt UI v3 Starter](https://github.com/HugoRCD/wxt-nuxt-ui-starter)  
   A minimal starter template for building web extensions with WXT and Nuxt UI v3. This template provides a streamlined setup for developers who want to create beautiful, accessible browser extensions using Vue 3 and the latest version of Nuxt UI..  
@@ -133,9 +133,6 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 
 - [Nuxt Multisite Inheritance](https://github.com/filrak/nuxt-layers-multisite)  
   This template shows how to approach a problem of unifying multiple applications with a sgnificant amount of shared functionalities on the UI/feature layer.  
-
-- [Chat with PDF](https://github.com/filrak/nuxt-layers-multisite)  
-  Chat with PDF is a full-stack AI-powered application that lets you to ask questions to PDF documents.  
 
 - [NuxtCommerce](https://github.com/zackha/nuxtcommerce)  
   An open-source, dynamic e-commerce solution powered by Nuxt 3 and GraphQL, headless storefront replacement for Woocommerce. Featuring a user interface in the style of Pinterest and fully customizable (Vue, Nuxt3).  
