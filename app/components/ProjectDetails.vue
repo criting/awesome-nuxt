@@ -1,6 +1,19 @@
 <template>
   <div v-if="selectedProject" class="relative">
     <div class="flex flex-col gap-4 mt-12">
+      <div>
+        <UBadge
+          v-if="category"
+          color="primary"
+          size="sm"
+          variant="soft"
+          class="rounded-full px-3 py-2"
+        >
+          <UIcon :name="category.icon" class="mr-1 size-3" />
+          {{ category.name }}
+        </UBadge>
+        <h1 class="text-3xl font-bold mt-2">{{ selectedProject.name }}</h1>
+      </div>
       <NuxtLink
         class="relative w-full px-12 py-8 group transition-all"
         :to="`${selectedProject.url}`"
@@ -14,11 +27,12 @@
           v-if="selectedProject.premium"
           class="text-center opacity-100 absolute top-4 left-0 right-0 m-auto"
         >
-          <UBadge color="neutral" size="sm" variant="outline" class="ring-0">Premium</UBadge>
+          <UBadge color="neutral" size="sm" variant="outline" class="ring-0 rounded-full"
+            >Premium</UBadge
+          >
         </div>
         <ProjectImage
           :image="selectedProject.image"
-          :name="selectedProject.name"
           :description="selectedProject.description"
           class="z-10"
           size="taller"
@@ -35,6 +49,7 @@
               color="primary"
               size="sm"
               variant="soft"
+              class="rounded-full px-3 py-2"
             >
               {{ tag }}
             </UBadge>
@@ -59,7 +74,10 @@
           </div>
 
           <div>
-            <span v-if="selectedProject.lastUpdated" class="text-gray-500 text-sm">
+            <span
+              v-if="selectedProject.lastUpdated"
+              class="text-gray-500 dark:text-gray-400 text-sm"
+            >
               Last updated:
               {{
                 new Date(selectedProject.lastUpdated).toLocaleDateString('en-GB', {
@@ -109,6 +127,7 @@
   </div>
 </template>
 <script setup lang="ts">
+import { PROJECT_CATEGORIES } from '~~/types/category';
 import type { Project } from '~~/types/project';
 const toast = useToast();
 
@@ -119,6 +138,12 @@ const props = defineProps<{
 }>();
 
 const slugInput = ref(`${config.public.siteUrl}/r/${props.selectedProject?.slug || ''}`);
+
+const category = computed(() => {
+  return props.selectedProject?.category
+    ? PROJECT_CATEGORIES[props.selectedProject.category]
+    : null;
+});
 
 function copyToClipboard(text: string) {
   navigator.clipboard.writeText(text).then(() => {
