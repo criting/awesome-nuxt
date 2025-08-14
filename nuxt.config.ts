@@ -2,7 +2,6 @@ import vue from '@vitejs/plugin-vue';
 import { projects } from './data/all'
 
 export default defineNuxtConfig({
-  ssr: false,
   devtools: { enabled: true },
   modules: [
     '@nuxt/eslint',
