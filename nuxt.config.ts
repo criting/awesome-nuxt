@@ -52,4 +52,10 @@ export default defineNuxtConfig({
       plugins: [vue()]
     }
   },
+
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.SITE_URL || 'https://awesome-nuxt.dev'
+    }
+  }
 })

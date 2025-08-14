@@ -1,4 +1,5 @@
 export type Project = {
+  slug?: string;
   name: string;
   description: string;
   url: string;

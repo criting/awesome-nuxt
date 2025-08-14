@@ -37,6 +37,22 @@
             <span class="text-gray-500 dark:text-gray-400 text-sm">Filter by category:</span>
             <CategoryFilter v-model="selectedCategory" :categories="allCategories" />
           </div>
+
+          <div class="mt-4">
+            <UButton
+              variant="subtle"
+              size="xs"
+              class="text-sm text-gray-500 dark:text-gray-400"
+              @click="
+                selectedCategory = 'all';
+                selectedTags = [];
+                searchQuery = '';
+              "
+            >
+              <UIcon name="i-lucide-refresh-cw" class="mr-1" />
+              Reset filters
+            </UButton>
+          </div>
         </div>
 
         <section>
@@ -45,7 +61,6 @@
               {{ filteredProjects.length }} project{{ filteredProjects.length === 1 ? '' : 's' }}
             </p>
           </div>
-
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             <ProjectCard
               v-for="project in filteredProjects"

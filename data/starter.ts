@@ -222,13 +222,6 @@ export const starter: Project[] = [
     category: 'starter',
   },
   {
-    name: 'Chat with PDF',
-    description: "Chat with PDF is a full-stack AI-powered application that lets you to ask questions to PDF documents.",
-    url: 'https://github.com/filrak/nuxt-layers-multisite',
-    tags: ['nuxt 3', 'pdf', 'ai', 'chat', 'nuxthub'],
-    category: 'starter',
-  },
-  {
     name: 'NuxtCommerce',
     description: "An open-source, dynamic e-commerce solution powered by Nuxt 3 and GraphQL, headless storefront replacement for Woocommerce. Featuring a user interface in the style of Pinterest and fully customizable (Vue, Nuxt3).",
     url: 'https://github.com/zackha/nuxtcommerce',

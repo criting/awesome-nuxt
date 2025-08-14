@@ -56,7 +56,6 @@ export const template: Project[] = [
     url: 'https://github.com/nuxt-ui-pro/dashboard-vue',
     tags: ['nuxt 3', 'nuxt ui pro', 'dashboard'],
     category: 'template',
-    image: 'https://github-production-user-asset-6210df.s3.amazonaws.com/904724/418197124-c620cfcb-f244-49c0-8c9e-e95c17f014ef.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250813T182758Z&X-Amz-Expires=300&X-Amz-Signature=90ca978363bebf38998d1157f92c70950ed959a5ba3ec0c04aa5191bf8ca7f4e&X-Amz-SignedHeaders=host',
     premium: true
   },
   {
