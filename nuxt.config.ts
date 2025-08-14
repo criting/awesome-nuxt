@@ -1,4 +1,5 @@
 import vue from '@vitejs/plugin-vue';
+import { projects } from './data/all'
 
 export default defineNuxtConfig({
   ssr: false,
@@ -8,6 +9,9 @@ export default defineNuxtConfig({
     '@nuxt/ui-pro',
     '@nuxthub/core',
     '@nuxt/image',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+    'nuxt-link-checker'
   ],
 
   hub: {
@@ -57,5 +61,19 @@ export default defineNuxtConfig({
     public: {
       siteUrl: process.env.SITE_URL || 'https://awesome-nuxt.dev'
     }
-  }
+  },
+
+  site: {
+    url: process.env.SITE_URL || 'https://awesome-nuxt.dev',
+    name: 'Awesome Nuxt'
+  },
+
+  sitemap: {
+    urls: projects.map(p => ({
+      loc: `/r/${p.slug}`,
+      lastmod: p.lastUpdated ? p.lastUpdated.slice(0, 10) : undefined,
+      changefreq: 'weekly',
+      priority: 0.7
+    }))
+  },
 })
