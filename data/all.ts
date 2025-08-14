@@ -25,14 +25,20 @@ export const rawProjects: Project[] = [
 ]
 
 export const projects: Project[] = rawProjects.map((project) => {
-  if (project.url && githubMeta[project.url]) {
-    return {
-      ...project,
-      slug: slugifyName(project.name),
-      stars: githubMeta[project.url]?.stars,
-      lastUpdated: githubMeta[project.url]?.lastUpdated,
-      author: githubMeta[project.url]?.author
-    }
+  const githubData = project.url && githubMeta[project.url] ? githubMeta[project.url] : {}
+
+  let slug = ''
+  if (project.url?.includes('github.com')) {
+    slug = project.url.split('/').filter(Boolean).slice(-1)[0]
+  } else {
+    slug = slugifyName(project.name)
   }
-  return project
+
+  return {
+    ...project,
+    slug,
+    stars: githubData.stars,
+    lastUpdated: githubData.lastUpdated,
+    author: githubData.author
+  }
 })

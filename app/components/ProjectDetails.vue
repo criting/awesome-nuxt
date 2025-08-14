@@ -25,26 +25,8 @@
         />
       </NuxtLink>
 
-      <div class="flex flex-row gap-2 items-center">
-        <span class="text-sm font-semibold">Share</span>
-        <UInput v-model="slugInput" :ui="{ trailing: 'pr-0.5' }" disabled>
-          <template v-if="slugInput?.length" #trailing>
-            <UTooltip text="Copy to clipboard" :content="{ side: 'right' }">
-              <UButton
-                color="neutral"
-                variant="link"
-                size="sm"
-                icon="i-lucide-copy"
-                aria-label="Copy to clipboard"
-                @click="copyToClipboard(slugInput)"
-              />
-            </UTooltip>
-          </template>
-        </UInput>
-      </div>
-
       <div>
-        <div>
+        <div class="mt-2">
           <h5 class="text-sm font-semibold mb-2">Tags</h5>
           <div class="flex flex-wrap gap-2">
             <UBadge
@@ -87,6 +69,24 @@
                 })
               }}
             </span>
+          </div>
+
+          <div class="mt-4">
+            <div class="text-sm font-semibold">Share</div>
+            <UInput v-model="slugInput" class="mt-2" :ui="{ trailing: 'pr-0.5' }" disabled>
+              <template v-if="slugInput?.length" #trailing>
+                <UTooltip text="Copy to clipboard" :content="{ side: 'right' }">
+                  <UButton
+                    color="neutral"
+                    variant="link"
+                    size="sm"
+                    icon="i-lucide-copy"
+                    aria-label="Copy to clipboard"
+                    @click="copyToClipboard(slugInput)"
+                  />
+                </UTooltip>
+              </template>
+            </UInput>
           </div>
 
           <div v-if="selectedProject.url" class="mt-4">

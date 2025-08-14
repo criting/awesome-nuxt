@@ -61,7 +61,7 @@
               {{ filteredProjects.length }} project{{ filteredProjects.length === 1 ? '' : 's' }}
             </p>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12">
             <ProjectCard
               v-for="project in filteredProjects"
               :key="project.name"
@@ -88,6 +88,11 @@ const emit = defineEmits<{
 function onView(project: Project) {
   emit('view', project);
 }
+
+console.log(
+  'Projects without slug:',
+  allProjects.value.filter((p) => !p.slug).map((p) => p.name)
+);
 
 const allCategories = computed(() => {
   const categoriesSet = new Set<string>(['all']);

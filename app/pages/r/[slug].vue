@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-12">
+  <div class="md:pt-12 px-6 relative pb-8">
     <div
       fetchPriority="high"
       class="absolute left-0 top-0 w-full h-full bg-[url(/hero-bg.svg)] dark:bg-[url(/hero-bg-dark.svg)] bg-cover opacity-40 dark:opacity-70 -z-[10]"
