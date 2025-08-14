@@ -8,6 +8,8 @@
 </template>
 
 <script lang="ts" setup>
+const cfg = useRuntimeConfig();
+
 useHead({
   htmlAttrs: {
     lang: 'en'
@@ -23,16 +25,16 @@ useHead({
 useSeoMeta({
   title: 'Awesome Nuxt - Build better with Nuxt',
   ogTitle: 'Awesome Nuxt - Build better with Nuxt',
-  ogImage: '/og-image.png',
+  ogImage: cfg.public.siteUrl + '/og-image.png',
   description:
     'A curated list of awesome Nuxt projects, respources, and tools to help you build better applications with Nuxt.',
   ogDescription:
     'A curated list of awesome Nuxt projects, respources, and tools to help you build better applications with Nuxt.',
-  ogUrl: 'https://awesome-nuxt.dev/',
+  ogUrl: cfg.public.siteUrl,
   twitterTitle: 'Awesome Nuxt - Build better with Nuxt',
   twitterDescription:
     'A curated list of awesome Nuxt projects, respources, and tools to help you build better applications with Nuxt.',
-  twitterImage: '/og-image.png',
+  twitterImage: cfg.public.siteUrl + '/og-image.png',
   twitterCard: 'summary_large_image'
 });
 </script>
