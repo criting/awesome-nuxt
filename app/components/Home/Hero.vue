@@ -27,7 +27,7 @@
           <template #links>
             <div
               to="#projects"
-              class="flex gap-2 items-center cursor-pointer group"
+              class="flex gap-2 items-center cursor-pointer group border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
               @click="scrollToProjects"
             >
               <div
@@ -38,7 +38,7 @@
               Explore projects
             </div>
             <NuxtLink
-              class="flex gap-2 items-center cursor-pointer group"
+              class="flex gap-2 items-center cursor-pointer group border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
               to="https://github.com/criting/awesome-nuxt"
               target="_blank"
             >

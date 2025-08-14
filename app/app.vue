@@ -35,6 +35,11 @@ useSeoMeta({
   twitterDescription:
     'A curated list of awesome Nuxt projects, respources, and tools to help you build better applications with Nuxt.',
   twitterImage: cfg.public.siteUrl + '/og-image.png',
-  twitterCard: 'summary_large_image'
+  twitterCard: 'summary_large_image',
+  ogType: 'website'
+});
+
+useHead({
+  meta: [{ property: 'og:logo', content: `${cfg.public.siteUrl}/favicon.svg` }]
 });
 </script>

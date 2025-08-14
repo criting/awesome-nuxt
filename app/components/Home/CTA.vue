@@ -21,7 +21,7 @@ import type { ButtonProps } from '@nuxt/ui';
 const links = ref<ButtonProps[]>([
   {
     label: 'Contribute',
-    color: 'neutral',
+    color: 'primary',
     trailingIcon: 'i-lucide-arrow-right',
     to: 'https://github.com/criting/awesome-nuxt#-contributing',
     target: '_blank'
