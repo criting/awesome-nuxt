@@ -16,6 +16,9 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 - [Chat with PDF](https://github.com/RihanArfan/chat-with-pdf)  
   Chat with PDF is a full-stack AI-powered application that lets you to ask questions to PDF documents.  
 
+- [Nuxt Chatgpt + Image Generator](https://github.com/SchnapsterDog/nuxt-chatgpt)  
+  ChatGPT integration for Nuxt 3  
+
 ## Templates
 
 - [Canvas template](https://github.com/HugoRCD/canvas)  
@@ -41,6 +44,24 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 
 - [HR Folio](https://github.com/HugoRCD/hr-folio)  
   This is the code for my personal portfolio built with Nuxt and Tailwind CSS.  
+
+- [Nuxt Shadcn UnoCSS](https://github.com/dianprata/nuxt-shadcn-dashboard)  
+  Template Dashboard with Nuxt 3 + Shadcn + UnoCSS  
+
+- [Zooper](https://github.com/fayazara/zooper)  
+  Zooper is a beautiful personal portfolio template for developers, programmers, freelancers and designers.  
+
+- [CvFy](https://github.com/claudiabdm/cvfy)  
+  CV generator built with Nuxt.js, TailwindCSS, deployed on Cloudflare Pages.  
+
+- [Prismic + Nuxt Blog Starter](https://github.com/prismicio-community/nuxt-starter-prismic-blog)  
+  This sample blog is an excellent starting point to explore Nuxt and Prismic. Get it up and running in minutes. Modify and adapt it to your liking; it's all yours!  
+
+- [Nuxt 3 Kitchen Sink Template](https://github.com/vercel/nuxt3-kitchen-sink)  
+  This template is an open-source, customizable template built with Nuxt 3 and Tailwind CSS. It showcases how all Nuxt 3 features work with zero configuration on Vercel.  
+
+- [Minted Directory Template](https://github.com/masterkram/minted-directory)  
+  Markdown driven directory template. Built with Nuxt, Nuxt Content and Tailwindcss. Optimized for SEO. Beautiful Customizable Style  
 
 ## Starter Kits
 
@@ -205,6 +226,30 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 
 - [Cloudflare Workers AI LLM](https://github.com/ra-jeev/hub-chat)  
   Cloudflare Workers AI LLM Playground with Nuxt  
+
+- [tRPC-Nuxt](https://github.com/wobsoriano/trpc-nuxt)  
+  End-to-end typesafe APIs with tRPC.io in Nuxt applications.  
+
+- [Laravel Nuxt Boilerplate](https://github.com/k2so-dev/laravel-nuxt)  
+  Laravel and Nuxt.js boilerplate designed for development with maximum API performance, ready-made authorization methods, image uploading with optimization, user roles, device management  
+
+- [Nuxt 3 Multi-tenancy](https://github.com/hieuhani/nuxt-multi-tenancy)  
+  Nuxt 3 Multi-tenancy module for building multi-tenant applications on Nuxt 3  
+
+- [Nuxt 4 Starter](https://github.com/lazercaveman/nuxt-starter)  
+  Fully configured Nuxt 4 Starter-Kit featuring TypeScript, Vitest, ESLint, Pinia, Tailwind + SCSS and Husky and more - optimized and ready to power robust, real-world applications - to kickstart your next project.  
+
+- [fuxt](https://github.com/funkhaus/fuxt)  
+  A complete Headless WordPress tech stack built on Nuxt 4. Works best with the fuxt-backend WordPress theme and included WordPress optimized components.  
+
+- [NuxtGain](https://github.com/CyberCowboy404/nuxtgain)  
+  Nuxt3 + Supabase; Production ready SaaS boilerplate  
+
+- [Nitrogen](https://github.com/rylanharper/nitrogen)  
+  A Nuxt 4 Shopify template based on Hydrogen  
+
+- [supaAuth](https://github.com/zackha/supaAuth)  
+  A Nuxt 4 + Supabase starter template. Add Login and Register page into your Nuxt 4 project using Supabase authentication.  
 
 
 

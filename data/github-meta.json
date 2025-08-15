@@ -313,5 +313,80 @@
     "stars": 88,
     "lastUpdated": "2025-07-22T05:27:59Z",
     "author": "ra-jeev"
+  },
+  "https://github.com/SchnapsterDog/nuxt-chatgpt": {
+    "stars": 171,
+    "lastUpdated": "2025-07-18T18:30:19Z",
+    "author": "SchnapsterDog"
+  },
+  "https://github.com/dianprata/nuxt-shadcn-dashboard": {
+    "stars": 428,
+    "lastUpdated": "2025-08-15T02:45:06Z",
+    "author": "dianprata"
+  },
+  "https://github.com/fayazara/zooper": {
+    "stars": 338,
+    "lastUpdated": "2025-07-30T09:34:24Z",
+    "author": "fayazara"
+  },
+  "https://github.com/claudiabdm/cvfy": {
+    "stars": 327,
+    "lastUpdated": "2025-08-06T08:52:17Z",
+    "author": "claudiabdm"
+  },
+  "https://github.com/prismicio-community/nuxt-starter-prismic-blog": {
+    "stars": 57,
+    "lastUpdated": "2025-07-16T09:12:49Z",
+    "author": "prismicio-community"
+  },
+  "https://github.com/vercel/nuxt3-kitchen-sink": {
+    "stars": 69,
+    "lastUpdated": "2025-08-07T03:02:10Z",
+    "author": "vercel"
+  },
+  "https://github.com/masterkram/minted-directory": {
+    "stars": 79,
+    "lastUpdated": "2025-08-14T11:52:38Z",
+    "author": "masterkram"
+  },
+  "https://github.com/wobsoriano/trpc-nuxt": {
+    "stars": 758,
+    "lastUpdated": "2025-08-09T02:52:08Z",
+    "author": "wobsoriano"
+  },
+  "https://github.com/k2so-dev/laravel-nuxt": {
+    "stars": 299,
+    "lastUpdated": "2025-08-12T18:43:26Z",
+    "author": "k2so-dev"
+  },
+  "https://github.com/hieuhani/nuxt-multi-tenancy": {
+    "stars": 262,
+    "lastUpdated": "2025-08-15T04:24:06Z",
+    "author": "hieuhani"
+  },
+  "https://github.com/lazercaveman/nuxt-starter": {
+    "stars": 85,
+    "lastUpdated": "2025-08-08T18:03:12Z",
+    "author": "lazercaveman"
+  },
+  "https://github.com/funkhaus/fuxt": {
+    "stars": 258,
+    "lastUpdated": "2025-08-12T16:17:28Z",
+    "author": "funkhaus"
+  },
+  "https://github.com/CyberCowboy404/nuxtgain": {
+    "stars": 94,
+    "lastUpdated": "2025-08-11T15:31:49Z",
+    "author": "CyberCowboy404"
+  },
+  "https://github.com/rylanharper/nitrogen": {
+    "stars": 263,
+    "lastUpdated": "2025-08-13T04:05:42Z",
+    "author": "rylanharper"
+  },
+  "https://github.com/zackha/supaAuth": {
+    "stars": 94,
+    "lastUpdated": "2025-08-07T23:54:56Z",
+    "author": "zackha"
   }
 }
