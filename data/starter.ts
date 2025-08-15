@@ -397,5 +397,63 @@ export const starter: Project[] = [
     url: 'https://github.com/ra-jeev/hub-chat',
     tags: ['nuxt 3', 'ai', 'llm', 'cloudflare', 'workers'],
     category: 'starter' 
-  }
+  },
+  {
+    name: 'tRPC-Nuxt',
+    description: "End-to-end typesafe APIs with tRPC.io in Nuxt applications.",
+    url: 'https://github.com/wobsoriano/trpc-nuxt',
+    tags: ['nuxt 3', 'trpc', 'end-to-end', 'typesafe', 'api'],
+    category: 'starter' 
+  },
+  {
+    name: 'Laravel Nuxt Boilerplate',
+    description: "Laravel and Nuxt.js boilerplate designed for development with maximum API performance, ready-made authorization methods, image uploading with optimization, user roles, device management",
+    url: 'https://github.com/k2so-dev/laravel-nuxt',
+    tags: ['nuxt 3', 'laravel', 'boilerplate', 'api', 'authorization'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt 3 Multi-tenancy',
+    description: "Nuxt 3 Multi-tenancy module for building multi-tenant applications on Nuxt 3",
+    url: 'https://github.com/hieuhani/nuxt-multi-tenancy',
+    tags: ['nuxt 3', 'multi-tenancy', 'multitenancy', 'multisite'],
+    category: 'starter',
+  },
+  {
+    name: 'Nuxt 4 Starter',
+    description: "Fully configured Nuxt 4 Starter-Kit featuring TypeScript, Vitest, ESLint, Pinia, Tailwind + SCSS and Husky and more - optimized and ready to power robust, real-world applications - to kickstart your next project.",
+    url: 'https://github.com/lazercaveman/nuxt-starter',
+    tags: ['nuxt 4', 'starter', 'typescript', 'vitest', 'eslint', 'pinia', 'tailwindcss', 'scss', 'husky'],
+    category: 'starter',
+    image: 'https://github.com/lazercaveman/nuxt-starter/raw/main/app/assets/img/screenshot.png'
+  },
+  {
+    name: 'fuxt',
+    description: "A complete Headless WordPress tech stack built on Nuxt 4. Works best with the fuxt-backend WordPress theme and included WordPress optimized components.",
+    url: 'https://github.com/funkhaus/fuxt',
+    tags: ['nuxt 4', 'headless', 'wordpress', 'fuxt-backend', 'components'],
+    category: 'starter',
+  },
+  {
+    name: 'NuxtGain',
+    description: "Nuxt3 + Supabase; Production ready SaaS boilerplate",
+    url: 'https://github.com/CyberCowboy404/nuxtgain',
+    tags: ['nuxt 4', 'supabase', 'saas', 'boilerplate'],
+    category: 'starter',
+  },
+  {
+    name: 'Nitrogen',
+    description: "A Nuxt 4 Shopify template based on Hydrogen",
+    url: 'https://github.com/rylanharper/nitrogen',
+    tags: ['nuxt 4', 'shopify', 'hydrogen'],
+    category: 'starter',
+  },
+  {
+    name: 'supaAuth',
+    description: "A Nuxt 4 + Supabase starter template. Add Login and Register page into your Nuxt 4 project using Supabase authentication.",
+    url: 'https://github.com/zackha/supaAuth',
+    tags: ['nuxt 4', 'supabase', 'authentication'],
+    category: 'starter',
+    image: 'https://user-images.githubusercontent.com/79358543/229441570-3ba48ca8-8cf3-4fd4-aac7-2cc5eac67a03.png'
+  },
 ];

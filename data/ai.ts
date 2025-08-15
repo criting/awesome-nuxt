@@ -26,4 +26,11 @@ export const ai: Project[] = [
     category: 'ai',
     image: 'https://github.com/RihanArfan/chat-with-pdf/raw/main/.github/hybrid-rag.png'
   },
+  {
+    name: 'Nuxt Chatgpt + Image Generator',
+    description: 'ChatGPT integration for Nuxt 3',
+    url: 'https://github.com/SchnapsterDog/nuxt-chatgpt',
+    tags: ['nuxt 3', 'chatgpt', 'image generator'],
+    category: 'ai',
+  },
 ];
