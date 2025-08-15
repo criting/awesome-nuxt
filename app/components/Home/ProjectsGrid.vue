@@ -26,6 +26,7 @@
                 placeholder="Search projects..."
                 icon="i-heroicons-magnifying-glass"
                 class="w-auto md:w-md lg:w-xl"
+                size="lg"
               />
             </div>
             <div class="flex flex-col gap-2">
@@ -42,7 +43,7 @@
             <UButton
               variant="subtle"
               size="xs"
-              class="text-sm text-gray-500 dark:text-gray-400 w-full md:w-auto flex items-center gap-1 justify-center py-2 px-4"
+              class="text-sm text-gray-500 dark:text-gray-400 w-full md:w-auto flex items-center gap-1 justify-center py-1 px-3"
               @click="
                 selectedCategory = 'all';
                 selectedTags = [];
@@ -61,13 +62,19 @@
               {{ filteredProjects.length }} project{{ filteredProjects.length === 1 ? '' : 's' }}
             </p>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12">
+          <div
+            v-if="filteredProjects.length > 0"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12"
+          >
             <ProjectCard
               v-for="project in filteredProjects"
               :key="project.name"
               :project="project"
               @view="onView(project)"
             />
+          </div>
+          <div v-else class="text-gray-500 dark:text-gray-400">
+            No projects found matching your filters.
           </div>
         </section>
       </div>

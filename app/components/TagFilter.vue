@@ -6,6 +6,7 @@
     placeholder="Filter by tags"
     icon="i-heroicons-tag"
     class="w-full sm:w-60"
+    size="lg"
   />
 </template>
 
