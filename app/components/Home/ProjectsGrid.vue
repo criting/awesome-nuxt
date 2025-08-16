@@ -66,12 +66,14 @@
             v-if="filteredProjects.length > 0"
             class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12"
           >
-            <ProjectCard
+            <NuxtLink
               v-for="project in filteredProjects"
               :key="project.name"
-              :project="project"
-              @view="onView(project)"
-            />
+              class="cursor-pointer"
+              :to="`/r/${project.slug}`"
+            >
+              <ProjectCard :project="project" />
+            </NuxtLink>
           </div>
           <div v-else class="text-gray-500 dark:text-gray-400">
             No projects found matching your filters.
@@ -89,14 +91,6 @@ import type { CategoryOption } from '~~/types/category-ui';
 
 const allProjects = ref(projects);
 const { category: selectedCategory, tags: selectedTags, search: searchQuery } = useFilterQuery();
-
-const emit = defineEmits<{
-  (e: 'view', project: Project): void;
-}>();
-
-function onView(project: Project) {
-  emit('view', project);
-}
 
 const ALL_OPTION: CategoryOption = { slug: 'all', name: 'All', icon: 'i-lucide-grid' };
 

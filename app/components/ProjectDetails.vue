@@ -1,6 +1,6 @@
 <template>
   <div v-if="selectedProject" class="relative">
-    <div class="flex flex-col gap-4 mt-12">
+    <div class="flex flex-col gap-4 mt-6 md:mt-12">
       <div>
         <UBadge
           v-if="category"

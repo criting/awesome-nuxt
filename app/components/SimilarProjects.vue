@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mt-12 lg:mt-24 mb-12"
+    class="mt-12 lg:mt-24 mb-6 md:mb-12"
     :class="{
       'max-w-3xl mx-auto': similar.length < 3
     }"
