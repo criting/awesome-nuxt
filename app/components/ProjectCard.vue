@@ -1,5 +1,5 @@
 <template>
-  <div @click="selectProject(project)">
+  <div>
     <UContextMenu
       size="sm"
       :items="items"
@@ -44,23 +44,7 @@
 import type { ContextMenuItem } from '@nuxt/ui';
 import type { Project } from '@@/types/project';
 
-const emit = defineEmits<{
-  (e: 'view', project: Project): void;
-}>();
-
-function selectProject(project: Project) {
-  emit('view', project);
-}
-
-const items = ref<ContextMenuItem[]>([
-  {
-    label: 'View Project',
-    icon: 'i-lucide-eye',
-    onSelect() {
-      emit('view', props.project);
-    }
-  }
-]);
+const items = ref<ContextMenuItem[]>([]);
 
 const props = defineProps({
   project: {
