@@ -120,4 +120,12 @@ export const template: Project[] = [
     category: 'template',
     image: 'https://github.com/oneminch/Bentolio/raw/main/public/screenshot.png'
   },
+  {
+    name: 'Résumé',
+    description: "A minimal, single-column, print-friendly Résumé/CV template built with Nuxt. Designed following modern résumé best practices with easy customization through a single configuration file (app.config.ts).",
+    url: 'https://github.com/oneminch/Resume',
+    tags: ['nuxt 4', 'tailwindcss', 'portfolio'],
+    category: 'template',
+    image: 'https://github.com/oneminch/Resume/raw/main/public/cover.png'
+  },
 ];
