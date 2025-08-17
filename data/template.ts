@@ -112,4 +112,12 @@ export const template: Project[] = [
     tags: ['nuxt 3', 'nuxt content', 'tailwindcss', 'directory'],
     category: 'template',
   },
+  {
+    name: 'Bentolio',
+    description: "A minimal portfolio template built with Nuxt, Tailwind CSS, and GSAP. All content and basic styling are configured via app.config.ts.",
+    url: 'https://github.com/oneminch/Bentolio',
+    tags: ['nuxt 4', 'tailwindcss', 'gsap'],
+    category: 'template',
+    image: 'https://github.com/oneminch/Bentolio/raw/main/public/screenshot.png'
+  },
 ];
