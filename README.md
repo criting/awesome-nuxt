@@ -66,6 +66,9 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 - [Bentolio](https://github.com/oneminch/Bentolio)  
   A minimal portfolio template built with Nuxt, Tailwind CSS, and GSAP. All content and basic styling are configured via app.config.ts.  
 
+- [Résumé](https://github.com/oneminch/Resume)  
+  A minimal, single-column, print-friendly Résumé/CV template built with Nuxt. Designed following modern résumé best practices with easy customization through a single configuration file (app.config.ts).  
+
 ## Starter Kits
 
 - [WXT + Nuxt UI v3 Starter](https://github.com/HugoRCD/wxt-nuxt-ui-starter)  
