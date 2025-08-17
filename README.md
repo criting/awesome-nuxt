@@ -63,6 +63,9 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 - [Minted Directory Template](https://github.com/masterkram/minted-directory)  
   Markdown driven directory template. Built with Nuxt, Nuxt Content and Tailwindcss. Optimized for SEO. Beautiful Customizable Style  
 
+- [Bentolio](https://github.com/oneminch/Bentolio)  
+  A minimal portfolio template built with Nuxt, Tailwind CSS, and GSAP. All content and basic styling are configured via app.config.ts.  
+
 ## Starter Kits
 
 - [WXT + Nuxt UI v3 Starter](https://github.com/HugoRCD/wxt-nuxt-ui-starter)  
