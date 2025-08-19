@@ -12,4 +12,5 @@ export type Project = {
   stars?: number;
   lastUpdated?: string;
   author?: string;
+  featured?: boolean;
 };

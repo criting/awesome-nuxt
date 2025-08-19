@@ -1,402 +1,482 @@
 {
   "https://github.com/HugoRCD/nuxt-ui-chat": {
-    "stars": 91,
-    "lastUpdated": "2025-08-12T20:49:48Z",
-    "author": "HugoRCD"
+    "stars": 92,
+    "lastUpdated": "2025-08-18T12:26:15Z",
+    "author": "HugoRCD",
+    "image": "og-images/HugoRCD-nuxt-ui-chat.png"
   },
   "https://github.com/nuxt-ui-pro/chat": {
-    "stars": 107,
-    "lastUpdated": "2025-08-12T14:14:45Z",
-    "author": "nuxt-ui-pro"
-  },
-  "https://github.com/HugoRCD/canvas": {
-    "stars": 311,
-    "lastUpdated": "2025-08-12T20:41:54Z",
-    "author": "HugoRCD"
-  },
-  "https://github.com/atinux/content-wind": {
-    "stars": 872,
-    "lastUpdated": "2025-08-12T14:32:15Z",
-    "author": "atinux"
-  },
-  "https://github.com/prismicio-community/nuxt-starter-prismic-glideai": {
-    "stars": 31,
-    "lastUpdated": "2025-08-04T23:24:53Z",
-    "author": "prismicio-community"
-  },
-  "https://github.com/harlan-zw/harlanzw.com": {
-    "stars": 212,
-    "lastUpdated": "2025-08-12T13:41:48Z",
-    "author": "harlan-zw"
-  },
-  "https://github.com/clemcode/alpine-theme": {
-    "stars": 330,
-    "lastUpdated": "2025-08-06T19:37:08Z",
-    "author": "clemcode"
-  },
-  "https://github.com/HugoRCD/wxt-nuxt-ui-starter": {
-    "stars": 28,
-    "lastUpdated": "2025-08-13T07:41:45Z",
-    "author": "HugoRCD"
-  },
-  "https://github.com/HugoRCD/nuxt-visitors": {
-    "stars": 91,
-    "lastUpdated": "2025-07-31T07:58:17Z",
-    "author": "HugoRCD"
-  },
-  "https://github.com/NuxSaaS/NuxSaaS": {
-    "stars": 364,
-    "lastUpdated": "2025-08-13T10:32:33Z",
-    "author": "NuxSaaS"
-  },
-  "https://github.com/SupersaasHQ/lemonrepo": {
-    "stars": 265,
-    "lastUpdated": "2025-08-13T04:37:13Z",
-    "author": "SupersaasHQ"
-  },
-  "https://github.com/kingyue737/vitify-nuxt": {
-    "stars": 130,
-    "lastUpdated": "2025-08-11T08:09:39Z",
-    "author": "kingyue737"
-  },
-  "https://github.com/nuxt/movies": {
-    "stars": 2142,
-    "lastUpdated": "2025-08-12T06:00:14Z",
-    "author": "nuxt"
-  },
-  "https://github.com/nuxt/hackernews": {
-    "stars": 1377,
-    "lastUpdated": "2025-08-12T06:00:24Z",
-    "author": "nuxt"
-  },
-  "https://github.com/scottyzen/woonuxt": {
-    "stars": 841,
-    "lastUpdated": "2025-08-12T00:14:39Z",
-    "author": "scottyzen"
-  },
-  "https://github.com/w3bdesign/nuxtjs-woocommerce": {
-    "stars": 222,
-    "lastUpdated": "2025-08-13T06:24:28Z",
-    "author": "w3bdesign"
-  },
-  "https://github.com/danielroe/nuxt-vapor-demo": {
-    "stars": 48,
-    "lastUpdated": "2025-08-03T05:09:50Z",
-    "author": "danielroe"
-  },
-  "https://github.com/productdevbook/nitro-graphql": {
-    "stars": 53,
-    "lastUpdated": "2025-08-05T06:38:36Z",
-    "author": "productdevbook"
-  },
-  "https://github.com/Flosciante/nuxt-image-gallery": {
-    "stars": 169,
-    "lastUpdated": "2025-08-10T14:47:41Z",
-    "author": "Flosciante"
-  },
-  "https://github.com/HugoRCD/nuxt-better-auth": {
-    "stars": 57,
-    "lastUpdated": "2025-08-08T01:01:18Z",
-    "author": "HugoRCD"
-  },
-  "https://github.com/danielroe/nuxt-vercel-isr": {
-    "stars": 176,
-    "lastUpdated": "2025-07-29T11:47:33Z",
-    "author": "danielroe"
-  },
-  "https://github.com/nurRiyad/nuxt-blog": {
-    "stars": 327,
-    "lastUpdated": "2025-08-06T12:02:29Z",
-    "author": "nurRiyad"
-  },
-  "https://github.com/AlexLavoie42/Nuxt-Mapbox": {
-    "stars": 101,
-    "lastUpdated": "2025-06-09T09:22:24Z",
-    "author": "AlexLavoie42"
-  },
-  "https://github.com/Youhan/maya-nuxt-template": {
-    "stars": 100,
-    "lastUpdated": "2025-07-26T16:47:07Z",
-    "author": "Youhan"
-  },
-  "https://github.com/caoxiemeihao/nuxt-electron": {
-    "stars": 209,
-    "lastUpdated": "2025-08-08T00:54:51Z",
-    "author": "caoxiemeihao"
-  },
-  "https://github.com/serkodev/nuxt-monorepo": {
     "stars": 115,
-    "lastUpdated": "2025-08-01T05:36:17Z",
-    "author": "serkodev"
-  },
-  "https://github.com/fumeapp/laranuxt": {
-    "stars": 695,
-    "lastUpdated": "2025-08-02T23:31:07Z",
-    "author": "fumeapp"
-  },
-  "https://github.com/Strift/nuxt-mastra-starter-kit": {
-    "stars": 26,
-    "lastUpdated": "2025-07-30T00:55:59Z",
-    "author": "Strift"
-  },
-  "https://github.com/alvarosabu/nuxt-3d-dnd-game": {
-    "stars": 118,
-    "lastUpdated": "2025-08-11T11:19:32Z",
-    "author": "alvarosabu"
-  },
-  "https://github.com/OlivierBelaud/nuxt-starter-medusa": {
-    "stars": 51,
-    "lastUpdated": "2025-08-05T02:30:10Z",
-    "author": "OlivierBelaud"
-  },
-  "https://github.com/nuxt-hub/multiplayer-globe": {
-    "stars": 83,
-    "lastUpdated": "2025-07-23T13:45:16Z",
-    "author": "nuxt-hub"
-  },
-  "https://github.com/sandros94/nuxt-reactive-ws": {
-    "stars": 21,
-    "lastUpdated": "2025-01-30T21:10:43Z",
-    "author": "sandros94"
-  },
-  "https://github.com/masterkram/Nuxt-Waitlist": {
-    "stars": 23,
-    "lastUpdated": "2025-05-07T06:50:47Z",
-    "author": "masterkram"
-  },
-  "https://github.com/SupersaasHQ/essentials-lite": {
-    "stars": 73,
-    "lastUpdated": "2025-07-12T20:48:35Z",
-    "author": "SupersaasHQ"
-  },
-  "https://github.com/filrak/nuxt-layers-multisite": {
-    "stars": 36,
-    "lastUpdated": "2025-08-06T06:42:40Z",
-    "author": "filrak"
-  },
-  "https://github.com/zackha/nuxtcommerce": {
-    "stars": 165,
-    "lastUpdated": "2025-08-10T00:18:37Z",
-    "author": "zackha"
-  },
-  "https://github.com/NicolaSpadari/nuxtor": {
-    "stars": 382,
-    "lastUpdated": "2025-08-13T12:27:55Z",
-    "author": "NicolaSpadari"
-  },
-  "https://github.com/P4sca1/nuxt-headlessui": {
-    "stars": 183,
-    "lastUpdated": "2025-08-11T09:27:57Z",
-    "author": "P4sca1"
-  },
-  "https://github.com/Benbinbin/BlogiNote": {
-    "stars": 41,
-    "lastUpdated": "2025-08-09T08:47:37Z",
-    "author": "Benbinbin"
-  },
-  "https://github.com/danielroe/n3dium": {
-    "stars": 32,
-    "lastUpdated": "2025-07-21T14:52:22Z",
-    "author": "danielroe"
-  },
-  "https://github.com/antfu/vitesse-nuxt": {
-    "stars": 1850,
-    "lastUpdated": "2025-08-12T16:22:32Z",
-    "author": "antfu"
-  },
-  "https://github.com/basics/nuxt-booster": {
-    "stars": 784,
-    "lastUpdated": "2025-08-11T21:28:29Z",
-    "author": "basics"
+    "lastUpdated": "2025-08-19T14:48:21Z",
+    "author": "nuxt-ui-pro",
+    "image": "og-images/nuxt-ui-pro-chat.png"
   },
   "https://github.com/RihanArfan/chat-with-pdf": {
-    "stars": 99,
-    "lastUpdated": "2025-08-03T11:06:08Z",
-    "author": "RihanArfan"
-  },
-  "https://github.com/nuxt-ui-pro/landing": {
-    "stars": 325,
-    "lastUpdated": "2025-08-04T04:34:27Z",
-    "author": "nuxt-ui-pro"
-  },
-  "https://github.com/nuxt-ui-pro/dashboard-vue": {
-    "stars": 55,
-    "lastUpdated": "2025-08-06T13:56:04Z",
-    "author": "nuxt-ui-pro"
-  },
-  "https://github.com/HugoRCD/hr-folio": {
-    "stars": 41,
-    "lastUpdated": "2025-08-11T07:31:36Z",
-    "author": "HugoRCD"
-  },
-  "https://github.com/ArthurDanjou/artsite": {
-    "stars": 35,
-    "lastUpdated": "2025-07-30T09:25:36Z",
-    "author": "ArthurDanjou"
-  },
-  "https://github.com/renegadevi/nuxt-boilerplate": {
-    "stars": 153,
-    "lastUpdated": "2025-08-13T11:48:58Z",
-    "author": "renegadevi"
-  },
-  "https://github.com/nuxt-hub/hello-edge": {
-    "stars": 21,
-    "lastUpdated": "2025-08-01T05:34:18Z",
-    "author": "nuxt-hub"
-  },
-  "https://github.com/atinux/atidone": {
-    "stars": 842,
-    "lastUpdated": "2025-08-13T09:23:42Z",
-    "author": "atinux"
-  },
-  "https://github.com/atinux/atidraw": {
-    "stars": 176,
-    "lastUpdated": "2025-08-13T09:45:17Z",
-    "author": "atinux"
-  },
-  "https://github.com/atinux/flux-ai-image-generator": {
-    "stars": 79,
-    "lastUpdated": "2025-07-17T17:11:53Z",
-    "author": "atinux"
-  },
-  "https://github.com/bloggrify/bloggrify": {
-    "stars": 148,
-    "lastUpdated": "2025-08-12T01:49:57Z",
-    "author": "bloggrify"
-  },
-  "https://github.com/sanity-io/sanity-template-nuxt-clean": {
-    "stars": 73,
-    "lastUpdated": "2025-08-06T21:02:48Z",
-    "author": "sanity-io"
-  },
-  "https://github.com/Baroshem/nuxt-commerce": {
-    "stars": 170,
-    "lastUpdated": "2025-07-30T18:12:51Z",
-    "author": "Baroshem"
-  },
-  "https://github.com/SeanLuis/github-explorer": {
-    "stars": 49,
-    "lastUpdated": "2025-06-13T14:09:05Z",
-    "author": "SeanLuis"
-  },
-  "https://github.com/NuxtMint/recruiterre-mint": {
-    "stars": 28,
-    "lastUpdated": "2025-07-19T16:36:48Z",
-    "author": "NuxtMint"
-  },
-  "https://github.com/Pinegrow/pg-nuxtui": {
-    "stars": 75,
-    "lastUpdated": "2025-08-01T07:03:33Z",
-    "author": "Pinegrow"
-  },
-  "https://github.com/danielroe/nuxt-workers": {
-    "stars": 418,
-    "lastUpdated": "2025-08-11T20:31:42Z",
-    "author": "danielroe"
-  },
-  "https://github.com/Diizzayy/nuxt-graphql-client": {
-    "stars": 398,
-    "lastUpdated": "2025-08-04T19:25:38Z",
-    "author": "Diizzayy"
-  },
-  "https://github.com/konkonam/nuxt-shopify": {
-    "stars": 67,
-    "lastUpdated": "2025-08-11T05:06:40Z",
-    "author": "konkonam"
-  },
-  "https://github.com/druxt/druxt.js": {
-    "stars": 114,
-    "lastUpdated": "2025-05-13T21:14:39Z",
-    "author": "druxt"
-  },
-  "https://github.com/ra-jeev/hub-chat": {
-    "stars": 88,
-    "lastUpdated": "2025-07-22T05:27:59Z",
-    "author": "ra-jeev"
+    "stars": 102,
+    "lastUpdated": "2025-08-18T14:52:26Z",
+    "author": "RihanArfan",
+    "image": "og-images/RihanArfan-chat-with-pdf.png"
   },
   "https://github.com/SchnapsterDog/nuxt-chatgpt": {
     "stars": 171,
     "lastUpdated": "2025-07-18T18:30:19Z",
-    "author": "SchnapsterDog"
+    "author": "SchnapsterDog",
+    "image": "og-images/SchnapsterDog-nuxt-chatgpt.png"
+  },
+  "https://github.com/atinux/content-wind": {
+    "stars": 873,
+    "lastUpdated": "2025-08-17T04:14:54Z",
+    "author": "atinux",
+    "image": "og-images/atinux-content-wind.png"
+  },
+  "https://github.com/prismicio-community/nuxt-starter-prismic-glideai": {
+    "stars": 33,
+    "lastUpdated": "2025-08-19T11:45:42Z",
+    "author": "prismicio-community",
+    "image": "og-images/prismicio-community-nuxt-starter-prismic-glideai.png"
+  },
+  "https://github.com/harlan-zw/harlanzw.com": {
+    "stars": 212,
+    "lastUpdated": "2025-08-12T13:41:48Z",
+    "author": "harlan-zw",
+    "image": "og-images/harlan-zw-harlanzw.com.png"
+  },
+  "https://github.com/clemcode/alpine-theme": {
+    "stars": 329,
+    "lastUpdated": "2025-08-16T22:09:11Z",
+    "author": "clemcode",
+    "image": "og-images/clemcode-alpine-theme.png"
+  },
+  "https://github.com/nuxt-ui-pro/landing": {
+    "stars": 328,
+    "lastUpdated": "2025-08-18T18:58:20Z",
+    "author": "nuxt-ui-pro",
+    "image": "og-images/nuxt-ui-pro-landing.png"
+  },
+  "https://github.com/nuxt-ui-pro/dashboard-vue": {
+    "stars": 57,
+    "lastUpdated": "2025-08-19T08:38:19Z",
+    "author": "nuxt-ui-pro",
+    "image": "og-images/nuxt-ui-pro-dashboard-vue.png"
+  },
+  "https://github.com/HugoRCD/hr-folio": {
+    "stars": 41,
+    "lastUpdated": "2025-08-19T09:20:24Z",
+    "author": "HugoRCD",
+    "image": "og-images/HugoRCD-hr-folio.png"
   },
   "https://github.com/dianprata/nuxt-shadcn-dashboard": {
-    "stars": 428,
-    "lastUpdated": "2025-08-15T02:45:06Z",
-    "author": "dianprata"
+    "stars": 432,
+    "lastUpdated": "2025-08-19T13:21:23Z",
+    "author": "dianprata",
+    "image": "og-images/dianprata-nuxt-shadcn-dashboard.png"
   },
   "https://github.com/fayazara/zooper": {
-    "stars": 338,
-    "lastUpdated": "2025-07-30T09:34:24Z",
-    "author": "fayazara"
+    "stars": 339,
+    "lastUpdated": "2025-08-16T09:37:24Z",
+    "author": "fayazara",
+    "image": "og-images/fayazara-zooper.png"
   },
   "https://github.com/claudiabdm/cvfy": {
     "stars": 327,
     "lastUpdated": "2025-08-06T08:52:17Z",
-    "author": "claudiabdm"
+    "author": "claudiabdm",
+    "image": "og-images/claudiabdm-cvfy.png"
   },
   "https://github.com/prismicio-community/nuxt-starter-prismic-blog": {
     "stars": 57,
     "lastUpdated": "2025-07-16T09:12:49Z",
-    "author": "prismicio-community"
+    "author": "prismicio-community",
+    "image": "og-images/prismicio-community-nuxt-starter-prismic-blog.png"
   },
   "https://github.com/vercel/nuxt3-kitchen-sink": {
     "stars": 69,
     "lastUpdated": "2025-08-07T03:02:10Z",
-    "author": "vercel"
+    "author": "vercel",
+    "image": "og-images/vercel-nuxt3-kitchen-sink.png"
   },
   "https://github.com/masterkram/minted-directory": {
+    "stars": 80,
+    "lastUpdated": "2025-08-19T00:13:13Z",
+    "author": "masterkram",
+    "image": "og-images/masterkram-minted-directory.png"
+  },
+  "https://github.com/oneminch/Bentolio": {
+    "stars": 5,
+    "lastUpdated": "2025-08-19T18:59:41Z",
+    "author": "oneminch",
+    "image": "og-images/oneminch-Bentolio.png"
+  },
+  "https://github.com/oneminch/Resume": {
+    "stars": 2,
+    "lastUpdated": "2025-08-17T21:52:26Z",
+    "author": "oneminch",
+    "image": "og-images/oneminch-Resume.png"
+  },
+  "https://github.com/HugoRCD/wxt-nuxt-ui-starter": {
+    "stars": 29,
+    "lastUpdated": "2025-08-17T15:19:47Z",
+    "author": "HugoRCD",
+    "image": "og-images/HugoRCD-wxt-nuxt-ui-starter.png"
+  },
+  "https://github.com/HugoRCD/nuxt-visitors": {
+    "stars": 92,
+    "lastUpdated": "2025-08-19T07:08:42Z",
+    "author": "HugoRCD",
+    "image": "og-images/HugoRCD-nuxt-visitors.png"
+  },
+  "https://github.com/NuxSaaS/NuxSaaS": {
+    "stars": 375,
+    "lastUpdated": "2025-08-19T15:45:16Z",
+    "author": "NuxSaaS",
+    "image": "og-images/NuxSaaS-NuxSaaS.png"
+  },
+  "https://github.com/SupersaasHQ/lemonrepo": {
+    "stars": 265,
+    "lastUpdated": "2025-08-13T04:37:13Z",
+    "author": "SupersaasHQ",
+    "image": "og-images/SupersaasHQ-lemonrepo.png"
+  },
+  "https://github.com/kingyue737/vitify-nuxt": {
+    "stars": 130,
+    "lastUpdated": "2025-08-16T14:59:00Z",
+    "author": "kingyue737",
+    "image": "og-images/kingyue737-vitify-nuxt.png"
+  },
+  "https://github.com/nuxt/movies": {
+    "stars": 2145,
+    "lastUpdated": "2025-08-19T07:09:54Z",
+    "author": "nuxt",
+    "image": "og-images/nuxt-movies.png"
+  },
+  "https://github.com/nuxt/hackernews": {
+    "stars": 1380,
+    "lastUpdated": "2025-08-18T09:44:41Z",
+    "author": "nuxt",
+    "image": "og-images/nuxt-hackernews.png"
+  },
+  "https://github.com/scottyzen/woonuxt": {
+    "stars": 847,
+    "lastUpdated": "2025-08-17T18:08:32Z",
+    "author": "scottyzen",
+    "image": "og-images/scottyzen-woonuxt.png"
+  },
+  "https://github.com/w3bdesign/nuxtjs-woocommerce": {
+    "stars": 222,
+    "lastUpdated": "2025-08-19T12:45:17Z",
+    "author": "w3bdesign",
+    "image": "og-images/w3bdesign-nuxtjs-woocommerce.png"
+  },
+  "https://github.com/danielroe/nuxt-vapor-demo": {
+    "stars": 48,
+    "lastUpdated": "2025-08-03T05:09:50Z",
+    "author": "danielroe",
+    "image": "og-images/danielroe-nuxt-vapor-demo.png"
+  },
+  "https://github.com/productdevbook/nitro-graphql": {
+    "stars": 57,
+    "lastUpdated": "2025-08-19T16:14:20Z",
+    "author": "productdevbook",
+    "image": "og-images/productdevbook-nitro-graphql.png"
+  },
+  "https://github.com/Flosciante/nuxt-image-gallery": {
+    "stars": 170,
+    "lastUpdated": "2025-08-19T11:47:28Z",
+    "author": "Flosciante",
+    "image": "og-images/Flosciante-nuxt-image-gallery.png"
+  },
+  "https://github.com/HugoRCD/nuxt-better-auth": {
+    "stars": 58,
+    "lastUpdated": "2025-08-17T15:39:35Z",
+    "author": "HugoRCD",
+    "image": "og-images/HugoRCD-nuxt-better-auth.png"
+  },
+  "https://github.com/danielroe/nuxt-vercel-isr": {
+    "stars": 177,
+    "lastUpdated": "2025-08-13T17:02:26Z",
+    "author": "danielroe",
+    "image": "og-images/danielroe-nuxt-vercel-isr.png"
+  },
+  "https://github.com/nurRiyad/nuxt-blog": {
+    "stars": 329,
+    "lastUpdated": "2025-08-19T12:26:09Z",
+    "author": "nurRiyad",
+    "image": "og-images/nurRiyad-nuxt-blog.png"
+  },
+  "https://github.com/AlexLavoie42/Nuxt-Mapbox": {
+    "stars": 102,
+    "lastUpdated": "2025-08-17T15:44:13Z",
+    "author": "AlexLavoie42",
+    "image": "og-images/AlexLavoie42-Nuxt-Mapbox.png"
+  },
+  "https://github.com/Youhan/maya-nuxt-template": {
+    "stars": 100,
+    "lastUpdated": "2025-07-26T16:47:07Z",
+    "author": "Youhan",
+    "image": "og-images/Youhan-maya-nuxt-template.png"
+  },
+  "https://github.com/caoxiemeihao/nuxt-electron": {
+    "stars": 209,
+    "lastUpdated": "2025-08-08T00:54:51Z",
+    "author": "caoxiemeihao",
+    "image": "og-images/caoxiemeihao-nuxt-electron.png"
+  },
+  "https://github.com/serkodev/nuxt-monorepo": {
+    "stars": 115,
+    "lastUpdated": "2025-08-01T05:36:17Z",
+    "author": "serkodev",
+    "image": "og-images/serkodev-nuxt-monorepo.png"
+  },
+  "https://github.com/fumeapp/laranuxt": {
+    "stars": 694,
+    "lastUpdated": "2025-08-17T14:35:26Z",
+    "author": "fumeapp",
+    "image": "og-images/fumeapp-laranuxt.png"
+  },
+  "https://github.com/Strift/nuxt-mastra-starter-kit": {
+    "stars": 26,
+    "lastUpdated": "2025-07-30T00:55:59Z",
+    "author": "Strift",
+    "image": "og-images/Strift-nuxt-mastra-starter-kit.png"
+  },
+  "https://github.com/alvarosabu/nuxt-3d-dnd-game": {
+    "stars": 118,
+    "lastUpdated": "2025-08-11T11:19:32Z",
+    "author": "alvarosabu",
+    "image": "og-images/alvarosabu-nuxt-3d-dnd-game.png"
+  },
+  "https://github.com/OlivierBelaud/nuxt-starter-medusa": {
+    "stars": 51,
+    "lastUpdated": "2025-08-14T11:21:19Z",
+    "author": "OlivierBelaud",
+    "image": "og-images/OlivierBelaud-nuxt-starter-medusa.png"
+  },
+  "https://github.com/nuxt-hub/multiplayer-globe": {
+    "stars": 83,
+    "lastUpdated": "2025-07-23T13:45:16Z",
+    "author": "nuxt-hub",
+    "image": "og-images/nuxt-hub-multiplayer-globe.png"
+  },
+  "https://github.com/sandros94/nuxt-reactive-ws": {
+    "stars": 23,
+    "lastUpdated": "2025-08-18T13:26:29Z",
+    "author": "sandros94",
+    "image": "og-images/sandros94-nuxt-reactive-ws.png"
+  },
+  "https://github.com/masterkram/Nuxt-Waitlist": {
+    "stars": 23,
+    "lastUpdated": "2025-05-07T06:50:47Z",
+    "author": "masterkram",
+    "image": "og-images/masterkram-Nuxt-Waitlist.png"
+  },
+  "https://github.com/SupersaasHQ/essentials-lite": {
+    "stars": 73,
+    "lastUpdated": "2025-07-12T20:48:35Z",
+    "author": "SupersaasHQ",
+    "image": "og-images/SupersaasHQ-essentials-lite.png"
+  },
+  "https://github.com/filrak/nuxt-layers-multisite": {
+    "stars": 36,
+    "lastUpdated": "2025-08-06T06:42:40Z",
+    "author": "filrak",
+    "image": "og-images/filrak-nuxt-layers-multisite.png"
+  },
+  "https://github.com/zackha/nuxtcommerce": {
+    "stars": 170,
+    "lastUpdated": "2025-08-18T11:00:53Z",
+    "author": "zackha",
+    "image": "og-images/zackha-nuxtcommerce.png"
+  },
+  "https://github.com/NicolaSpadari/nuxtor": {
+    "stars": 395,
+    "lastUpdated": "2025-08-19T19:00:34Z",
+    "author": "NicolaSpadari",
+    "image": "og-images/NicolaSpadari-nuxtor.png"
+  },
+  "https://github.com/P4sca1/nuxt-headlessui": {
+    "stars": 185,
+    "lastUpdated": "2025-08-18T10:50:32Z",
+    "author": "P4sca1",
+    "image": "og-images/P4sca1-nuxt-headlessui.png"
+  },
+  "https://github.com/Benbinbin/BlogiNote": {
+    "stars": 41,
+    "lastUpdated": "2025-08-09T08:47:37Z",
+    "author": "Benbinbin",
+    "image": "og-images/Benbinbin-BlogiNote.png"
+  },
+  "https://github.com/danielroe/n3dium": {
+    "stars": 32,
+    "lastUpdated": "2025-07-21T14:52:22Z",
+    "author": "danielroe",
+    "image": "og-images/danielroe-n3dium.png"
+  },
+  "https://github.com/antfu/vitesse-nuxt": {
+    "stars": 1848,
+    "lastUpdated": "2025-08-18T07:40:23Z",
+    "author": "antfu",
+    "image": "og-images/antfu-vitesse-nuxt.png"
+  },
+  "https://github.com/basics/nuxt-booster": {
+    "stars": 790,
+    "lastUpdated": "2025-08-19T15:23:58Z",
+    "author": "basics",
+    "image": "og-images/basics-nuxt-booster.png"
+  },
+  "https://github.com/ArthurDanjou/artsite": {
+    "stars": 35,
+    "lastUpdated": "2025-07-30T09:25:36Z",
+    "author": "ArthurDanjou",
+    "image": "og-images/ArthurDanjou-artsite.png"
+  },
+  "https://github.com/renegadevi/nuxt-boilerplate": {
+    "stars": 154,
+    "lastUpdated": "2025-08-17T15:52:12Z",
+    "author": "renegadevi",
+    "image": "og-images/renegadevi-nuxt-boilerplate.png"
+  },
+  "https://github.com/nuxt-hub/hello-edge": {
+    "stars": 21,
+    "lastUpdated": "2025-08-01T05:34:18Z",
+    "author": "nuxt-hub",
+    "image": "og-images/nuxt-hub-hello-edge.png"
+  },
+  "https://github.com/atinux/atidone": {
+    "stars": 844,
+    "lastUpdated": "2025-08-18T20:42:40Z",
+    "author": "atinux",
+    "image": "og-images/atinux-atidone.png"
+  },
+  "https://github.com/atinux/atidraw": {
+    "stars": 176,
+    "lastUpdated": "2025-08-13T09:45:17Z",
+    "author": "atinux",
+    "image": "og-images/atinux-atidraw.png"
+  },
+  "https://github.com/atinux/flux-ai-image-generator": {
     "stars": 79,
-    "lastUpdated": "2025-08-14T11:52:38Z",
-    "author": "masterkram"
+    "lastUpdated": "2025-08-15T13:17:37Z",
+    "author": "atinux",
+    "image": "og-images/atinux-flux-ai-image-generator.png"
+  },
+  "https://github.com/bloggrify/bloggrify": {
+    "stars": 151,
+    "lastUpdated": "2025-08-17T03:51:23Z",
+    "author": "bloggrify",
+    "image": "og-images/bloggrify-bloggrify.png"
+  },
+  "https://github.com/sanity-io/sanity-template-nuxt-clean": {
+    "stars": 73,
+    "lastUpdated": "2025-08-06T21:02:48Z",
+    "author": "sanity-io",
+    "image": "og-images/sanity-io-sanity-template-nuxt-clean.png"
+  },
+  "https://github.com/Baroshem/nuxt-commerce": {
+    "stars": 175,
+    "lastUpdated": "2025-08-19T11:33:39Z",
+    "author": "Baroshem",
+    "image": "og-images/Baroshem-nuxt-commerce.png"
+  },
+  "https://github.com/SeanLuis/github-explorer": {
+    "stars": 50,
+    "lastUpdated": "2025-08-19T05:30:22Z",
+    "author": "SeanLuis",
+    "image": "og-images/SeanLuis-github-explorer.png"
+  },
+  "https://github.com/NuxtMint/recruiterre-mint": {
+    "stars": 28,
+    "lastUpdated": "2025-07-19T16:36:48Z",
+    "author": "NuxtMint",
+    "image": "og-images/NuxtMint-recruiterre-mint.png"
+  },
+  "https://github.com/Pinegrow/pg-nuxtui": {
+    "stars": 77,
+    "lastUpdated": "2025-08-19T14:04:43Z",
+    "author": "Pinegrow",
+    "image": "og-images/Pinegrow-pg-nuxtui.png"
+  },
+  "https://github.com/danielroe/nuxt-workers": {
+    "stars": 420,
+    "lastUpdated": "2025-08-19T06:58:45Z",
+    "author": "danielroe",
+    "image": "og-images/danielroe-nuxt-workers.png"
+  },
+  "https://github.com/Diizzayy/nuxt-graphql-client": {
+    "stars": 398,
+    "lastUpdated": "2025-08-04T19:25:38Z",
+    "author": "Diizzayy",
+    "image": "og-images/Diizzayy-nuxt-graphql-client.png"
+  },
+  "https://github.com/konkonam/nuxt-shopify": {
+    "stars": 68,
+    "lastUpdated": "2025-08-19T15:27:41Z",
+    "author": "konkonam",
+    "image": "og-images/konkonam-nuxt-shopify.png"
+  },
+  "https://github.com/druxt/druxt.js": {
+    "stars": 114,
+    "lastUpdated": "2025-05-13T21:14:39Z",
+    "author": "druxt",
+    "image": "og-images/druxt-druxt.js.png"
+  },
+  "https://github.com/ra-jeev/hub-chat": {
+    "stars": 90,
+    "lastUpdated": "2025-08-17T12:28:43Z",
+    "author": "ra-jeev",
+    "image": "og-images/ra-jeev-hub-chat.png"
   },
   "https://github.com/wobsoriano/trpc-nuxt": {
     "stars": 758,
     "lastUpdated": "2025-08-09T02:52:08Z",
-    "author": "wobsoriano"
+    "author": "wobsoriano",
+    "image": "og-images/wobsoriano-trpc-nuxt.png"
   },
   "https://github.com/k2so-dev/laravel-nuxt": {
-    "stars": 299,
-    "lastUpdated": "2025-08-12T18:43:26Z",
-    "author": "k2so-dev"
+    "stars": 301,
+    "lastUpdated": "2025-08-19T18:45:13Z",
+    "author": "k2so-dev",
+    "image": "og-images/k2so-dev-laravel-nuxt.png"
   },
   "https://github.com/hieuhani/nuxt-multi-tenancy": {
     "stars": 262,
     "lastUpdated": "2025-08-15T04:24:06Z",
-    "author": "hieuhani"
+    "author": "hieuhani",
+    "image": "og-images/hieuhani-nuxt-multi-tenancy.png"
   },
   "https://github.com/lazercaveman/nuxt-starter": {
     "stars": 85,
     "lastUpdated": "2025-08-08T18:03:12Z",
-    "author": "lazercaveman"
+    "author": "lazercaveman",
+    "image": "og-images/lazercaveman-nuxt-starter.png"
   },
   "https://github.com/funkhaus/fuxt": {
-    "stars": 258,
-    "lastUpdated": "2025-08-12T16:17:28Z",
-    "author": "funkhaus"
+    "stars": 259,
+    "lastUpdated": "2025-08-19T12:46:44Z",
+    "author": "funkhaus",
+    "image": "og-images/funkhaus-fuxt.png"
   },
   "https://github.com/CyberCowboy404/nuxtgain": {
     "stars": 94,
     "lastUpdated": "2025-08-11T15:31:49Z",
-    "author": "CyberCowboy404"
+    "author": "CyberCowboy404",
+    "image": "og-images/CyberCowboy404-nuxtgain.png"
   },
   "https://github.com/rylanharper/nitrogen": {
-    "stars": 263,
-    "lastUpdated": "2025-08-13T04:05:42Z",
-    "author": "rylanharper"
+    "stars": 265,
+    "lastUpdated": "2025-08-19T17:09:07Z",
+    "author": "rylanharper",
+    "image": "og-images/rylanharper-nitrogen.png"
   },
   "https://github.com/zackha/supaAuth": {
-    "stars": 94,
-    "lastUpdated": "2025-08-07T23:54:56Z",
-    "author": "zackha"
+    "stars": 95,
+    "lastUpdated": "2025-08-16T09:07:30Z",
+    "author": "zackha",
+    "image": "og-images/zackha-supaAuth.png"
   },
-  "https://github.com/oneminch/Bentolio": {
-    "stars": 4,
-    "lastUpdated": "2025-08-16T22:26:31Z",
-    "author": "oneminch"
-  },
-  "https://github.com/oneminch/Resume": {
-    "stars": 1,
-    "lastUpdated": "2025-08-17T08:51:35Z",
-    "author": "oneminch"
+  "https://github.com/HugoRCD/canvas": {
+    "stars": 312,
+    "lastUpdated": "2025-08-18T13:06:49Z",
+    "author": "HugoRCD",
+    "image": "og-images/HugoRCD-canvas.png"
   }
 }

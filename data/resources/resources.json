@@ -1,0 +1,49 @@
+[
+  { "url": "https://www.youtube.com/watch?v=jmlkL2UJ5hs&t=12s", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=dCxSsr5xuL8", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=jtaNn9F8mvY", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=RhZZ0whiuT8&t=2015s", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=DK93dqmJJYg", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=rCT54d8sMWk", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=9dI_FENApz0", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=fr5yo3aVkfA", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=7_2KJWmac4E", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=zDzO6-uq80s", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=uvG11I-ftfo", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=sMYOigI5NjM", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=TAoTh4DqH6A", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=NiQB7QPJAiM", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=0hx38jAzd68", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=JTAo08f74GA", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=8GmfcbuYOWE", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=SUPkSeYHRRQ", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=sonGs62a6B8", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=f5w6A-nXAcc", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=YErzRvxpwrg", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=_eQxomah-nA", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=J0c9vIleO9U", "type": "read" },
+  { "url": "https://www.youtube.com/watch?v=OnekipgnjOA", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=7Lr0QTP1Ro8", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=EmvCh7Jb0Mw", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=SE_ysS_ZXbk", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=WoSIEdJmmBc", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=Oomx3mAK0vs", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=azs0ov_SbOA", "type": "tutorial" },
+  { "url": "https://www.youtube.com/watch?v=_yS-xwOCbR0", "type": "tutorial" },
+  {
+    "url": "https://medium.com/vue-mastery/minimalist-nuxt-authentication-8de8caac4117",
+    "type": "tutorial"
+  },
+  {
+    "url": "https://medium.com/@muhammederdinc/nuxt-studio-the-effortless-way-of-web-development-e1a4ee799dea",
+    "type": "tutorial"
+  },
+  { "url": "https://dev.to/criting/nuxt-3-flexible-cookie-consent-module-l8h", "type": "read" },
+  { "url": "https://dev.to/jacobandrewsky/nuxt-tips-collection-2j2d", "type": "read" },
+  {
+    "url": "https://dev.to/michalkuncio/nuxt-ui-is-one-of-the-best-ui-libraries-out-there-3c4p",
+    "type": "read"
+  },
+  { "url": "https://masteringnuxt.com/", "type": "tutorial", "featured": true },
+  { "url": "https://www.youtube.com/watch?v=tq8EluL70hw", "type": "tutorial" }
+]

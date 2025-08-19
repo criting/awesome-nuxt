@@ -19,9 +19,11 @@ export default defineNuxtConfig({
 
   image: {
     provider: 'cloudflare',
+
     cloudflare: {
       baseURL: 'https://awesome-nuxt.dev'
     },
+
     format: ['webp'],
     quality: 80,
 
@@ -32,7 +34,7 @@ export default defineNuxtConfig({
       lg: 400,
       xl: 500,
       xxl: 600,
-    }
+    },
   },
 
   css: ['~/assets/css/main.css'],
@@ -45,6 +47,30 @@ export default defineNuxtConfig({
         weights: ['300', '400', '500', '600', '700', '800']
       }
     ]
+  },
+
+  icon: {
+    customCollections: [
+      {
+        prefix: 'custom',
+        dir: './app/assets/icons'
+      }
+    ]
+  },
+
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png', sizes: '96x96' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'shortcut icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'manifest', href: '/site.webmanifest' }
+      ],
+      meta: [
+        { name: 'apple-mobile-web-app-title', content: 'Awesome Nuxt' }
+      ]
+    }
   },
 
   nitro: {

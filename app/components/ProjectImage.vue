@@ -1,10 +1,22 @@
 <template>
   <div class="w-full z-10">
     <div v-if="image">
+      <img
+        v-if="image?.includes('og-images/')"
+        :src="image"
+        class="rounded-lg w-full object-contain group-hover:scale-105 transition-transform duration-200"
+         :class="{
+          'pt-8 h-60': size === 'taller'
+        }"
+        sizes="100px sm:150px md:300px"
+        loading="lazy"
+        alt="Project Image"
+      />
       <NuxtImg
+        v-else
         :src="image"
         alt="Project Image"
-        class="rounded-lg w-full h-48 object-contain group-hover:scale-105 transition-transform duration-200"
+        class="rounded-lg w-full object-contain group-hover:scale-105 transition-transform duration-200"
         :class="{
           'pt-8 h-60': size === 'taller'
         }"
@@ -15,7 +27,7 @@
         format="webp"
       />
       <div
-        class="font-semibold text-white text-center group-hover:mix-blend-normal transition-all duration-200 z-10"
+        class="font-semibold text-white text-center group-hover:mix-blend-normal transition-all duration-200 z-10 mt-6"
         :class="{
           'mt-8 mix-blend-normal': size === 'taller',
           'mix-blend-overlay': size !== 'taller'
@@ -34,9 +46,9 @@
         {{ description }}
       </div>
     </div>
-    <div v-else class="w-full h-60 object-contain flex flex-col items-center justify-center">
+    <div v-else class="w-full h-full object-contain flex flex-col items-center justify-center">
       <div
-        class="font-semibold text-white group-hover:mix-blend-normal"
+        class="font-semibold text-white group-hover:mix-blend-normal text-center"
         :class="{
           'mix-blend-normal': size === 'taller',
           'mix-blend-overlay': size !== 'taller'
