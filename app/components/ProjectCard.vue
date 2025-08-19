@@ -26,9 +26,7 @@ const props = defineProps<{
   menu?: boolean
 }>()
 
-const menu = computed(() => props.menu !== false);
-
-if (menu.value) {
+if (props.menu) {
   if (props.project.premium) {
     items.value.push({
       label: 'Premium',

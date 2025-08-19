@@ -15,7 +15,7 @@
       </div>
       <div>
         <section
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 items-stretch mt-18"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12 lg:gap-12 items-stretch mt-18"
         >
           <div v-for="tutorial in tutorials" :key="tutorial.title" class="cursor-pointer">
             <div class="relative h-full">
@@ -57,7 +57,7 @@
       </div>
       <div>
         <section
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 items-stretch mt-18"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12 lg:gap-12 items-stretch mt-18"
         >
           <div v-for="resource in otherResources" :key="resource.title" class="cursor-pointer">
             <div class="relative h-full">

@@ -64,7 +64,7 @@
           </div>
           <div
             v-if="filteredProjects.length > 0"
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 items-stretch auto-rows-[1fr]"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 lg:gap-12 items-stretch auto-rows-[1fr]"
           >
             <NuxtLink
               v-for="project in filteredProjects"
@@ -72,7 +72,7 @@
               class="cursor-pointer h-full"
               :to="`/r/${project.slug}`"
             >
-              <ProjectCard :project="project" class="h-full" />
+              <ProjectCard :project="project" class="h-full" :menu="true" />
             </NuxtLink>
           </div>
           <div v-else class="text-gray-500 dark:text-gray-400">

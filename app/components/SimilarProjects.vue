@@ -21,7 +21,7 @@
         :to="`/r/${item.slug}`"
         class="block h-full"
       >
-        <ProjectCard :project="item" class="h-full" />
+        <ProjectCard :project="item" class="h-full" :menu="true" />
       </NuxtLink>
     </div>
   </div>

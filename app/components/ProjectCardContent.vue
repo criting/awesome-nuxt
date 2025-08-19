@@ -2,7 +2,7 @@
   <div class="transition-transform duration-200 group cursor-pointer h-full project-card">
     <div class="relative h-full">
       <div
-        class="relative w-full group transition-all px-12 h-full flex items-center justify-center py-16 pb-10"
+        class="relative w-full group transition-all px-12 h-full flex items-center justify-center py-10 pb-10"
       >
         <div
           class="absolute top-0 w-full h-full bg-[url(/gradient.jpg)] bg-cover left-0 -z-[10] opacity-100 rounded-lg"
