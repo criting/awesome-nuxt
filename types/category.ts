@@ -2,6 +2,7 @@ export type CategorySlug =
   | 'starter'
   | 'ai'
   | 'template'
+  | 'other';
 
 export type ProjectCategory = {
   slug: CategorySlug
@@ -25,4 +26,9 @@ export const PROJECT_CATEGORIES: Record<CategorySlug, ProjectCategory> = {
         name: 'Templates',
         icon: 'i-lucide-file-text'
   },
+  other: {
+        slug: 'other',
+        name: 'Other',
+        icon: 'i-lucide-globe'
+  }
 }

@@ -48,15 +48,13 @@ export const template: Project[] = [
     tags: ['nuxt 3', 'nuxt ui pro'],
     category: 'template',
     image: 'https://camo.githubusercontent.com/554aed614ce5337b6923d21d570196200d91b16cde414deefe74b94810772802/68747470733a2f2f6173736574732e6875622e6e7578742e636f6d2f65794a30655841694f694a4b563151694c434a68624763694f694a49557a49314e694a392e65794a31636d77694f694a6f64485277637a6f764c327868626d5270626d6374644756746347786864475575626e56346443356b5a5859694c434a70595851694f6a45334d7a6b304e6a4d7a4e7a56392e6a61326e5544564f6f49467679614d6d67394a6e3531754e4d6f595974345741314b57555142577755506f2e6a70673f7468656d653d6461726b',
-    premium: true
   },
   {
     name: 'Dashboard Template',
     description: "Get started with the Vite + Vue dashboard template with multiple pages, collapsible sidebar, keyboard shortcuts, light & dark more, command palette and more, powered by Nuxt UI Pro.",
     url: 'https://github.com/nuxt-ui-pro/dashboard-vue',
     tags: ['nuxt 3', 'nuxt ui pro', 'dashboard'],
-    category: 'template',
-    premium: true
+    category: 'template'
   },
   {
     name: 'HR Folio',

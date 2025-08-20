@@ -7,24 +7,22 @@
       class="absolute bg-[url(/gradient-shape-4.svg)] w-20 h-20 bg-cover bg-no-repeat -top-[40px] right-[130px] lg:right-120 z-10 dark:opacity-70"
     />
     <UContainer>
-      <UPageCTA
-        title="Know an awesome Nuxt project?"
-        description="Share it with the community!"
-        :links="links"
-      />
+      <UPageCTA title="Know an awesome Nuxt project?" description="Share it with the community!">
+        <template #links>
+          <NuxtLink
+            class="flex gap-2 text-sm items-center cursor-pointer group border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+            to="https://github.com/criting/awesome-nuxt#-contributing"
+            target="_blank"
+          >
+            <div
+              class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
+            >
+              <UIcon name="i-simple-icons-github" class="text-white" />
+            </div>
+            Contribute on GitHub
+          </NuxtLink>
+        </template>
+      </UPageCTA>
     </UContainer>
   </section>
 </template>
-<script setup lang="ts">
-import type { ButtonProps } from '@nuxt/ui';
-
-const links = ref<ButtonProps[]>([
-  {
-    label: 'Contribute',
-    color: 'primary',
-    trailingIcon: 'i-lucide-arrow-right',
-    to: 'https://github.com/criting/awesome-nuxt#-contributing',
-    target: '_blank'
-  }
-]);
-</script>

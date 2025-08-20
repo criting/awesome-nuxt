@@ -8,9 +8,13 @@
     />
     <UPageSection title="FAQ" description="Have questions? We have answers!">
       <template #body>
-        <UPageAccordion
+        <UAccordion
           :items="items"
           class="max-w-2xl mx-auto bg-[rgba(255,255,255,0.5)] dark:bg-[rgba(32,39,57,0.5)] p-4 px-6 rounded-lg backdrop-blur-2xl"
+          :ui="{
+            trigger: 'cursor-pointer',
+            label: 'font-semibold'
+          }"
         />
       </template>
     </UPageSection>
