@@ -1,11 +1,20 @@
 import { writeFile } from 'fs/promises'
 import { projects } from '@@/data/all'
+import { resources } from '@@/data/resources/resources'
 import type { Project } from '@@/types/project'
 import { PROJECT_CATEGORIES } from '~~/types/category';
 import type { CategorySlug } from '~~/types/category';
 
 const OG_IMAGE = 'https://awesome-nuxt.dev/og-image.png'
 const SITE_URL = 'https://awesome-nuxt.dev'
+
+const tutorials = resources
+  .filter((resource) => resource.type === 'tutorial')
+  .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+
+const otherResources = resources
+  .filter((resource) => resource.type !== 'tutorial')
+  .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 
 function escapeMarkdown(text: string) {
   return text.replace(/\*/g, '\\*').replace(/_/g, '\\_')
@@ -29,6 +38,32 @@ function getCategory(category: CategorySlug) {
 
 function capitalize(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1)
+}
+
+function tutorialsSection() {
+  const lines: string[] = []
+  lines.push('## 📚 Tutorials\n')
+  lines.push('Curated tutorials, guides, and video resources for Nuxt developers.\n')
+
+  for (const t of tutorials) {
+    lines.push(
+      `- [${t.title}](${t.url})  \n  ${escapeMarkdown(t.description || '')}  \n`
+    )
+  }
+  return lines.join('\n')
+}
+
+function resourcesSection() {
+  const lines: string[] = []
+  lines.push('## 🛠 Resources\n')
+  lines.push('Helpful Nuxt resources, articles, and tools.\n')
+
+  for (const r of otherResources) {
+    lines.push(
+      `- [${r.title}](${r.url})  \n  ${escapeMarkdown(r.description || '')}  \n`
+    )
+  }
+  return lines.join('\n')
 }
 
 function generateMarkdown() {
@@ -58,6 +93,10 @@ function generateMarkdown() {
   }
 
   lines.push('\n')
+  lines.push(tutorialsSection())
+
+  lines.push('\n')
+  lines.push(resourcesSection())
 
   return lines.join('\n')
 }

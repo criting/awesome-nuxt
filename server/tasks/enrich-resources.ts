@@ -183,7 +183,7 @@ function shouldRefresh(entry?: CacheEntry) {
 }
 
 export default defineTask({
-  meta: { name: 'enrich-resources', description: 'Fetch OG tags w/ cache, logs, throttling + YouTube maxres fallback' },
+  meta: { name: 'enrich-resources', description: 'Fetch OG tags w/ cache, logs, throttling + YouTube maxres fallback.' },
   async run() {
     const raw = await readFile(SEED_PATH, 'utf8')
     const seed: Array<Pick<Resource, 'url' | 'featured' | 'type'>> = JSON.parse(raw)
