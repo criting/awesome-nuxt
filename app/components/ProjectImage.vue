@@ -1,5 +1,9 @@
 <template>
-  <div class="w-full z-10">
+  <div 
+    class="w-full z-10 mt-2" 
+    :class="{
+      'max-w-[400px] mx-auto': size === 'taller'
+  }">
     <div v-if="image">
       <img
         v-if="image?.includes('og-images/')"
@@ -18,7 +22,7 @@
         alt="Project Image"
         class="rounded-lg w-full object-contain group-hover:scale-105 transition-transform duration-200"
         :class="{
-          'pt-8 h-60': size === 'taller'
+          'object-contain mx-auto w-[500px]': size === 'taller'
         }"
         sizes="100px sm:150px md:300px"
         loading="lazy"
@@ -27,7 +31,7 @@
         format="webp"
       />
       <div
-        class="font-semibold text-white text-center group-hover:mix-blend-normal transition-all duration-200 z-10 mt-6"
+        class="font-semibold text-white text-center group-hover:mix-blend-normal transition-all duration-200 z-10 mt-4"
         :class="{
           'mt-8 mix-blend-normal': size === 'taller',
           'mix-blend-overlay': size !== 'taller'

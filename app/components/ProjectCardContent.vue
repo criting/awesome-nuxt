@@ -15,7 +15,7 @@
         />
         <div
           v-if="project.premium"
-          class="text-center opacity-50 group-hover:opacity-100 transition-opacity duration-200 absolute top-4 left-0 right-0 m-auto"
+          class="text-center opacity-50 group-hover:opacity-100 transition-opacity duration-200 absolute top-3 left-0 right-0 m-auto"
         >
           <UBadge color="neutral" size="sm" variant="outline" class="ring-0 rounded-full"
             >Premium</UBadge

@@ -3,7 +3,7 @@
     icon="i-heroicons-arrow-up"
     color="primary"
     size="sm"
-    class="fixed bottom-6 right-6 z-50 shadow-lg transition-opacity duration-300"
+    class="fixed bottom-6 right-6 z-50 shadow-lg transition-opacity duration-300 dark:text-white"
     :class="{ 'opacity-0 pointer-events-none': !visible, 'opacity-100': visible }"
     aria-label="Scroll to top"
     @click="scrollToTop"

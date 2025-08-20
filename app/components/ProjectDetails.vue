@@ -107,19 +107,36 @@
             </UInput>
           </div>
 
-          <div v-if="selectedProject.url" class="mt-4">
-            <NuxtLink
-              class="flex gap-2 items-center cursor-pointer group"
-              :to="selectedProject.url"
-              target="_blank"
-            >
-              <div
-                class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
+          <div class="flex gap-4 mt-6">
+            <div v-if="selectedProject.url">
+              <NuxtLink
+                class="flex gap-2 items-center cursor-pointer group"
+                :to="selectedProject.url"
+                target="_blank"
               >
-                <UIcon name="i-lucide-square-arrow-out-up-right" class="text-white" />
-              </div>
-              View project
-            </NuxtLink>
+                <div
+                  class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
+                  >
+                  <UIcon :name="selectedProject.stars ? 'i-lucide-github' : 'i-lucide-square-arrow-out-up-right'" class="text-white" />
+                </div>
+                  {{ selectedProject.stars ? 'GitHub Repo' : 'View project' }}
+              </NuxtLink>
+            </div>
+
+            <div v-if="selectedProject.demo">
+              <NuxtLink
+                class="flex gap-2 items-center cursor-pointer group"
+                :to="selectedProject.demo"
+                target="_blank"
+              >
+                <div
+                  class="bg-secondary group-hover:bg-primary flex justify-center p-2 rounded-full transition-colors duration-200"
+                  >
+                  <UIcon name="i-lucide-eye" class="text-white" />
+                </div>
+                {{ selectedProject.stars ? 'Demo' : 'View project' }}
+              </NuxtLink>
+            </div>
           </div>
         </div>
       </div>
