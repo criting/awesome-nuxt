@@ -114,7 +114,7 @@ function generateMarkdown() {
 export default defineTask({
   meta: {
     name: 'Generate README.md',
-    description: 'Builds a markdown file from the project list.',
+    description: 'Builds a markdown file from the project list',
   },
   async run() {
     const markdown = generateMarkdown()
