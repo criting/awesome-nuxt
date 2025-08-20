@@ -47,7 +47,7 @@ function tutorialsSection() {
 
   for (const t of tutorials) {
     lines.push(
-      `- [${t.title}](${t.url})  \n  ${escapeMarkdown(t.description || '')}  \n`
+      `- [${t.title}](${t.url}) \n`
     )
   }
   return lines.join('\n')
@@ -60,7 +60,7 @@ function resourcesSection() {
 
   for (const r of otherResources) {
     lines.push(
-      `- [${r.title}](${r.url})  \n  ${escapeMarkdown(r.description || '')}  \n`
+      `- [${r.title}](${r.url}) \n`
     )
   }
   return lines.join('\n')

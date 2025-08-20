@@ -263,71 +263,49 @@ A curated list of Nuxt projects, templates, and starters that actually work — 
 
 Curated tutorials, guides, and video resources for Nuxt developers.
 
-- [Mastering Nuxt | The official courses for learning Nuxt](https://masteringnuxt.com/)  
-  The complete guide to developing and deploying fast, production-ready Nuxt apps. MasteringNuxt is the most in-depth, fun, and realistic course made on Nuxt.  
+- [Mastering Nuxt | The official courses for learning Nuxt](https://masteringnuxt.com/) 
 
-- [Nuxt Crash Course 2025](https://www.youtube.com/watch?v=RhZZ0whiuT8)  
-    
+- [Nuxt Crash Course 2025](https://www.youtube.com/watch?v=RhZZ0whiuT8) 
 
-- [Full Stack App Build | Travel Log w/ Nuxt, Vue, Better Auth, Drizzle, Tailwind, DaisyUI, MapLibre](https://www.youtube.com/watch?v=DK93dqmJJYg)  
-    
+- [Full Stack App Build | Travel Log w/ Nuxt, Vue, Better Auth, Drizzle, Tailwind, DaisyUI, MapLibre](https://www.youtube.com/watch?v=DK93dqmJJYg) 
 
-- [How to use Nuxt Layers to encapsulate your code](https://www.youtube.com/watch?v=fr5yo3aVkfA)  
-    
+- [How to use Nuxt Layers to encapsulate your code](https://www.youtube.com/watch?v=fr5yo3aVkfA) 
 
-- [Nuxt UI - The Best UI Library for Nuxt 3?](https://www.youtube.com/watch?v=7_2KJWmac4E)  
-    
+- [Nuxt UI - The Best UI Library for Nuxt 3?](https://www.youtube.com/watch?v=7_2KJWmac4E) 
 
-- [Using a `src` folder in Nuxt 4](https://www.youtube.com/watch?v=zDzO6-uq80s)  
-    
+- [Using a `src` folder in Nuxt 4](https://www.youtube.com/watch?v=zDzO6-uq80s) 
 
-- [Fetch ONCE and share data between Nuxt and Nitro!](https://www.youtube.com/watch?v=0hx38jAzd68)  
-    
+- [Fetch ONCE and share data between Nuxt and Nitro!](https://www.youtube.com/watch?v=0hx38jAzd68) 
 
-- [Build a Full Stack Apple Notes Web App with Auth & Nuxt 3](https://www.youtube.com/watch?v=JTAo08f74GA)  
-    
+- [Build a Full Stack Apple Notes Web App with Auth & Nuxt 3](https://www.youtube.com/watch?v=JTAo08f74GA) 
 
-- [Nuxt 3 Crash Course - Full Website Tutorial - 2023](https://www.youtube.com/watch?v=8GmfcbuYOWE)  
-    
+- [Nuxt 3 Crash Course - Full Website Tutorial - 2023](https://www.youtube.com/watch?v=8GmfcbuYOWE) 
 
-- [Pro Nuxt Workflow: Boost Productivity with the Nuxt.js Ecosystem](https://www.youtube.com/watch?v=sonGs62a6B8)  
-    
+- [Pro Nuxt Workflow: Boost Productivity with the Nuxt.js Ecosystem](https://www.youtube.com/watch?v=sonGs62a6B8) 
 
-- [Fastest way to build Admin Area in Nuxt (Vue, Shadcn, TypeScript)](https://www.youtube.com/watch?v=YErzRvxpwrg)  
-    
+- [Fastest way to build Admin Area in Nuxt (Vue, Shadcn, TypeScript)](https://www.youtube.com/watch?v=YErzRvxpwrg) 
 
-- [Going Nitro! Use Nuxt 3 and Storyblok for your next gen website by Alex Jover Morales](https://www.youtube.com/watch?v=OnekipgnjOA)  
-    
+- [Going Nitro! Use Nuxt 3 and Storyblok for your next gen website by Alex Jover Morales](https://www.youtube.com/watch?v=OnekipgnjOA) 
 
-- [Building a plain SPA with Nuxt!?](https://www.youtube.com/watch?v=7Lr0QTP1Ro8)  
-    
+- [Building a plain SPA with Nuxt!?](https://www.youtube.com/watch?v=7Lr0QTP1Ro8) 
 
-- [Learn Nuxt, GSAP, Tailwind, and Prismic to build a dark, mordern, sleek website - Full Course 2025](https://www.youtube.com/watch?v=EmvCh7Jb0Mw)  
-    
+- [Learn Nuxt, GSAP, Tailwind, and Prismic to build a dark, mordern, sleek website - Full Course 2025](https://www.youtube.com/watch?v=EmvCh7Jb0Mw) 
 
-- [Getting Started With Nuxt UI](https://www.youtube.com/watch?v=SE_ysS_ZXbk)  
-    
+- [Getting Started With Nuxt UI](https://www.youtube.com/watch?v=SE_ysS_ZXbk) 
 
-- [Nuxt 3 Beginner's Full-Course : Build & Deploy A Blog App | Laravel 12 | Vue 3 |Vercel](https://www.youtube.com/watch?v=WoSIEdJmmBc)  
-    
+- [Nuxt 3 Beginner's Full-Course : Build & Deploy A Blog App | Laravel 12 | Vue 3 |Vercel](https://www.youtube.com/watch?v=WoSIEdJmmBc) 
 
-- [Building a Front-End Web App Dashboard with Nuxt 3 @shadcn & @TailwindLabs — 4K [2 hours] 2024](https://www.youtube.com/watch?v=Oomx3mAK0vs)  
-    
+- [Building a Front-End Web App Dashboard with Nuxt 3 @shadcn & @TailwindLabs — 4K [2 hours] 2024](https://www.youtube.com/watch?v=Oomx3mAK0vs) 
 
-- [Get Started with Nuxt 3 & @shadcn UI — Course part 1](https://www.youtube.com/watch?v=azs0ov_SbOA)  
-    
+- [Get Started with Nuxt 3 & @shadcn UI — Course part 1](https://www.youtube.com/watch?v=azs0ov_SbOA) 
 
-- [Build and Deploy A COMPLETE  Real-Time E-Commerce App With Nuxt 3 & Vue 3,PostgreSQL,Prisma & Stripe](https://www.youtube.com/watch?v=_yS-xwOCbR0)  
-    
+- [Build and Deploy A COMPLETE  Real-Time E-Commerce App With Nuxt 3 & Vue 3,PostgreSQL,Prisma & Stripe](https://www.youtube.com/watch?v=_yS-xwOCbR0) 
 
-- [Minimalist Nuxt Authentication](https://medium.com/vue-mastery/minimalist-nuxt-authentication-8de8caac4117)  
-  Secure data with Nuxt Auth Utils: a minimalist authentication module for Nuxt with Vue composables and server utils.  
+- [Minimalist Nuxt Authentication](https://medium.com/vue-mastery/minimalist-nuxt-authentication-8de8caac4117) 
 
-- [Nuxt Studio: The Effortless Way of Web Development](https://medium.com/@muhammederdinc/nuxt-studio-the-effortless-way-of-web-development-e1a4ee799dea)  
-  Nuxt Studio is a powerful web application built on GitHub for creating, editing, and deploying Nuxt 3 applications. Specifically designed…  
+- [Nuxt Studio: The Effortless Way of Web Development](https://medium.com/@muhammederdinc/nuxt-studio-the-effortless-way-of-web-development-e1a4ee799dea) 
 
-- [undefined](https://www.youtube.com/watch?v=tq8EluL70hw)  
-    
+- [You Are Sleeping On Nuxt, Nitro and Vue w/ Daniel Roe](https://www.youtube.com/watch?v=tq8EluL70hw) 
 
 
 
@@ -335,50 +313,34 @@ Curated tutorials, guides, and video resources for Nuxt developers.
 
 Helpful Nuxt resources, articles, and tools.
 
-- [7 Nuxt Modules to 10x Your Development](https://www.youtube.com/watch?v=jmlkL2UJ5hs)  
-    
+- [7 Nuxt Modules to 10x Your Development](https://www.youtube.com/watch?v=jmlkL2UJ5hs) 
 
-- [Nuxt in 100 Seconds](https://www.youtube.com/watch?v=dCxSsr5xuL8)  
-    
+- [Nuxt in 100 Seconds](https://www.youtube.com/watch?v=dCxSsr5xuL8) 
 
-- [Nuxt 4 just dropped. This is a new era for Vue devs...](https://www.youtube.com/watch?v=jtaNn9F8mvY)  
-    
+- [Nuxt 4 just dropped. This is a new era for Vue devs...](https://www.youtube.com/watch?v=jtaNn9F8mvY) 
 
-- [Nuxt 4 - An overview!](https://www.youtube.com/watch?v=rCT54d8sMWk)  
-    
+- [Nuxt 4 - An overview!](https://www.youtube.com/watch?v=rCT54d8sMWk) 
 
-- [Everything New in Nuxt 4 — Should You Switch?](https://www.youtube.com/watch?v=9dI_FENApz0)  
-    
+- [Everything New in Nuxt 4 — Should You Switch?](https://www.youtube.com/watch?v=9dI_FENApz0) 
 
-- [Nuxt.js Mini Documentary | Behind The Code](https://www.youtube.com/watch?v=uvG11I-ftfo)  
-    
+- [Nuxt.js Mini Documentary | Behind The Code](https://www.youtube.com/watch?v=uvG11I-ftfo) 
 
-- [You should learn Nuxt!](https://www.youtube.com/watch?v=sMYOigI5NjM)  
-    
+- [You should learn Nuxt!](https://www.youtube.com/watch?v=sMYOigI5NjM) 
 
-- [TWO Major Nuxt versions coming? All you need to know about Nuxt 4 and Nuxt 5](https://www.youtube.com/watch?v=TAoTh4DqH6A)  
-    
+- [TWO Major Nuxt versions coming? All you need to know about Nuxt 4 and Nuxt 5](https://www.youtube.com/watch?v=TAoTh4DqH6A) 
 
-- [Vercel BUYING NuxtLabs - What it means for you!](https://www.youtube.com/watch?v=NiQB7QPJAiM)  
-    
+- [Vercel BUYING NuxtLabs - What it means for you!](https://www.youtube.com/watch?v=NiQB7QPJAiM) 
 
-- [Nailing It with Nuxt 3 - Inside and Out | VueConf US 2024](https://www.youtube.com/watch?v=SUPkSeYHRRQ)  
-    
+- [Nailing It with Nuxt 3 - Inside and Out | VueConf US 2024](https://www.youtube.com/watch?v=SUPkSeYHRRQ) 
 
-- [Live Coding - Rebuild Wordpress with Nuxt - Daniel Roe](https://www.youtube.com/watch?v=f5w6A-nXAcc)  
-    
+- [Live Coding - Rebuild Wordpress with Nuxt - Daniel Roe](https://www.youtube.com/watch?v=f5w6A-nXAcc) 
 
-- [My New Favorite UI Library](https://www.youtube.com/watch?v=_eQxomah-nA)  
-    
+- [My New Favorite UI Library](https://www.youtube.com/watch?v=_eQxomah-nA) 
 
-- [Frontend Nation 2025: Vibe Coding with Nuxt by Daniel Roe](https://www.youtube.com/watch?v=J0c9vIleO9U)  
-    
+- [Frontend Nation 2025: Vibe Coding with Nuxt by Daniel Roe](https://www.youtube.com/watch?v=J0c9vIleO9U) 
 
-- [Nuxt 3: Flexible Cookie Consent Module](https://dev.to/criting/nuxt-3-flexible-cookie-consent-module-l8h)  
-  A Simple, Flexible Cookie Consent Module for Nuxt 3 — Still in Development   Cookie banners...  
+- [Nuxt 3: Flexible Cookie Consent Module](https://dev.to/criting/nuxt-3-flexible-cookie-consent-module-l8h) 
 
-- [Nuxt Tips Collection](https://dev.to/jacobandrewsky/nuxt-tips-collection-2j2d)  
-  Hey there!  Recently, Michael Thiessen asked me for help reviewing his new ebook including Nuxt Tips...  
+- [Nuxt Tips Collection](https://dev.to/jacobandrewsky/nuxt-tips-collection-2j2d) 
 
-- [Nuxt UI is one of the best UI libraries out there](https://dev.to/michalkuncio/nuxt-ui-is-one-of-the-best-ui-libraries-out-there-3c4p)  
-  Intro   I probably say this too often, but I&#39;m fascinated by how much the Vue ecosystem has...  
+- [Nuxt UI is one of the best UI libraries out there](https://dev.to/michalkuncio/nuxt-ui-is-one-of-the-best-ui-libraries-out-there-3c4p) 
