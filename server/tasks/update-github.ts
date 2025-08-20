@@ -52,6 +52,7 @@ export default defineTask({
           author: data.owner?.login || '',
           image: `og-images/${filename}`, // relative path for frontend
         }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (error: any) {
         console.error(`❌ ${repoUrl}: ${error?.response?._data?.message || error.message}`)
         return null

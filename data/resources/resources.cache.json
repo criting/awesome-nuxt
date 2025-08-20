@@ -338,5 +338,13 @@
     "platform": "other",
     "lastChecked": "2025-08-18T18:13:39.068Z",
     "cachedAt": "2025-08-18T18:13:39.068Z"
+  },
+  "https://www.youtube.com/watch?v=tq8EluL70hw": {
+    "url": "https://www.youtube.com/watch?v=tq8EluL70hw",
+    "type": "tutorial",
+    "image": "https://i.ytimg.com/vi/tq8EluL70hw/hqdefault.jpg",
+    "platform": "youtube",
+    "lastChecked": "2025-08-20T08:50:58.135Z",
+    "cachedAt": "2025-08-20T08:50:58.135Z"
   }
 }

@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
-import { request } from 'undici'
+import { $fetch } from 'ofetch'
 import type { Resource } from '@@/types/resource'
 
 const SEED_PATH = 'data/resources/resources.json'
@@ -65,10 +65,9 @@ function normalizeUrl(url: string) {
 /** HEAD check utility: returns true if URL is reachable (2xx) */
 async function urlExists(url: string): Promise<boolean> {
   try {
-    const res = await request(url, {
+    const res = await $fetch(url, {
       method: 'HEAD',
-      headers: { 'user-agent': randomUA() },
-      headersTimeout: 8000, bodyTimeout: 8000
+      headers: { 'user-agent': randomUA() }
     })
     return res.statusCode >= 200 && res.statusCode < 300
   } catch {
@@ -97,15 +96,13 @@ async function bestYouTubeThumbFromId(id: string): Promise<string> {
 
 async function fetchHTML(url: string): Promise<{ html: string | null; status?: number; error?: string }> {
   try {
-    const res = await request(url, {
+    const res = await $fetch(url, {
       headers: {
         'user-agent': randomUA(),
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'accept-language': 'en-US,en;q=0.9',
         'cache-control': 'no-cache'
       },
-      headersTimeout: 20000,
-      bodyTimeout: 20000
     })
     const status = res.statusCode
     if (status >= 200 && status < 400) {
@@ -122,9 +119,8 @@ async function fetchHTML(url: string): Promise<{ html: string | null; status?: n
 async function fetchYouTubeMeta(videoUrl: string): Promise<{ title?: string; image?: string; author?: string } | null> {
   try {
     const oembed = `https://www.youtube.com/oembed?url=${encodeURIComponent(videoUrl)}&format=json&hl=en`
-    const res = await request(oembed, {
+    const res = await $fetch(oembed, {
       headers: { 'user-agent': randomUA(), 'accept': 'application/json' },
-      headersTimeout: 10000, bodyTimeout: 10000
     })
     if (res.statusCode >= 200 && res.statusCode < 400) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
