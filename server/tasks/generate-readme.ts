@@ -1,11 +1,20 @@
 import { writeFile } from 'fs/promises'
 import { projects } from '@@/data/all'
+import { resources } from '@@/data/resources/resources'
 import type { Project } from '@@/types/project'
 import { PROJECT_CATEGORIES } from '~~/types/category';
 import type { CategorySlug } from '~~/types/category';
 
 const OG_IMAGE = 'https://awesome-nuxt.dev/og-image.png'
 const SITE_URL = 'https://awesome-nuxt.dev'
+
+const tutorials = resources
+  .filter((resource) => resource.type === 'tutorial')
+  .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+
+const otherResources = resources
+  .filter((resource) => resource.type !== 'tutorial')
+  .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 
 function escapeMarkdown(text: string) {
   return text.replace(/\*/g, '\\*').replace(/_/g, '\\_')
@@ -31,52 +40,30 @@ function capitalize(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
-function contributingSection() {
-  return `
-## 🤝 Contributing
+function tutorialsSection() {
+  const lines: string[] = []
+  lines.push('## 📚 Tutorials\n')
+  lines.push('Curated tutorials, guides, and video resources for Nuxt developers.\n')
 
-You can contribute in two ways:
+  for (const t of tutorials) {
+    lines.push(
+      `- [${t.title}](${t.url}) \n`
+    )
+  }
+  return lines.join('\n')
+}
 
-1) Open an **Issue** with the project you want added.  
-2) Open a **Pull Request** with your changes.
+function resourcesSection() {
+  const lines: string[] = []
+  lines.push('## 🛠 Resources\n')
+  lines.push('Helpful Nuxt resources, articles, and tools.\n')
 
-### Local setup
-
-\`\`\`bash
-git clone <your-repo-url>
-cd <repo>
-pnpm install
-\`\`\`
-
-### Add a project
-
-- Add your project to the appropriate file in \`data/\` (or create a new one to introduce a new category).  
-- Ensure entries follow the \`Project\` type in \`types/project.ts\`.
-
-### GitHub metadata
-
-Add your token to \`.env\`:
-
-\`\`\`bash
-GITHUB_TOKEN=ghp_xxx
-\`\`\`
-
-Run the Nitro tasks:
-
-\`\`\`bash
-# Fetch stars + last updated and cache them
-pnpm nuxi task update-github
-
-# Regenerate README from data
-pnpm nuxi task generate-readme
-\`\`\`
-
-This will pull **stars** and **last updated** from GitHub for GitHub URLs and refresh the **README.md**.
-
-### Submit your PR
-
-Create a Pull Request. We’ll review for quality, relevance, and metadata completeness.
-`.trim()
+  for (const r of otherResources) {
+    lines.push(
+      `- [${r.title}](${r.url}) \n`
+    )
+  }
+  return lines.join('\n')
 }
 
 function generateMarkdown() {
@@ -106,7 +93,10 @@ function generateMarkdown() {
   }
 
   lines.push('\n')
-  lines.push(contributingSection())
+  lines.push(tutorialsSection())
+
+  lines.push('\n')
+  lines.push(resourcesSection())
 
   return lines.join('\n')
 }

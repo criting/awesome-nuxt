@@ -43,6 +43,24 @@ if (props.menu) {
         window.open(`${props.project.url}`, '_blank');
       }
     });
+  } else {
+    items.value.push({
+      label: 'Project Website',
+      icon: 'i-lucide-globe',
+      onSelect() {
+        window.open(`${props.project.url}`, '_blank');
+      }
+    });
+  }
+
+  if (props.project.demo) {
+    items.value.push({
+      label: 'Demo',
+      icon: 'i-lucide-eye',
+      onSelect() {
+        window.open(`${props.project.demo}`, '_blank');
+      }
+    });
   }
 
   if (props.project.stars) {

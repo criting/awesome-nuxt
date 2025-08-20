@@ -11,6 +11,12 @@ const TTL_DAYS = Number(process.env.RESOURCES_TTL_DAYS || 7)
 const FORCE = process.env.RESOURCES_FORCE === '1'
 const THROTTLE_MS = Number(process.env.RESOURCES_THROTTLE_MS || 1000) // 1 req/sec
 
+type YTOEmbed = {
+  title: string
+  author_name: string
+  thumbnail_url: string
+}
+
 const UAS = [
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15',
@@ -62,36 +68,24 @@ function normalizeUrl(url: string) {
   } catch { return url }
 }
 
-/** HEAD check utility: returns true if URL is reachable (2xx) */
-async function urlExists(url: string): Promise<boolean> {
-  try {
-    const res = await $fetch(url, {
-      method: 'HEAD',
-      headers: { 'user-agent': randomUA() }
-    })
-    return res.statusCode >= 200 && res.statusCode < 300
-  } catch {
-    return false
-  }
-}
-
 /** Given a YouTube thumbnail URL (hq or maxres), upgrade to maxres if it exists */
-async function bestYouTubeThumbFromUrl(thumbUrl: string): Promise<string> {
+async function headOk(url: string) {
   try {
-    const u = new URL(thumbUrl)
-    if (u.hostname !== 'i.ytimg.com') return thumbUrl
-    const max = thumbUrl.replace('/hqdefault.jpg', '/maxresdefault.jpg')
-    return (await urlExists(max)) ? max : thumbUrl
-  } catch {
-    return thumbUrl
-  }
+    const res = await $fetch.raw(url, { method: 'HEAD' })
+    return res.status === 200
+  } catch { return false }
 }
 
-/** Given a video id, choose best available thumbnail (maxres then hq) */
-async function bestYouTubeThumbFromId(id: string): Promise<string> {
-  const max = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`
-  if (await urlExists(max)) return max
+async function bestYouTubeThumbFromId(id: string) {
+  const hi = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`
+  if (await headOk(hi)) return hi
   return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
+}
+
+async function bestYouTubeThumbFromUrl(url: string) {
+  // upgrade hq → maxres when available
+  const hi = url.replace('/hqdefault.jpg', '/maxresdefault.jpg')
+  return (hi !== url && await headOk(hi)) ? hi : url
 }
 
 async function fetchHTML(url: string): Promise<{ html: string | null; status?: number; error?: string }> {
@@ -117,32 +111,25 @@ async function fetchHTML(url: string): Promise<{ html: string | null; status?: n
 
 /** YouTube oEmbed (title + thumbnail). Thumbnail is upgraded via HEAD check. */
 async function fetchYouTubeMeta(videoUrl: string): Promise<{ title?: string; image?: string; author?: string } | null> {
-  try {
-    const oembed = `https://www.youtube.com/oembed?url=${encodeURIComponent(videoUrl)}&format=json&hl=en`
-    const res = await $fetch(oembed, {
-      headers: { 'user-agent': randomUA(), 'accept': 'application/json' },
-    })
-    if (res.statusCode >= 200 && res.statusCode < 400) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const json = await res.body.json() as any
-      let image = json?.thumbnail_url as string | undefined
-      if (image) image = await bestYouTubeThumbFromUrl(image)
-      // If for some reason that failed, try via id
-      if (!image) {
-        const id = ytId(videoUrl)
-        if (id) image = await bestYouTubeThumbFromId(id)
-      }
-      return {
-        title: json?.title,
-        image,
-        author: json?.author_name
-      }
-    }
-  } catch { /* ignore */ }
-
-  // Fallback only by ID
   const id = ytId(videoUrl)
+
+  try {
+    const data = await $fetch<YTOEmbed>(
+      `https://www.youtube.com/oembed?url=${encodeURIComponent(videoUrl)}&format=json&hl=en`,
+      { headers: { 'user-agent': randomUA(), accept: 'application/json' } }
+    )
+
+    let image = data.thumbnail_url
+    if (image) image = await bestYouTubeThumbFromUrl(image)
+    if (!image && id) image = await bestYouTubeThumbFromId(id)
+
+    return { title: data.title, author: data.author_name, image }
+  } catch {
+    // fall through to ID-only fallback
+  }
+
   if (id) {
+    // oEmbed can fail for shorts/age‑restricted/unlisted/region‑blocked/rate‑limited videos
     return { image: await bestYouTubeThumbFromId(id) }
   }
   return null
@@ -183,7 +170,7 @@ function shouldRefresh(entry?: CacheEntry) {
 }
 
 export default defineTask({
-  meta: { name: 'enrich-resources', description: 'Fetch OG tags w/ cache, logs, throttling + YouTube maxres fallback' },
+  meta: { name: 'enrich-resources', description: 'Fetch OG tags w/ cache, logs, throttling + YouTube maxres fallback.' },
   async run() {
     const raw = await readFile(SEED_PATH, 'utf8')
     const seed: Array<Pick<Resource, 'url' | 'featured' | 'type'>> = JSON.parse(raw)
@@ -232,6 +219,7 @@ export default defineTask({
         if (!meta) {
           failures.push({ url, reason: 'youtube oembed/thumbnail failed' })
         } else {
+          console.log(meta || 'YouTube meta', url);
           title = meta.title || cached?.title
           image = meta.image || cached?.image
           description = cached?.description // oEmbed has no description

@@ -13,4 +13,5 @@ export type Project = {
   lastUpdated?: string;
   author?: string;
   featured?: boolean;
+  demo?: string;
 };

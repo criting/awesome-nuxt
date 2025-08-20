@@ -342,8 +342,9 @@ export const resources: Resource[] = [
   {
     "url": "https://www.youtube.com/watch?v=tq8EluL70hw",
     "type": "tutorial",
-    "image": "https://i.ytimg.com/vi/tq8EluL70hw/hqdefault.jpg",
+    "title": "You Are Sleeping On Nuxt, Nitro and Vue w/ Daniel Roe",
+    "image": "https://i.ytimg.com/vi/tq8EluL70hw/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-20T08:50:58.135Z"
+    "lastChecked": "2025-08-20T11:31:00.692Z"
   }
 ]
