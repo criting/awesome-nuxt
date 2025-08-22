@@ -29,6 +29,7 @@
       </UNavigationMenu>
 
       <template #right>
+        <FeedbackModal />
         <UColorModeButton />
         <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
           <UButton
