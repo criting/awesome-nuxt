@@ -96,6 +96,9 @@ export default defineNuxtConfig({
     },
     rollupConfig: {
       plugins: [vue()]
+    },
+    routeRules: {
+      '/': { prerender: true }
     }
   },
 
