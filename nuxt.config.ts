@@ -69,6 +69,23 @@ export default defineNuxtConfig({
       ],
       meta: [
         { name: 'apple-mobile-web-app-title', content: 'Awesome Nuxt' }
+      ],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://awesome-nuxt.dev/",
+            "name": "Awesome Nuxt",
+            "description": "A curated list of Nuxt projects, tutorials, and resources to help you build better with Nuxt.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Awesome Nuxt",
+              "logo": "https://awesome-nuxt.dev/logo.png"
+            }
+          })
+        }
       ]
     }
   },
