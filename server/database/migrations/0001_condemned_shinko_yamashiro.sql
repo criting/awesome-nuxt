@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `path_fingerprint_idx` ON `feedback` (`path`,`fingerprint`);
