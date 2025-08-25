@@ -13,7 +13,7 @@
             class="w-10 h-10"
             alt="Logo"
           />
-          Awesome Nuxt
+          <span class="hidden sm:block">Awesome Nuxt</span>
         </div></template
       >
 
@@ -29,7 +29,7 @@
       </UNavigationMenu>
 
       <template #right>
-        <FeedbackModal />
+        <FeedbackModal :page="page" />
         <UColorModeButton />
         <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
           <UButton
@@ -51,6 +51,10 @@
 </template>
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui';
+
+const page = {
+  title: 'General'
+};
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
