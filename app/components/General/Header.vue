@@ -29,7 +29,6 @@
       </UNavigationMenu>
 
       <template #right>
-        <FeedbackModal :page="page" />
         <UColorModeButton />
         <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
           <UButton
@@ -51,10 +50,6 @@
 </template>
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui';
-
-const page = {
-  title: 'General'
-};
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
