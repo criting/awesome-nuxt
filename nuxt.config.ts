@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
-    'nuxt-link-checker'
+    'nuxt-link-checker',
+    '@nuxt/icon',
   ],
 
   hub: {

@@ -1,6 +1,7 @@
 <template>
   <UApp>
     <NuxtRouteAnnouncer />
+    <ScrollToTop />
     <GeneralHeader />
     <NuxtPage />
     <GeneralFooter />

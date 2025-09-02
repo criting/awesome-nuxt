@@ -80,6 +80,15 @@
           </div>
         </section>
       </div>
+
+      <div class="max-w-md">
+        <FeedbackWidget
+          :page="{
+            title: 'Projects'
+          }"
+          class="mt-20"
+        />
+      </div>
     </UContainer>
   </section>
 </template>

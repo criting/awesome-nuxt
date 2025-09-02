@@ -62,6 +62,14 @@ const items = computed<NavigationMenuItem[]>(() => [
     to: '/'
   },
   {
+    label: 'Guide',
+    to: '/guide'
+  },
+  {
+    label: 'Projects',
+    to: '/projects'
+  },
+  {
     label: 'Learn',
     to: '/learn'
   },
