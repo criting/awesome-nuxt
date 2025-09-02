@@ -1,7 +1,7 @@
 <template>
   <section class="relative">
     <div
-      class="absolute inset-0 bg-linear-to-b from-gray-100 to-white -z-10 h-[500px] w-full xl:w-[95%] mx-auto bg-no-repeat dark:to-gray-900 rounded-lg"
+      class="absolute inset-0 bg-linear-to-b from-gray-100 to-white -z-10 h-[500px] w-full xl:w-[95%] mx-auto bg-no-repeat dark:from-primary-900 dark:to-gray-900 rounded-lg dark:opacity-50"
     />
 
     <div
