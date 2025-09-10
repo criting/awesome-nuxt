@@ -75,7 +75,7 @@ const items = computed<NavigationMenuItem[]>(() => [
   },
   {
     label: 'Contribute',
-    to: 'https://github.com/criting/awesome-nuxt#-contributing',
+    to: 'https://github.com/criting/awesome-nuxt?tab=contributing-ov-file',
     target: '_blank'
   }
 ]);

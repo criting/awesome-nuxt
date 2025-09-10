@@ -8,10 +8,10 @@
     />
     <UContainer>
       <div class="relative mb-8 pt-24">
-        <h1 class="text-3xl font-bold mb-2">Explore Nuxt Projects</h1>
+        <h1 class="text-3xl font-bold mb-2">Nuxt Resources</h1>
         <p class="text-gray-600 dark:text-gray-400">
-          Discover a collection of Nuxt projects, templates, and starters that are ready to use or
-          learn from.
+          Discover a collection of Nuxt resources like tutorials, courses, and articles to help you
+          learn and grow.
         </p>
       </div>
       <div class="grid grid-cols-1">

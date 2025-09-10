@@ -3,281 +3,250 @@ export const resources: Resource[] = [
   {
     "url": "https://www.youtube.com/watch?v=jmlkL2UJ5hs",
     "type": "read",
-    "featured": false,
     "title": "7 Nuxt Modules to 10x Your Development",
     "image": "https://i.ytimg.com/vi/jmlkL2UJ5hs/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:12:55.295Z"
+    "lastChecked": "2025-09-07T14:30:32.272Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=dCxSsr5xuL8",
     "type": "read",
-    "featured": false,
     "title": "Nuxt in 100 Seconds",
     "image": "https://i.ytimg.com/vi/dCxSsr5xuL8/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:12:56.495Z"
+    "lastChecked": "2025-09-07T14:30:33.524Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=jtaNn9F8mvY",
     "type": "read",
-    "featured": false,
     "title": "Nuxt 4 just dropped. This is a new era for Vue devs...",
     "image": "https://i.ytimg.com/vi/jtaNn9F8mvY/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:12:57.772Z"
+    "lastChecked": "2025-09-07T14:30:34.816Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=RhZZ0whiuT8",
     "type": "tutorial",
-    "featured": false,
     "title": "Nuxt Crash Course 2025",
     "image": "https://i.ytimg.com/vi/RhZZ0whiuT8/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:12:58.931Z"
+    "lastChecked": "2025-09-07T14:30:36.136Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=DK93dqmJJYg",
     "type": "tutorial",
-    "featured": false,
     "title": "Full Stack App Build | Travel Log w/ Nuxt, Vue, Better Auth, Drizzle, Tailwind, DaisyUI, MapLibre",
     "image": "https://i.ytimg.com/vi/DK93dqmJJYg/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:00.078Z"
+    "lastChecked": "2025-09-07T14:30:37.413Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=rCT54d8sMWk",
     "type": "read",
-    "featured": false,
     "title": "Nuxt 4 - An overview!",
     "image": "https://i.ytimg.com/vi/rCT54d8sMWk/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:01.234Z"
+    "lastChecked": "2025-09-07T14:30:38.715Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=9dI_FENApz0",
     "type": "read",
-    "featured": false,
     "title": "Everything New in Nuxt 4 — Should You Switch?",
     "image": "https://i.ytimg.com/vi/9dI_FENApz0/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:02.413Z"
+    "lastChecked": "2025-09-07T14:30:39.989Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=fr5yo3aVkfA",
     "type": "tutorial",
-    "featured": false,
     "title": "How to use Nuxt Layers to encapsulate your code",
     "image": "https://i.ytimg.com/vi/fr5yo3aVkfA/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:03.589Z"
+    "lastChecked": "2025-09-07T14:30:41.279Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=7_2KJWmac4E",
     "type": "tutorial",
-    "featured": false,
     "title": "Nuxt UI - The Best UI Library for Nuxt 3?",
     "image": "https://i.ytimg.com/vi/7_2KJWmac4E/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:04.750Z"
+    "lastChecked": "2025-09-07T14:30:42.595Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=zDzO6-uq80s",
     "type": "tutorial",
-    "featured": false,
     "title": "Using a `src` folder in Nuxt 4",
     "image": "https://i.ytimg.com/vi/zDzO6-uq80s/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:05.911Z"
+    "lastChecked": "2025-09-07T14:30:43.890Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=uvG11I-ftfo",
     "type": "read",
-    "featured": false,
     "title": "Nuxt.js Mini Documentary | Behind The Code",
     "image": "https://i.ytimg.com/vi/uvG11I-ftfo/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:07.115Z"
+    "lastChecked": "2025-09-07T14:30:45.215Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=sMYOigI5NjM",
     "type": "read",
-    "featured": false,
     "title": "You should learn Nuxt!",
     "image": "https://i.ytimg.com/vi/sMYOigI5NjM/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:08.281Z"
+    "lastChecked": "2025-09-07T14:30:46.513Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=TAoTh4DqH6A",
     "type": "read",
-    "featured": false,
     "title": "TWO Major Nuxt versions coming? All you need to know about Nuxt 4 and Nuxt 5",
     "image": "https://i.ytimg.com/vi/TAoTh4DqH6A/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:09.449Z"
+    "lastChecked": "2025-09-07T14:30:47.825Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=NiQB7QPJAiM",
     "type": "read",
-    "featured": false,
     "title": "Vercel BUYING NuxtLabs - What it means for you!",
     "image": "https://i.ytimg.com/vi/NiQB7QPJAiM/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:10.613Z"
+    "lastChecked": "2025-09-07T14:30:49.154Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=0hx38jAzd68",
     "type": "tutorial",
-    "featured": false,
     "title": "Fetch ONCE and share data between Nuxt and Nitro!",
     "image": "https://i.ytimg.com/vi/0hx38jAzd68/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:11.779Z"
+    "lastChecked": "2025-09-07T14:30:50.474Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=JTAo08f74GA",
     "type": "tutorial",
-    "featured": false,
     "title": "Build a Full Stack Apple Notes Web App with Auth & Nuxt 3",
     "image": "https://i.ytimg.com/vi/JTAo08f74GA/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:12.965Z"
+    "lastChecked": "2025-09-07T14:30:51.762Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=8GmfcbuYOWE",
     "type": "tutorial",
-    "featured": false,
     "title": "Nuxt 3 Crash Course - Full Website Tutorial - 2023",
     "image": "https://i.ytimg.com/vi/8GmfcbuYOWE/hqdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:14.396Z"
+    "lastChecked": "2025-09-07T14:30:53.053Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=SUPkSeYHRRQ",
     "type": "read",
-    "featured": false,
     "title": "Nailing It with Nuxt 3 - Inside and Out | VueConf US 2024",
     "image": "https://i.ytimg.com/vi/SUPkSeYHRRQ/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:15.582Z"
+    "lastChecked": "2025-09-07T14:30:54.381Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=sonGs62a6B8",
     "type": "tutorial",
-    "featured": false,
     "title": "Pro Nuxt Workflow: Boost Productivity with the Nuxt.js Ecosystem",
     "image": "https://i.ytimg.com/vi/sonGs62a6B8/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:16.753Z"
+    "lastChecked": "2025-09-07T14:30:55.677Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=f5w6A-nXAcc",
     "type": "read",
-    "featured": false,
     "title": "Live Coding - Rebuild Wordpress with Nuxt - Daniel Roe",
     "image": "https://i.ytimg.com/vi/f5w6A-nXAcc/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:17.950Z"
+    "lastChecked": "2025-09-07T14:30:56.983Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=YErzRvxpwrg",
     "type": "tutorial",
-    "featured": false,
     "title": "Fastest way to build Admin Area in Nuxt (Vue, Shadcn, TypeScript)",
     "image": "https://i.ytimg.com/vi/YErzRvxpwrg/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:19.116Z"
+    "lastChecked": "2025-09-07T14:30:58.273Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=_eQxomah-nA",
     "type": "read",
-    "featured": false,
     "title": "My New Favorite UI Library",
     "image": "https://i.ytimg.com/vi/_eQxomah-nA/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:20.239Z"
+    "lastChecked": "2025-09-07T14:30:59.517Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=J0c9vIleO9U",
     "type": "read",
-    "featured": false,
     "title": "Frontend Nation 2025: Vibe Coding with Nuxt by Daniel Roe",
     "image": "https://i.ytimg.com/vi/J0c9vIleO9U/hqdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:21.460Z"
+    "lastChecked": "2025-09-07T14:31:00.813Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=OnekipgnjOA",
     "type": "tutorial",
-    "featured": false,
     "title": "Going Nitro! Use Nuxt 3 and Storyblok for your next gen website by Alex Jover Morales",
     "image": "https://i.ytimg.com/vi/OnekipgnjOA/hqdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:22.642Z"
+    "lastChecked": "2025-09-07T14:31:02.108Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=7Lr0QTP1Ro8",
     "type": "tutorial",
-    "featured": false,
     "title": "Building a plain SPA with Nuxt!?",
     "image": "https://i.ytimg.com/vi/7Lr0QTP1Ro8/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:23.804Z"
+    "lastChecked": "2025-09-07T14:31:03.393Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=EmvCh7Jb0Mw",
     "type": "tutorial",
-    "featured": false,
     "title": "Learn Nuxt, GSAP, Tailwind, and Prismic to build a dark, mordern, sleek website - Full Course 2025",
     "image": "https://i.ytimg.com/vi/EmvCh7Jb0Mw/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:24.976Z"
+    "lastChecked": "2025-09-07T14:31:04.746Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=SE_ysS_ZXbk",
     "type": "tutorial",
-    "featured": false,
     "title": "Getting Started With Nuxt UI",
     "image": "https://i.ytimg.com/vi/SE_ysS_ZXbk/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:26.148Z"
+    "lastChecked": "2025-09-07T14:31:06.093Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=WoSIEdJmmBc",
     "type": "tutorial",
-    "featured": false,
     "title": "Nuxt 3 Beginner's Full-Course : Build & Deploy A Blog App | Laravel 12 | Vue 3 |Vercel",
     "image": "https://i.ytimg.com/vi/WoSIEdJmmBc/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:27.320Z"
+    "lastChecked": "2025-09-07T14:31:07.385Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=Oomx3mAK0vs",
     "type": "tutorial",
-    "featured": false,
     "title": "Building a Front-End Web App Dashboard with Nuxt 3 @shadcn & @TailwindLabs — 4K [2 hours] 2024",
     "image": "https://i.ytimg.com/vi/Oomx3mAK0vs/hqdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:28.493Z"
+    "lastChecked": "2025-09-07T14:31:08.715Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=azs0ov_SbOA",
     "type": "tutorial",
-    "featured": false,
     "title": "Get Started with Nuxt 3 & @shadcn UI — Course part 1",
     "image": "https://i.ytimg.com/vi/azs0ov_SbOA/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:29.651Z"
+    "lastChecked": "2025-09-07T14:31:09.987Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=_yS-xwOCbR0",
     "type": "tutorial",
-    "featured": false,
     "title": "Build and Deploy A COMPLETE  Real-Time E-Commerce App With Nuxt 3 & Vue 3,PostgreSQL,Prisma & Stripe",
     "image": "https://i.ytimg.com/vi/_yS-xwOCbR0/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-18T18:13:30.814Z"
+    "lastChecked": "2025-09-07T14:31:11.289Z"
   },
   {
     "url": "https://medium.com/vue-mastery/minimalist-nuxt-authentication-8de8caac4117",
@@ -345,6 +314,6 @@ export const resources: Resource[] = [
     "title": "You Are Sleeping On Nuxt, Nitro and Vue w/ Daniel Roe",
     "image": "https://i.ytimg.com/vi/tq8EluL70hw/maxresdefault.jpg",
     "platform": "youtube",
-    "lastChecked": "2025-08-20T11:31:00.692Z"
+    "lastChecked": "2025-09-07T14:31:22.660Z"
   }
 ]

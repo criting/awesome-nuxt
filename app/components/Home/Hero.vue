@@ -1,5 +1,5 @@
 <template>
-  <section class="relative h-screen -mt-20">
+  <section class="relative h-screen">
     <div
       class="absolute inset-0 bg-[url(/hero-bg.svg)] dark:bg-[url(/hero-bg-dark.svg)] bg-cover bg-no-repeat opacity-50 pointer-events-none"
     />

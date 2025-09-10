@@ -5,7 +5,7 @@
       class="absolute left-0 top-0 w-full h-full bg-[url(/hero-bg.svg)] dark:bg-[url(/hero-bg-dark.svg)] bg-cover opacity-40 dark:opacity-70 -z-[10]"
     />
     <div v-if="project" class="max-w-3xl mx-auto">
-      <NuxtLink class="flex gap-2 items-center cursor-pointer group" to="/">
+      <NuxtLink class="flex gap-2 items-center cursor-pointer group" to="/projects">
         <div
           class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
         >

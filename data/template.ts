@@ -130,7 +130,8 @@ export const template: Project[] = [
     demo: 'https://bento.minch.dev/',
     tags: ['nuxt 4', 'tailwindcss', 'gsap'],
     category: 'template',
-    image: 'https://github.com/oneminch/Bentolio/raw/main/public/screenshot.png'
+    image: 'https://github.com/oneminch/Bentolio/raw/main/public/screenshot.png',
+    featured: true
   },
   {
     name: 'Résumé',

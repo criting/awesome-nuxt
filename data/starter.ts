@@ -24,6 +24,7 @@ export const starter: Project[] = [
     demo: 'https://nuxsaas.com/',
     tags: ['auth', 'nuxt 4', 'saas', 'full-stack', 'i18n', 'payments', 'stripe', 'drizzle'],
     category: 'starter',
+    featured: true,
   },
   {
     name: 'SuperSaaS',

@@ -41,6 +41,10 @@ useSeoMeta({
 });
 
 useHead({
-  meta: [{ property: 'og:logo', content: `${cfg.public.siteUrl}/favicon.svg` }]
+  meta: [
+    { property: 'og:logo', content: `${cfg.public.siteUrl}/favicon.svg` },
+    { name: 'robots', content: 'index,follow,max-snippet:-1,max-image-preview:large' }
+  ],
+  link: [{ rel: 'canonical', href: 'https://awesome-nuxt.dev/' }]
 });
 </script>
