@@ -418,7 +418,7 @@ export const starter: Project[] = [
     demo: 'https://konkonam.github.io/nuxt-shopify/',
     tags: ['nuxt 3', 'nuxt 4', 'shopify'],
     category: 'starter',
-    image: 'https://private-user-images.githubusercontent.com/58994540/480031225-68a1a3d2-9ead-4366-94df-3f7e0a74fecb.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU2OTc1MzMsIm5iZiI6MTc1NTY5NzIzMywicGF0aCI6Ii81ODk5NDU0MC80ODAwMzEyMjUtNjhhMWEzZDItOWVhZC00MzY2LTk0ZGYtM2Y3ZTBhNzRmZWNiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODIwVDEzNDAzM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgwZmY2MTExYzU1ZmQ1MmVjZjM2OTVjMTU5YjU0NWVjMGZiZTQzOWRjMDBhNDYxZDMxMTFhMTA4NjlmYjIzMzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.LiO7BK-kh6jqXg8Jclx-pK4nf2OLU0PqW5NelSejKE8'
+    image: 'https://konkonam.github.io/nuxt-shopify/logo-readme.jpg'
   },
   {
     name: 'DruxtJS',
