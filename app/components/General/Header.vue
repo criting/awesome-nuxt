@@ -41,6 +41,15 @@
             aria-label="GitHub"
           />
         </UTooltip>
+
+        <UButton
+          color="neutral"
+          variant="ghost"
+          to="https://nuxt.com"
+          target="_blank"
+          icon="i-simple-icons-nuxt"
+          aria-label="Nuxt"
+        />
       </template>
 
       <template #body>
@@ -72,6 +81,10 @@ const items = computed<NavigationMenuItem[]>(() => [
   {
     label: 'Learn',
     to: '/learn'
+  },
+  {
+    label: 'Community',
+    to: '/community'
   },
   {
     label: 'Contribute',

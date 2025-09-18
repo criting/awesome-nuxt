@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     'nuxt-link-checker',
     '@nuxt/icon',
+    'v-gsap-nuxt',
   ],
 
   hub: {

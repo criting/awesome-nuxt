@@ -27,10 +27,9 @@
 
       <UContainer class="relative">
         <UPageHero
-          headline="Nuxt ecosystem"
-          title="Your Nuxt Guide"
-          description="Tools you’ll actually use with Nuxt—beyond the official modules. Auth, databases, ORMs, UI,
-        validation, testing, deployment, security, analytics, and more."
+          headline="Nuxt community"
+          title="Be part of the Nuxt community"
+          description="Join a vibrant community of Nuxt developers and enthusiasts."
           :ui="{
             headline:
               'bg-secondary text-white rounded-full px-4 py-1.5 mb-4 inline-block text-[11px] font-semibold tracking-wide',

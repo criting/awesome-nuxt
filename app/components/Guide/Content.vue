@@ -29,7 +29,7 @@
       </aside>
 
       <!-- Content -->
-      <section class="space-y-10">
+      <section class="space-y-10 px-10 lg:px-0">
         <!-- Why Nuxt -->
         <div id="why-nuxt" class="scroll-mt-24 relative group">
           <h2 class="text-2xl md:text-3xl font-bold flex gap-2 items-center">
@@ -85,7 +85,10 @@
             Nuxt doesn’t ship with built-in auth. Use one of these:
           </p>
           <h3 class="mt-6 text-lg md:text-xl font-semibold">
-            Nuxt Auth Utils (community favorite)
+            <NuxtLink to="https://nuxt.com/modules/auth-utils" target="_blank" external
+              >Nuxt Auth Utils <Icon name="lucide:square-arrow-out-up-right w-3"
+            /></NuxtLink>
+            (community favorite)
           </h3>
           <ul class="mt-2 space-y-2 text-gray-700 dark:text-gray-300">
             <li>• Secure cookie-based sessions with encryption</li>
@@ -94,7 +97,11 @@
             <li>• Works with SSR, ISR, and SPA</li>
           </ul>
 
-          <h3 class="mt-6 text-lg md:text-xl font-semibold">BetterAuth (Logto, Lucia, etc.)</h3>
+          <h3 class="mt-6 text-lg md:text-xl font-semibold">
+            <NuxtLink to="https://www.better-auth.com/" target="_blank" external
+              >BetterAuth <Icon name="lucide:square-arrow-out-up-right w-3"
+            /></NuxtLink>
+          </h3>
           <ul class="mt-2 space-y-2 text-gray-700 dark:text-gray-300">
             <li>• Lightweight and flexible token/session flows</li>
             <li>• Great for enterprise-grade identity and custom rules</li>
@@ -106,7 +113,7 @@
             need more control.
           </p>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- DB -->
@@ -130,24 +137,47 @@
           </p>
           <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
             <li>
-              • <span class="font-semibold">Cloudflare D1</span> – SQLite-compatible DB on the edge
-              (cheap, fast, NuxtHub-friendly)
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://developers.cloudflare.com/d1" target="_blank" external
+                  >Cloudflare D1 <Icon name="lucide:square-arrow-out-up-right w-3" /></NuxtLink
+              ></span>
+              – SQLite-compatible DB on the edge (cheap, fast, NuxtHub-friendly)
             </li>
             <li>
-              • <span class="font-semibold">Supabase</span> – Postgres + Auth + Storage + Realtime,
-              great DX
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://supabase.com/" target="_blank" external
+                  >Supabase
+
+                  <Icon name="lucide:square-arrow-out-up-right w-3" /> </NuxtLink
+              ></span>
+              – Postgres + Auth + Storage + Realtime, great DX
             </li>
             <li>
-              • <span class="font-semibold">Turso (libSQL)</span> – Distributed SQLite with sync &
-              vector support
+              •
+              <span class="font-semibold"
+                >Turso (libSQL)
+                <NuxtLink to="https://turso.tech/" target="_blank" external
+                  >Turso (libSQL)
+
+                  <Icon name="lucide:square-arrow-out-up-right w-3" /> </NuxtLink
+              ></span>
+              – Distributed SQLite with sync & vector support
             </li>
             <li>
-              • <span class="font-semibold">PocketBase</span> – OSS backend (DB + auth + files) for
-              small apps
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://pocketbase.io/" target="_blank" external
+                  >PocketBase
+
+                  <Icon name="lucide:square-arrow-out-up-right w-3" /> </NuxtLink
+              ></span>
+              – OSS backend (DB + auth + files) for small apps
             </li>
           </ul>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- Modules -->
@@ -177,7 +207,7 @@
             </li>
           </ul>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- Validation -->
@@ -201,17 +231,31 @@
           </p>
           <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
             <li>
-              • <span class="font-semibold">Zod</span> – TypeScript-first schemas (great in server
-              routes & components)
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://zod.dev/" target="_blank" external>
+                  Zod
+                  <Icon name="lucide:square-arrow-out-up-right w-3" /> </NuxtLink
+              ></span>
+              – TypeScript-first schemas (great in server routes & components)
             </li>
-            <li>• <span class="font-semibold">Joi</span> – Mature validator with rich rules</li>
+            <li>
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://joi.dev/" target="_blank" external>
+                  Joi
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – Mature validator with rich rules
+            </li>
           </ul>
           <p class="mt-3 text-gray-600 dark:text-gray-300">
             <span class="font-semibold">Tip:</span> Choose <span class="font-semibold">Zod</span> if
             you want type inference inside your Vue components.
           </p>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- UI -->
@@ -230,19 +274,48 @@
           </h2>
           <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
             <li>
-              • <span class="font-semibold">Nuxt UI</span> – First-party, Tailwind-based, excellent
-              DX
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://ui.nuxt.com/" target="_blank" external>
+                  Nuxt UI
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – First-party, Tailwind-based, excellent DX
             </li>
             <li>
-              • <span class="font-semibold">Shadcn Vue</span> – Headless & highly customizable
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://www.shadcn-vue.com/" target="_blank" external>
+                  Shadcn Vue
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – Headless & highly customizable
             </li>
-            <li>• <span class="font-semibold">PrimeVue</span> – 90+ rich, styled components</li>
             <li>
-              • <span class="font-semibold">Radix Vue</span> – Accessible, headless primitives
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://primevue.org/" target="_blank" external>
+                  PrimeVue
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – 90+ rich, styled components
+            </li>
+            <li>
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://www.radix-vue.com/" target="_blank" external>
+                  Radix Vue
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – Accessible, headless primitives
             </li>
           </ul>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- ORM -->
@@ -265,20 +338,35 @@
             ORMs simplify migrations, relations, and typing:
           </p>
 
-          <h3 class="mt-6 text-lg md:text-xl font-semibold">Drizzle ORM (best TS support)</h3>
+          <h3 class="mt-6 text-lg md:text-xl font-semibold">
+            <NuxtLink to="https://orm.drizzle.team/" target="_blank" external>
+              Drizzle ORM (best TS support)
+              <Icon name="lucide:square-arrow-out-up-right w-3" />
+            </NuxtLink>
+          </h3>
           <ul class="mt-2 space-y-2 text-gray-700 dark:text-gray-300">
             <li>• Edge-friendly (Cloudflare D1, Turso, Neon, etc.)</li>
             <li>• Strongly-typed queries, lightweight migrations</li>
             <li>• Popular in Nuxt full-stack templates</li>
           </ul>
 
-          <h3 class="mt-6 text-lg md:text-xl font-semibold">Prisma</h3>
+          <h3 class="mt-6 text-lg md:text-xl font-semibold">
+            <NuxtLink to="https://www.prisma.io/" target="_blank" external>
+              Prisma
+              <Icon name="lucide:square-arrow-out-up-right w-3" />
+            </NuxtLink>
+          </h3>
           <ul class="mt-2 space-y-2 text-gray-700 dark:text-gray-300">
             <li>• Feature-rich ORM (relations, migrations, studio)</li>
             <li>• Best for Postgres/MySQL; not for D1; limited on Turso</li>
           </ul>
 
-          <h3 class="mt-6 text-lg md:text-xl font-semibold">Kysely</h3>
+          <h3 class="mt-6 text-lg md:text-xl font-semibold">
+            <NuxtLink to="https://kysely.dev/" target="_blank" external>
+              Kysely
+              <Icon name="lucide:square-arrow-out-up-right w-3" />
+            </NuxtLink>
+          </h3>
           <ul class="mt-2 space-y-2 text-gray-700 dark:text-gray-300">
             <li>• Lightweight, type-safe query builder</li>
             <li>• Good choice where Prisma isn’t supported</li>
@@ -293,7 +381,7 @@
             <span class="font-semibold">Drizzle</span> both shine.
           </p>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- Testing -->
@@ -313,18 +401,52 @@
             </a>
           </h2>
           <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
-            <li>• <span class="font-semibold">Vitest</span> – Vite-native unit testing</li>
             <li>
-              • <span class="font-semibold">Playwright</span> – E2E browser tests (fast, resilient)
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://vitest.dev/" target="_blank" external>
+                  Vitest
+                  <Icon name="lucide:square-arrow-out-up-right w-3" /> </NuxtLink
+              ></span>
+              – Vite-native unit testing
             </li>
-            <li>• <span class="font-semibold">Cypress</span> – Popular E2E choice, rich tooling</li>
             <li>
-              • <span class="font-semibold">ESLint + Prettier</span> – via
-              <code class="font-mono">@nuxt/eslint</code> for consistent code
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://playwright.dev/" target="_blank" external>
+                  Playwright
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – E2E browser tests (fast, resilient)
+            </li>
+            <li>
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://www.cypress.io/" target="_blank" external>
+                  Cypress
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – Popular E2E choice, rich tooling
+            </li>
+            <li>
+              •
+              <span class="font-semibold">
+                <NuxtLink
+                  to="https://prettier.io/docs/integrating-with-linters"
+                  target="_blank"
+                  external
+                >
+                  ESLint + Prettier
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – via <code class="font-mono">@nuxt/eslint</code> for consistent code
             </li>
           </ul>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- Deployment -->
@@ -343,19 +465,58 @@
           </h2>
           <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
             <li>
-              • <span class="font-semibold">NuxtHub</span> – Cloudflare Workers + D1 + KV + Blob
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://hub.nuxt.com/" target="_blank" external>
+                  NuxtHub
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – Cloudflare Workers + D1 + KV + Blob
             </li>
             <li>
-              • <span class="font-semibold">Vercel</span> – Simple deploys, great edge support
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://vercel.com" target="_blank" external>
+                  Vercel
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – Simple deploys, great edge support
             </li>
-            <li>• <span class="font-semibold">Netlify</span> – Similar to Vercel, excellent DX</li>
-            <li>• <span class="font-semibold">GitHub Pages</span> – Static-only (SSG)</li>
             <li>
-              • <span class="font-semibold">Cloudflare Pages + Workers</span> – Edge SSR + databases
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://www.netlify.com/" target="_blank" external>
+                  Netlify
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – Similar to Vercel, excellent DX
+            </li>
+            <li>
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://docs.github.com/en/pages" target="_blank" external>
+                  GitHub Pages
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – Static-only (SSG)
+            </li>
+            <li>
+              •
+              <span class="font-semibold">
+                <NuxtLink to="https://www.cloudflare.com/products/pages/" target="_blank" external>
+                  Cloudflare Pages + Workers
+                  <Icon name="lucide:square-arrow-out-up-right w-3" />
+                </NuxtLink>
+              </span>
+              – Edge SSR + databases
             </li>
           </ul>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- Analytics -->
@@ -376,21 +537,32 @@
           </h2>
           <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
             <li>
-              • <span class="font-semibold">Plausible / Umami</span> – Lightweight, privacy-friendly
-              analytics
+              •
+              <span class="font-semibold"
+                ><NuxtLink to="https://plausible.io/" target="_blank" external
+                  >Plausible<Icon name="lucide:square-arrow-out-up-right w-3" /></NuxtLink
+              ></span>
+              – Lightweight, privacy-friendly analytics
             </li>
             <li>
-              • <span class="font-semibold">PostHog</span> – Product analytics (replay, funnels)
+              •
+              <span class="font-semibold"
+                ><NuxtLink to="https://umami.is/" target="_blank" external
+                  >Umami <Icon name="lucide:square-arrow-out-up-right w-3" /></NuxtLink
+              ></span>
+              – Self-hosted, privacy-focused analytics
             </li>
             <li>
-              • <span class="font-semibold">Sentry</span> – Error monitoring (client + server)
-            </li>
-            <li>
-              • <span class="font-semibold">OpenPanel / LogRocket</span> – Session replay & heatmaps
+              •
+              <span class="font-semibold"
+                ><NuxtLink to="https://posthog.com/" target="_blank" external
+                  >PostHog <Icon name="lucide:square-arrow-out-up-right w-3" /></NuxtLink
+              ></span>
+              – Product analytics (replay, funnels)
             </li>
           </ul>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- Email -->
@@ -408,14 +580,33 @@
             </a>
           </h2>
           <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
-            <li>• <span class="font-semibold">Resend</span> – DX-focused email API</li>
-            <li>• <span class="font-semibold">Postmark</span> – Reliable transactional email</li>
             <li>
-              • <span class="font-semibold">Frontegg / Clerk</span> – Identity + notifications suite
+              •
+              <span class="font-semibold"
+                ><NuxtLink to="https://resend.com/" target="_blank" external
+                  >Resend <Icon name="lucide:square-arrow-out-up-right w-3" /></NuxtLink
+              ></span>
+              – DX-focused email API
+            </li>
+            <li>
+              •
+              <span class="font-semibold"
+                ><NuxtLink to="https://postmarkapp.com/" target="_blank" external
+                  >Postmark <Icon name="lucide:square-arrow-out-up-right w-3" /></NuxtLink
+              ></span>
+              – Reliable transactional email
+            </li>
+            <li>
+              •
+              <span class="font-semibold"
+                ><NuxtLink to="https://frontegg.com/" target="_blank" external
+                  >Frontegg<Icon name="lucide:square-arrow-out-up-right w-3" /></NuxtLink
+              ></span>
+              – Identity + notifications suite
             </li>
           </ul>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- Security -->
@@ -439,7 +630,7 @@
             <li>• Force HTTPS everywhere (Cloudflare “Always Use HTTPS” + HSTS)</li>
           </ul>
 
-          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60"></div>
+          <div class="my-8 border-t border-gray-200/60 dark:border-gray-800/60" />
         </div>
 
         <!-- AI -->
@@ -457,11 +648,30 @@
             </a>
           </h2>
           <ul class="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
-            <li>• <span class="font-semibold">Vercel AI SDK</span> – Streaming AI in Nuxt UIs</li>
-            <li>• <span class="font-semibold">LangChain.js</span> – LLM chains & tools</li>
             <li>
-              • <span class="font-semibold">Nuxt AI utils</span> – Simple wrappers for common AI
-              tasks
+              •
+              <span class="font-semibold"
+                ><NuxtLink to="https://ai-sdk.dev/docs/introduction" target="_blank" external
+                  >Vercel AI SDK <Icon name="lucide:square-arrow-out-up-right w-3" /></NuxtLink
+              ></span>
+              – Streaming AI in Nuxt UIs
+            </li>
+            <li>
+              •
+              <span class="font-semibold"
+                ><NuxtLink to="https://js.langchain.com/docs/introduction/" target="_blank" external
+                  >LangChain.js <Icon name="lucide:square-arrow-out-up-right w-3" /></NuxtLink
+              ></span>
+              – LLM chains & tools
+            </li>
+            <li>
+              •
+              <span class="font-semibold"
+                ><NuxtLink to="https://hub.nuxt.com/docs/features/ai" target="_blank" external
+                  >NuxtHub CloudFlare AI
+                  <Icon name="lucide:square-arrow-out-up-right w-3" /></NuxtLink
+              ></span>
+              – Simple wrappers for common AI tasks
             </li>
           </ul>
 
@@ -492,22 +702,22 @@
 <script setup lang="ts">
 const sections = [
   { id: 'why-nuxt', label: 'Why Nuxt Is Popular', icon: 'i-lucide-rocket' },
-  { id: 'auth', label: 'Authentication', icon: 'i-lucide-fingerprint' },
+  { id: 'auth', label: 'Authentication', icon: 'i-lucide-lock' },
   { id: 'db', label: 'Database Providers', icon: 'i-lucide-database' },
-  { id: 'modules', label: 'Must-Have Modules', icon: 'i-lucide-package' },
-  { id: 'validation', label: 'Form Validation', icon: 'i-lucide-shield-check' },
-  { id: 'ui', label: 'UI Libraries', icon: 'i-lucide-layout-list' },
-  { id: 'orm', label: 'ORM Choices', icon: 'i-lucide-bubbles' },
+  { id: 'modules', label: 'Must-Have Modules', icon: 'i-lucide-puzzle' },
+  { id: 'validation', label: 'Form Validation', icon: 'i-lucide-check-circle' },
+  { id: 'ui', label: 'UI Libraries', icon: 'i-lucide-palette' },
+  { id: 'orm', label: 'ORM Choices', icon: 'i-lucide-database' },
   { id: 'testing', label: 'Testing & Quality', icon: 'i-lucide-book-open-check' },
-  { id: 'deploy', label: 'Deployment', icon: 'i-lucide-server-crash' },
+  { id: 'deploy', label: 'Deployment', icon: 'i-lucide-cloud' },
   {
     id: 'analytics',
     label: 'Analytics & Monitoring',
-    icon: 'i-lucide-chart-no-axes-combined'
+    icon: 'i-lucide-bar-chart'
   },
   { id: 'email', label: 'Email & Notifications', icon: 'i-lucide-mail' },
-  { id: 'security', label: 'Security Hardening', icon: 'i-lucide-lock-keyhole' },
-  { id: 'ai', label: 'AI / Modern Enhancements', icon: 'i-lucide-brain-circuit' }
+  { id: 'security', label: 'Security Hardening', icon: 'i-lucide-lock' },
+  { id: 'ai', label: 'AI / Modern Enhancements', icon: 'i-lucide-brain' }
 ];
 
 function go(id: string) {

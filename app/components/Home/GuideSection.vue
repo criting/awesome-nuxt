@@ -2,48 +2,127 @@
   <section>
     <UContainer>
       <UPageSection
-        title="New project? Start with the Guide"
-        description="Pick auth, database, ORM, UI, deployment and more — with realistic trade-offs and up-to-date picks."
+        title="Check out the simple Nuxt Guide"
+        description="Learn about auth, database, ORM, UI, deployment and more — with realistic trade-offs and up-to-date picks."
       >
         <template #body>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="rounded-xl border border-gray-200/70 dark:border-gray-800/70 p-4">
-              <div class="flex items-center gap-2 mb-2">
-                <UIcon name="i-lucide-shield-check" class="h-5 w-5 text-primary" />
-                <h3 class="text-lg md:text-xl font-semibold">Auth</h3>
+            <NuxtLink
+              to="/guide#auth"
+              class="rounded-xl border border-gray-200/70 dark:border-gray-800/70 p-6 h-[200px] flex flex-col group hover:border-gray-400 transition-all duration-300 cursor-pointer justify-between relative hover:scale-[1.02]"
+            >
+              <div
+                class="absolute top-0 left-0 inset-0 bg-[url(/dots.svg)] bg-contain opacity-[0.1] dark:opacity-10"
+              />
+              <div>
+                <div class="flex items-center gap-2 mb-2">
+                  <UIcon name="i-lucide-shield-check" class="h-7 w-7 text-primary" />
+                  <h3 class="text-lg md:text-2xl font-semibold">Auth</h3>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <p
+                    class="text-gray-600 dark:text-gray-300 text-sm opacity-70 group-hover:opacity-100 transition-opacity duration-200"
+                  >
+                    Nuxt Auth Utils or BetterAuth?
+                  </p>
+                </div>
               </div>
-              <p class="text-gray-600 dark:text-gray-300 text-sm">
-                Nuxt Auth Utils for speed, BetterAuth/Lucia when you need custom flows.
-              </p>
-            </div>
-            <div class="rounded-xl border border-gray-200/70 dark:border-gray-800/70 p-4">
-              <div class="flex items-center gap-2 mb-2">
-                <UIcon name="i-lucide-database" class="h-5 w-5 text-primary" />
-                <h3 class="text-lg md:text-xl font-semibold">Database</h3>
+              <div class="flex">
+                <div
+                  class="flex gap-2 text-sm items-center cursor-pointer group border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                >
+                  <div
+                    class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
+                  >
+                    <UIcon name="i-lucide-arrow-right" class="text-white" />
+                  </div>
+                  Learn more
+                </div>
               </div>
-              <p class="text-gray-600 dark:text-gray-300 text-sm">
-                Cloudflare D1 (edge & cheap) • Supabase (Postgres + Auth) • Turso (libSQL).
-              </p>
-            </div>
-            <div class="rounded-xl border border-gray-200/70 dark:border-gray-800/70 p-4">
-              <div class="flex items-center gap-2 mb-2">
-                <UIcon name="i-lucide-braces" class="h-5 w-5 text-primary" />
-                <h3 class="text-lg md:text-xl font-semibold">ORM & UI</h3>
+            </NuxtLink>
+            <NuxtLink
+              to="/guide#db"
+              class="rounded-xl border border-gray-200/70 dark:border-gray-800/70 p-6 h-[200px] flex flex-col justify-between group hover:border-gray-400 transition-all duration-300 cursor-pointer relative hover:scale-[1.02]"
+            >
+              <div
+                class="absolute top-0 left-0 inset-0 bg-[url(/dots.svg)] bg-contain opacity-[0.1] dark:opacity-10"
+              />
+              <div>
+                <div class="flex items-center gap-2 mb-2">
+                  <UIcon name="i-lucide-database" class="h-7 w-7 text-primary" />
+                  <h3 class="text-lg md:text-2xl font-semibold">Database</h3>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <p
+                    class="text-gray-600 dark:text-gray-300 text-sm opacity-70 group-hover:opacity-100 transition-opacity duration-200"
+                  >
+                    CloudFlare D1, Supabase, or Torso?
+                  </p>
+                </div>
               </div>
-              <p class="text-gray-600 dark:text-gray-300 text-sm">
-                Drizzle on the edge, Prisma on Postgres. Nuxt UI / Shadcn for a clean UI.
-              </p>
-            </div>
+              <div class="flex">
+                <div
+                  class="flex gap-2 text-sm items-center cursor-pointer group border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                >
+                  <div
+                    class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
+                  >
+                    <UIcon name="i-lucide-arrow-right" class="text-white" />
+                  </div>
+                  Learn more
+                </div>
+              </div>
+            </NuxtLink>
+            <NuxtLink
+              to="/guide#ui"
+              class="rounded-xl border border-gray-200/70 dark:border-gray-800/70 p-6 h-[200px] flex flex-col justify-between group hover:border-gray-400 transition-all duration-300 cursor-pointer relative hover:scale-[1.02]"
+            >
+              <div
+                class="absolute top-0 left-0 inset-0 bg-[url(/dots.svg)] bg-contain opacity-[0.1] dark:opacity-10"
+              />
+              <div>
+                <div class="flex items-center gap-2 mb-2">
+                  <UIcon name="i-lucide-blocks" class="h-7 w-7 text-primary" />
+                  <h3 class="text-lg md:text-2xl font-semibold">UI</h3>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <p
+                    class="text-gray-600 dark:text-gray-300 text-sm opacity-70 group-hover:opacity-100 transition-opacity duration-200"
+                  >
+                    Nuxt UI, PrimeVue, or Shadcn?
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="flex gap-2 text-sm items-center cursor-pointer group border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                >
+                  <div
+                    class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
+                  >
+                    <UIcon name="i-lucide-arrow-right" class="text-white" />
+                  </div>
+                  Learn more
+                </div>
+              </div>
+            </NuxtLink>
           </div>
 
-          <div class="mt-6">
-            <NuxtLink
-              to="/guide"
-              class="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-primary text-white hover:bg-primary-600 transition"
-            >
-              Explore the full Guide
-              <UIcon name="i-lucide-arrow-right" class="h-4 w-4" />
-            </NuxtLink>
+          <div class="mt-4 flex flex-col justify-center items-center">
+            and many more...
+            <div class="flex mt-6">
+              <NuxtLink
+                to="/guide"
+                class="flex gap-2 text-sm items-center cursor-pointer group border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              >
+                <div
+                  class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
+                >
+                  <UIcon name="i-lucide-arrow-right" class="text-white" />
+                </div>
+                Check out the full Guide
+              </NuxtLink>
+            </div>
           </div>
         </template>
       </UPageSection>

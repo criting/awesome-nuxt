@@ -1,7 +1,20 @@
 <template>
-  <section>
+  <section class="hero-section overflow-hidden">
     <div class="relative flex flex-col items-center justify-center lg:h-screen bg-no-repeat">
       <div
+        v-gsap.whenVisible.from="{
+          trigger: '.hero-section',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true
+        }"
+        v-gsap.whenVisible.to="{
+          trigger: '.hero-section',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+          scale: 1.15
+        }"
         fetchPriority="high"
         class="absolute -top-[80px] left-0 inset-0 bg-[url(/hero-bg.svg)] dark:bg-[url(/hero-bg-dark.svg)] bg-cover bg-no-repeat lg:bg-center light:opacity-40 light:md:opacity-100"
       />

@@ -30,6 +30,7 @@
     "nuxt-link-checker": "4.3.1",
     "octokit": "^5.0.3",
     "typescript": "^5.9.2",
+    "v-gsap-nuxt": "1.4.4",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
