@@ -9,6 +9,7 @@ export const ai: Project[] = [
     tags: ['auth', 'nuxt 3', 'nuxt ui pro', 'vercel', 'drizzle'],
     category: 'ai',
     image: 'https://nuxt-ui-chat.hrcd.fr/og.jpg',
+    featured: true,
   },
   {
     name: 'Nuxt AI Chatbot Template',

@@ -52,7 +52,7 @@
             </UButton>
           </div>
         </UFormField>
-        <UFormField label="Additional Feedback" name="message">
+        <UFormField label="Additional Feedback (optional)" name="message">
           <UTextarea v-model="formState.feedback" :rows="5" class="w-full mt-1" />
         </UFormField>
 

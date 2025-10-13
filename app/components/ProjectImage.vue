@@ -7,33 +7,24 @@
     }"
   >
     <div v-if="image">
-      <img
-        v-if="image?.includes('og-images/')"
-        :src="image"
-        class="rounded-lg w-full object-contain group-hover:scale-105 transition-transform duration-200"
-        :class="{
-          'mt-8': size === 'taller'
-        }"
-        sizes="100px sm:150px md:300px"
-        loading="lazy"
-        alt="Project Image"
-      />
       <NuxtImg
-        v-else-if="visible"
         :src="image"
         alt="Project Image"
         class="rounded-lg w-full object-contain"
         :class="{
           'group-hover:scale-105 transition-transform duration-200': size !== 'taller',
-          'object-contain mx-auto w-[500px] mt-4': size === 'taller'
+          'object-contain mx-auto w-[500px] mt-4': size === 'taller',
+          hidden: !visible
         }"
         sizes="100px sm:150px md:300px"
         loading="lazy"
         width="600"
         height="300"
         format="webp"
+        placeholder
         @error="onError"
       />
+
       <div
         class="font-semibold text-white text-center group-hover:mix-blend-normal transition-all duration-200 z-10 mt-4"
         :class="{
@@ -55,13 +46,11 @@
         {{ description }}
       </div>
     </div>
+
     <div v-else class="w-full h-full object-contain flex flex-col items-center justify-center">
       <div
         class="font-semibold text-white group-hover:mix-blend-normal text-center"
-        :class="{
-          'mix-blend-normal': size === 'taller',
-          'mix-blend-overlay': size !== 'taller'
-        }"
+        :class="{ 'mix-blend-normal': size === 'taller', 'mix-blend-overlay': size !== 'taller' }"
       >
         {{ name }}
       </div>
@@ -87,22 +76,9 @@ function onError() {
 }
 
 defineProps({
-  image: {
-    type: String,
-    default: ''
-  },
-  name: {
-    type: String,
-    required: false,
-    default: ''
-  },
-  description: {
-    type: String,
-    default: ''
-  },
-  size: {
-    type: String,
-    default: 'default'
-  }
+  image: { type: String, default: '' },
+  name: { type: String, default: '' },
+  description: { type: String, default: '' },
+  size: { type: String, default: 'default' }
 });
 </script>

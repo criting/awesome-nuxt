@@ -88,6 +88,15 @@
           </div>
         </section>
       </div>
+
+      <div class="max-w-md">
+        <FeedbackWidget
+          :page="{
+            title: 'Guide'
+          }"
+          class="mt-20"
+        />
+      </div>
     </UContainer>
   </section>
 </template>

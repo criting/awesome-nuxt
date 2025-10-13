@@ -1,8 +1,9 @@
 <template>
   <div>
-    <ScrollToTop />
     <HomeHero />
-    <HomeProjectsGrid />
+    <HomeGuideSection />
+    <HomeProjectsSection />
+    <HomeLearnSection />
     <HomeFAQ />
     <HomeCTA />
   </div>

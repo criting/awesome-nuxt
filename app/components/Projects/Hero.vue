@@ -27,9 +27,10 @@
 
       <UContainer>
         <UPageHero
-          headline="Fresh Resources"
-          title="Resources for Learning Nuxt"
-          description="A collection of tutorials, guides, and other resources to help you learn Nuxt effectively."
+          :headline="projects.length + ' Projects'"
+          title="Nuxt Projects That Deliver"
+          description="A curated list of Nuxt projects, templates, and starters that actually work — ready for
+          you to use or learn from."
           :ui="{
             container: 'lg:py-60',
             headline:
@@ -41,15 +42,27 @@
             <div
               to="#projects"
               class="flex gap-2 text-sm items-center cursor-pointer group border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-              @click="scrollToResources"
+              @click="scrollToProjects"
             >
               <div
                 class="bg-primary group-hover:bg-secondary flex justify-center p-2 rounded-full transition-colors duration-200"
               >
                 <UIcon name="i-lucide-arrow-down" class="text-white" />
               </div>
-              Explore resources
+              Explore projects
             </div>
+            <NuxtLink
+              class="flex gap-2 text-sm items-center cursor-pointer group border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              to="https://github.com/criting/awesome-nuxt"
+              target="_blank"
+            >
+              <div
+                class="bg-secondary group-hover:bg-primary flex justify-center p-2 rounded-full transition-colors duration-200"
+              >
+                <UIcon name="i-simple-icons-github" class="text-white" />
+              </div>
+              View on GitHub
+            </NuxtLink>
           </template>
         </UPageHero>
       </UContainer>
@@ -58,9 +71,11 @@
 </template>
 
 <script setup>
-function scrollToResources() {
+import { projects } from '~~/data/all';
+
+function scrollToProjects() {
   if (import.meta.client) {
-    document.getElementById('resources')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   }
 }
 </script>

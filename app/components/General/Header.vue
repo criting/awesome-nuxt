@@ -41,6 +41,15 @@
             aria-label="GitHub"
           />
         </UTooltip>
+
+        <UButton
+          color="neutral"
+          variant="ghost"
+          to="https://nuxt.com"
+          target="_blank"
+          icon="i-simple-icons-nuxt"
+          aria-label="Nuxt"
+        />
       </template>
 
       <template #body>
@@ -62,12 +71,24 @@ const items = computed<NavigationMenuItem[]>(() => [
     to: '/'
   },
   {
+    label: 'Guide',
+    to: '/guide'
+  },
+  {
+    label: 'Projects',
+    to: '/projects'
+  },
+  {
     label: 'Learn',
     to: '/learn'
   },
   {
+    label: 'Community',
+    to: '/community'
+  },
+  {
     label: 'Contribute',
-    to: 'https://github.com/criting/awesome-nuxt#-contributing',
+    to: 'https://github.com/criting/awesome-nuxt?tab=contributing-ov-file',
     target: '_blank'
   }
 ]);

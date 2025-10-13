@@ -5,12 +5,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxt/eslint',
-    '@nuxt/ui-pro',
+    '@nuxt/ui',
     '@nuxthub/core',
     '@nuxt/image',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
-    'nuxt-link-checker'
+    'nuxt-link-checker',
+    '@nuxt/icon',
+    'v-gsap-nuxt',
   ],
 
   hub: {

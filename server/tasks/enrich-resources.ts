@@ -88,24 +88,34 @@ async function bestYouTubeThumbFromUrl(url: string) {
   return (hi !== url && await headOk(hi)) ? hi : url
 }
 
-async function fetchHTML(url: string): Promise<{ html: string | null; status?: number; error?: string }> {
+async function fetchHTML(
+  url: string
+): Promise<{ html: string | null; status?: number; error?: string }> {
   try {
-    const res = await $fetch(url, {
+    const res = await $fetch.raw(url, {
       headers: {
         'user-agent': randomUA(),
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'accept-language': 'en-US,en;q=0.9',
         'cache-control': 'no-cache'
       },
+      redirect: 'follow',
+      responseType: 'text',     // <- important: return text
+      timeout: 20000
     })
-    const status = res.statusCode
-    if (status >= 200 && status < 400) {
-      return { html: await res.body.text(), status }
+
+    if (res.status >= 200 && res.status < 400) {
+      // _data is the text body when responseType:'text'
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      return { html: (res as any)._data as string, status: res.status }
     }
-    return { html: null, status, error: `status ${status}` }
+    return { html: null, status: res.status, error: res.statusText || `status ${res.status}` }
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (err: any) {
-    return { html: null, error: err?.message || 'network error' }
+    // ofetch error may carry response/status
+    const status = err?.response?.status
+    const statusText = err?.response?.statusText
+    return { html: null, status, error: statusText || err?.message || 'network error' }
   }
 }
 
@@ -166,7 +176,7 @@ type CacheMap = Record<string, CacheEntry>
 function shouldRefresh(entry?: CacheEntry) {
   if (FORCE || !entry) return true
   const age = Date.now() - new Date(entry.cachedAt).getTime()
-  return age > ms(TTL_DAYS)
+  return age > ms(TTL_DAYS) || !!entry.error
 }
 
 export default defineTask({
