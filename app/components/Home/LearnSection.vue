@@ -84,7 +84,7 @@
       </div>
       <div class="mt-12 flex justify-center">
         <NuxtLink
-          to="/projects"
+          to="/learn"
           class="flex gap-2 text-sm items-center cursor-pointer group border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
         >
           <div

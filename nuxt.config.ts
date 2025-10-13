@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxt/eslint',
-    '@nuxt/ui-pro',
+    '@nuxt/ui',
     '@nuxthub/core',
     '@nuxt/image',
     '@nuxtjs/robots',
